@@ -13,7 +13,109 @@
         <pubDate>Tue, 08 Oct 2024 11:10:32 +0800</pubDate>
         
         <guid>https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
-        <description></description>
+        <description>&lt;h1 id=&#34;md语法笔记&#34;&gt;MD语法笔记
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;学习自https://markdown.com.cn/basic-syntax/&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;标题&#34;&gt;标题
+&lt;/h2&gt;&lt;p&gt;井号（#）用于标题，数量对应标题级别&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;“#”后需要加入空格&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;或者在标题行后一行加入任何数量的“=”或者“-”分别表示一级二级标题&lt;/p&gt;
+&lt;h2 id=&#34;强调&#34;&gt;强调
+&lt;/h2&gt;&lt;h3 id=&#34;粗体&#34;&gt;粗体
+&lt;/h3&gt;&lt;p&gt;在单词或短语的前后各添加两个星号（*）或下划线（_）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下划线需要在英文模式下输入中文模式的破折号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;在句中为一个短语添加粗体时只能用星号，不要加空格&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;斜体&#34;&gt;斜体
+&lt;/h3&gt;&lt;p&gt;在单词或短语前后添加一个星号或下划线。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;要斜体突出单词的中间部分，请在字母前后各添加一个星号，中间不要带空格&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;粗体和斜体&#34;&gt;粗体和斜体
+&lt;/h3&gt;&lt;p&gt;要同时用粗体和斜体突出显示文本，请在单词或短语的前后各添加三个星号或下划线。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;要加粗并用斜体显示单词或短语的中间部分，请在要突出显示的部分前后各添加三个星号，中间不要带空格&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;引用&#34;&gt;引用
+&lt;/h2&gt;&lt;p&gt;引用一句话时，在句前添加&amp;gt;&lt;/p&gt;
+&lt;p&gt;若引用多段话，需要在两端中间添加一行空白行，空白行前加入&amp;gt;符号&lt;/p&gt;
+&lt;p&gt;引用多段话时，可以对嵌套引用内容，在引用块嵌套行前，&amp;gt;符号后输入&amp;raquo;&lt;/p&gt;
+&lt;p&gt;引用段中可包含Markdown的语法,并不是所有语法都可用&lt;/p&gt;
+&lt;h2 id=&#34;顺序&#34;&gt;顺序
+&lt;/h2&gt;&lt;h3 id=&#34;数字顺序&#34;&gt;数字顺序
+&lt;/h3&gt;&lt;p&gt;在每个列表项前添加数字并紧跟一个英文句点,后接空格,数字不必按数学顺序排列,列表应当以数字 1 起始&lt;/p&gt;
+&lt;p&gt;可以在单个项内嵌套另一数字顺序(???)&lt;/p&gt;
+&lt;h3 id=&#34;符号无序顺序&#34;&gt;符号(无序)顺序
+&lt;/h3&gt;&lt;p&gt;在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+),后输入空格 。缩进一个或多个列表项可创建嵌套列表。(???)&lt;/p&gt;
+&lt;p&gt;可在顺序中新建段落嵌套入段落、引用、代码块、图片等其他内容&lt;/p&gt;
+&lt;h2 id=&#34;代码&#34;&gt;代码
+&lt;/h2&gt;&lt;h3 id=&#34;代码句词&#34;&gt;代码句词
+&lt;/h3&gt;&lt;p&gt;要将单词或短语表示为代码，请将其包裹在反引号(`)中&lt;/p&gt;
+&lt;h3 id=&#34;代码块&#34;&gt;代码块
+&lt;/h3&gt;&lt;p&gt;在代码块之前和之后的行上使用三个反引号或三个波浪号(~)&lt;/p&gt;
+&lt;p&gt;代码块的右下角选择语言可以高亮显示&lt;/p&gt;
+&lt;h2 id=&#34;分割线&#34;&gt;分割线
+&lt;/h2&gt;&lt;p&gt;在单独一行上使用三个或多个星号 (&lt;code&gt;***&lt;/code&gt;)、破折号 (&lt;code&gt;---&lt;/code&gt;) 或下划线 (&lt;code&gt;___&lt;/code&gt;) ，并且不能包含其他内容。&lt;/p&gt;
+&lt;p&gt;为了兼容性，请在分隔线的前后均添加空白行。&lt;/p&gt;
+&lt;h2 id=&#34;链接&#34;&gt;链接
+&lt;/h2&gt;&lt;h3 id=&#34;超链接&#34;&gt;超链接
+&lt;/h3&gt;&lt;p&gt;链接文本放在中括号内，链接地址放在后面的括号中，链接title可选,如例&lt;/p&gt;
+&lt;p&gt;这是一个链接&lt;code&gt;[Github](https://github.com/)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这是一个链接&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;也可以给链接添加title,使鼠标悬停在链接上时会出现文字,title放在圆括号中链接地址后面，跟链接地址之间以空格分隔。如例&lt;/p&gt;
+&lt;p&gt;这是一个链接&lt;code&gt;[Github](https://github.com/ &amp;quot;全球最大的开源网站&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这是一个链接&lt;a class=&#34;link&#34; href=&#34;https://github.com/&#34;  title=&#34;全球最大的开源网站&#34;
+     target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;网站和email地址&#34;&gt;网站和email地址
+&lt;/h3&gt;&lt;p&gt;使用尖括号可以很方便地把URL或者email地址变成可点击的链接,如例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;https://github.com&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;强调链接&#34;&gt;强调链接
+&lt;/h3&gt;&lt;p&gt;链接同样支持Markdown强调语法&lt;/p&gt;
+&lt;h3 id=&#34;引用类型链接&#34;&gt;引用类型链接
+&lt;/h3&gt;&lt;p&gt;？？？&lt;/p&gt;
+&lt;h2 id=&#34;图片&#34;&gt;图片
+&lt;/h2&gt;&lt;p&gt;要添加图像，请使用感叹号 (&lt;code&gt;!&lt;/code&gt;), 然后在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本，如例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![Bronya](/assets/content/post/MD语法笔记/Bronya.jpg &amp;quot;Bronya&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya.jpg&#34;
+	width=&#34;656&#34;
+	height=&#34;601&#34;
+	srcset=&#34;https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya_hu12030326960857407769.jpg 480w, https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya_hu4708771382654508036.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Bronya&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;261px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;给图片增加链接，请将图像的Markdown 括在方括号中，然后将链接添加在圆括号中&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;![Bronya](/assets/content/post/MD语法笔记/Bronya.jpg &amp;quot;Bronya&amp;quot;)(https://coldmmheart.github.io/)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya.jpg&#34;
+	width=&#34;656&#34;
+	height=&#34;601&#34;
+	srcset=&#34;https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya_hu12030326960857407769.jpg 480w, https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/Bronya_hu4708771382654508036.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;MyHugoBlog&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;109&#34;
+		data-flex-basis=&#34;261px&#34;
+	
+&gt;(&lt;a class=&#34;link&#34; href=&#34;https://coldmmheart.github.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://coldmmheart.github.io/&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一定要用英文叹号&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;图片本地路径尽量使用相对路径，放在MD文档的同一文件夹下，就可以直接写文件名了&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络路径直接用网址替换图片本地路径即可&lt;/p&gt;
+&lt;h2 id=&#34;转义&#34;&gt;转义
+&lt;/h2&gt;&lt;p&gt;要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 （\） ，如例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\*111&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;*111&lt;/p&gt;
+&lt;p&gt;大部分字符都可转义&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>C语言学习笔记</title>
