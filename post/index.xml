@@ -13,12 +13,13 @@
         <pubDate>Tue, 08 Oct 2024 11:10:32 +0800</pubDate>
         
         <guid>https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</guid>
-        <description>&lt;h1 id=&#34;md语法笔记&#34;&gt;MD语法笔记
+        <description>&lt;img src="https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/beijing.jpeg" alt="Featured image of post MD语法笔记" /&gt;&lt;h1 id=&#34;md语法笔记&#34;&gt;MD语法笔记
 &lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;学习自https://markdown.com.cn/basic-syntax/&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;标题&#34;&gt;标题
-&lt;/h2&gt;&lt;p&gt;井号（#）用于标题，数量对应标题级别&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;。。。&lt;/p&gt;
+&lt;p&gt;井号（#）用于标题，数量对应标题级别&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;“#”后需要加入空格&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;或者在标题行后一行加入任何数量的“=”或者“-”分别表示一级二级标题&lt;/p&gt;
 &lt;h2 id=&#34;强调&#34;&gt;强调
