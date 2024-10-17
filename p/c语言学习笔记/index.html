@@ -297,7 +297,23 @@
       </ol>
     </li>
     <li><a href="#getchar和putchar函数的用法">getchar和putchar函数的用法</a></li>
-    <li><a href="#224复合赋值和递增递减">2.2.4复合赋值和递增递减</a></li>
+    <li><a href="#224复合赋值和递增递减">2.2.4复合赋值和递增递减</a>
+      <ol>
+        <li><a href="#复合赋值">复合赋值</a></li>
+        <li><a href="#递增递减运算符">递增递减运算符</a>
+          <ol>
+            <li><a href="#前缀后缀">前缀后缀</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#322判断条件">3.2.2判断条件</a></li>
+    <li><a href="#323找零计算器注释">3.2.3找零计算器——注释</a></li>
+    <li><a href="#324否则">3.2.4否则</a></li>
+    <li><a href="#325if再探">3.2.5if再探</a></li>
+    <li><a href="#331ifelse嵌套">3.3.1ifelse嵌套</a></li>
+    <li><a href="#332级联的if">3.3.2级联的if</a></li>
+    <li><a href="#334多路分支switch-case语句">3.3.4多路分支:switch-case语句</a></li>
   </ol>
 </nav>
         </div>
@@ -354,7 +370,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -411,7 +427,192 @@
 <p>学习自https://blog.csdn.net/m0_65601072/article/details/124650579</p>
 </blockquote>
 <h2 id="224复合赋值和递增递减">2.2.4复合赋值和递增递减
-</h2>
+</h2><h3 id="复合赋值">复合赋值
+</h3><p>+=，-=，*=，/=</p>
+<p>先计算等号右边，后对左侧值进行计算，如例</p>
+<p><code>total *= 12+6</code>等价于<code>total = total * (12+6)</code></p>
+<h3 id="递增递减运算符">递增递减运算符
+</h3><p>属于单目运算符，只有一个算子，且算子必为变量</p>
+<h4 id="前缀后缀">前缀后缀
+</h4><p>++，&ndash;可放在算子的前后，前缀后缀的不同导致算子的值在某些步骤中不同，如例</p>
+<p>使用a++时</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;a++=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="o">++</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;a=%d&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a++=10
+</span></span><span class="line"><span class="cl">a=11
+</span></span><span class="line"><span class="cl">Process returned 0 (0x0)   execution time : 0.029 s
+</span></span><span class="line"><span class="cl">Press any key to continue.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用++a时</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;++a=%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="o">++</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;a=%d&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">++a=11
+</span></span><span class="line"><span class="cl">a=11
+</span></span><span class="line"><span class="cl">Process returned 0 (0x0)   execution time : 0.030 s
+</span></span><span class="line"><span class="cl">Press any key to continue.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以看出，当使用后缀时，a++的值仍等于a，执行后a的值变为11；使用前缀时，++a的值等于11，执行后a的值也为11。</p>
+<p>即，使用前缀时，先执行使a加上1的步骤；使用后缀时，后执行使a加上1的步骤</p>
+<h2 id="322判断条件">3.2.2判断条件
+</h2><p>!=不相等，==相对</p>
+<p>判断是否相等的关系运算符优先级小于判断条件运算符</p>
+<h2 id="323找零计算器注释">3.2.3找零计算器——注释
+</h2><p>//用于单行</p>
+<p>/**/用于多行</p>
+<h2 id="324否则">3.2.4否则
+</h2><p>if的完整格式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="err">条件</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl">	<span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>注意:小括号后不接分号</strong></p>
+<h2 id="325if再探">3.2.5if再探
+</h2><p>if的另一种形式，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">if</span> <span class="p">()</span>
+</span></span><span class="line"><span class="cl">	<span class="p">...;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="p">...;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>不接大括号时，执行的语句为紧接的下一句</p>
+<h2 id="331ifelse嵌套">3.3.1ifelse嵌套
+</h2><p>else关联最近的if</p>
+<h2 id="332级联的if">3.3.2级联的if
+</h2><p>如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">if</span><span class="p">(</span><span class="n">exp1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">st1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="nf">if</span><span class="p">(</span><span class="n">exp2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">st2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> 
+</span></span><span class="line"><span class="cl">	<span class="n">st3</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="334多路分支switch-case语句">3.3.4多路分支:switch-case语句
+</h2><p>switch-case语句格式</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span> <span class="err">控制表达式</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="err">常量</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">st1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="err">常量</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">st2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">default</span><span class="o">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stn</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>控制表达式只能是整型的结果</strong></p>
+<p><strong>常量可以是常数，也可以是常数表达式，还可以是整型变量</strong></p>
+<p>若没有break，则继续向下一个case执行，直到遇到一个可执行的break，才会跳出整个switch语句</p>
+
 </section>
 
 
