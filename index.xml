@@ -7,7 +7,129 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>coldMMheart</copyright>
-        <lastBuildDate>Tue, 08 Oct 2024 11:10:32 +0800</lastBuildDate><atom:link href="https://coldMMheart.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 24 Oct 2024 18:06:05 +0800</lastBuildDate><atom:link href="https://coldMMheart.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>人工智能前沿技术讲座</title>
+        <link>https://coldMMheart.github.io/p/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF%E8%AE%B2%E5%BA%A7/</link>
+        <pubDate>Thu, 24 Oct 2024 18:06:05 +0800</pubDate>
+        
+        <guid>https://coldMMheart.github.io/p/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF%E8%AE%B2%E5%BA%A7/</guid>
+        <description>&lt;h1 id=&#34;人工智能前沿技术讲座&#34;&gt;人工智能前沿技术讲座
+&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;学习自张仰森教授&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;第一节&#34;&gt;第一节
+&lt;/h2&gt;&lt;h3 id=&#34;3人工智能的诞生及发展&#34;&gt;3.人工智能的诞生及发展
+&lt;/h3&gt;&lt;p&gt;起源于1956年达特茅斯会议&lt;/p&gt;
+&lt;h4 id=&#34;智能的三个层级&#34;&gt;智能的三个层级
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;运算智能&lt;/p&gt;
+&lt;p&gt;快速运算和记忆存储&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;感知智能&lt;/p&gt;
+&lt;p&gt;视觉听觉触觉，目前因充分利用DNN和大数据成果，机器在感知能力上已接近人类&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;认知智能&lt;/p&gt;
+&lt;p&gt;大语言模型&lt;/p&gt;
+&lt;p&gt;能理解会思考，即推理能力&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;提出问题，能够回答，即为理解&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;赋予机器智能&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4研究内容&#34;&gt;4.研究内容
+&lt;/h3&gt;&lt;h4 id=&#34;41研究内容&#34;&gt;4.1研究内容
+&lt;/h4&gt;&lt;p&gt;人工智能是研究用机器模拟、延伸和拓展人类智能的科学&lt;/p&gt;
+&lt;p&gt;研究内容：知识的获取表示和推理&lt;/p&gt;
+&lt;h5 id=&#34;知识&#34;&gt;知识
+&lt;/h5&gt;&lt;p&gt;知识是概念以及概念之间关系的总称，即知识=概念+关系&lt;/p&gt;
+&lt;h5 id=&#34;概念&#34;&gt;概念
+&lt;/h5&gt;&lt;p&gt;概念以某种形式的数据来标识或记载，如词或词组&lt;/p&gt;
+&lt;p&gt;词+语法关系+语义关系=知识的表达&lt;/p&gt;
+&lt;p&gt;概念是所感知的事物的本质特点，帮助人们从感性上升到理性，再应用于感性&lt;/p&gt;
+&lt;h5 id=&#34;数据&#34;&gt;数据
+&lt;/h5&gt;&lt;p&gt;指的是所有能输入到计算机中，能被计算机程序处理的符号&lt;/p&gt;
+&lt;h5 id=&#34;信息&#34;&gt;信息
+&lt;/h5&gt;&lt;p&gt;是客观事物共同特征的概括，用数据的形式体现，是对数据的解释和数据在特定场合下的具体含义，&lt;strong&gt;有格式的数据才蕴含着信息&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;数据是信息的载体&lt;/p&gt;
+&lt;h5 id=&#34;知识-1&#34;&gt;知识
+&lt;/h5&gt;&lt;p&gt;结构化的信息&lt;/p&gt;
+&lt;h5 id=&#34;智慧&#34;&gt;智慧
+&lt;/h5&gt;&lt;p&gt;运用知识解决问题的能力&lt;/p&gt;
+&lt;p&gt;心智的感悟和创造&lt;/p&gt;
+&lt;p&gt;一种理性思维，具有创造性&lt;/p&gt;
+&lt;p&gt;有意识的&lt;/p&gt;
+&lt;h5 id=&#34;智能&#34;&gt;智能
+&lt;/h5&gt;&lt;p&gt;心智的唤醒与执行&lt;/p&gt;
+&lt;p&gt;按照人的设置，自动实现某种功能&lt;/p&gt;
+&lt;p&gt;无意识的&lt;/p&gt;
+&lt;h4 id=&#34;42研究领域&#34;&gt;4.2研究领域
+&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;问题求解&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机器学习：如何使用计算机模拟人类学习活动&lt;/p&gt;
+&lt;p&gt;研究目标：人类学习过程的认知模型；通用学习算法；构造面向任务的专用学习系统的方法&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;模式识别：如何使机器具有感知能力&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自动定理证明&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自动程序设计：包括程序综合和程序正确性验证。程序综合用于实现自动编程。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;自然语言理解：包括回答问题、文章摘要、机器翻译&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;机器人学&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;人工神经网络&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;43研究方法及技术路线&#34;&gt;4.3研究方法及技术路线
+&lt;/h4&gt;&lt;h5 id=&#34;研究方法&#34;&gt;研究方法
+&lt;/h5&gt;&lt;p&gt;符号主义(逻辑主义学派)：认为人类智能的基本单元是符号，认知的过程是符号操作的过程（推理过程）。思维是符号运算。&lt;/p&gt;
+&lt;p&gt;基于逻辑的只是表示和推理机制&lt;/p&gt;
+&lt;p&gt;联结主义（仿生学派）：认为人类大脑的思维基元是神经元，认知过程是神经元构成的网络的信息传递，传递时并行分布进行的。&lt;/p&gt;
+&lt;p&gt;以网络连接为主的连接机制方法&lt;/p&gt;
+&lt;p&gt;行为主义（控制论学派）：认为人工智能起源于控制论，用感知代替知识&lt;/p&gt;
+&lt;h5 id=&#34;技术路线&#34;&gt;技术路线
+&lt;/h5&gt;&lt;p&gt;专用路线&lt;/p&gt;
+&lt;p&gt;通用路线&lt;/p&gt;
+&lt;p&gt;硬件路线：指智能机器的开发主要有赖于各种智能硬件、智能工具及固化技术&lt;/p&gt;
+&lt;p&gt;软件路线：指智能机器的研制主要在于各种智能软件及工具的开发和运用，发展软件技术时人工智能发展的必由之路&lt;/p&gt;
+&lt;h3 id=&#34;5机器学习和深度学习&#34;&gt;5.机器学习和深度学习
+&lt;/h3&gt;&lt;h4 id=&#34;机器学习&#34;&gt;机器学习
+&lt;/h4&gt;&lt;p&gt;分为传统机器学习、统计机器学习、深度机器学习&lt;/p&gt;
+&lt;h5 id=&#34;传统机器学习&#34;&gt;传统机器学习
+&lt;/h5&gt;&lt;p&gt;学习成果：规则性知识&lt;/p&gt;
+&lt;p&gt;学习过程：执行机构每解决一个问题，系统就记住他的问题和解&lt;/p&gt;
+&lt;p&gt;类比学习&lt;/p&gt;
+&lt;h5 id=&#34;统计机器学习&#34;&gt;统计机器学习
+&lt;/h5&gt;&lt;p&gt;如KNN、据册数、支持向量机、K-Means等&lt;/p&gt;
+&lt;h5 id=&#34;深度学习和神经网络&#34;&gt;深度学习和神经网络
+&lt;/h5&gt;&lt;p&gt;输入节点（输入层）&lt;/p&gt;
+&lt;p&gt;隐藏节点&lt;/p&gt;
+&lt;p&gt;输出节点（输出层）&lt;/p&gt;
+&lt;p&gt;机器学习的本质是特征获取。统计学习是对数据中的显性特征进行统计，或通过简单推理去获取半显性的特征。而深度学习的优势在于只要数据量足够，就可获得数据中的隐性特征。&lt;/p&gt;
+&lt;p&gt;研讨：基于CNN卷积神经网路的图像分析与处理过程&lt;/p&gt;
+&lt;h3 id=&#34;6预训练模型与大模型&#34;&gt;6.预训练模型与大模型
+&lt;/h3&gt;&lt;h4 id=&#34;预训练模型&#34;&gt;预训练模型
+&lt;/h4&gt;&lt;h4 id=&#34;大模型&#34;&gt;大模型
+&lt;/h4&gt;&lt;p&gt;大数据+大算力+强算法&lt;/p&gt;
+&lt;h3 id=&#34;7人工智能应用成果&#34;&gt;7.人工智能应用成果
+&lt;/h3&gt;</description>
+        </item>
+        <item>
         <title>MD语法笔记</title>
         <link>https://coldMMheart.github.io/p/md%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Tue, 08 Oct 2024 11:10:32 +0800</pubDate>
@@ -691,7 +813,228 @@
 &lt;h2 id=&#34;622整数类型&#34;&gt;6.2.2整数类型
 &lt;/h2&gt;&lt;p&gt;int无固定大小，取决于寄存器一次处理的大小&lt;/p&gt;
 &lt;h2 id=&#34;623整数的内部表达&#34;&gt;6.2.3整数的内部表达
-&lt;/h2&gt;</description>
+&lt;/h2&gt;&lt;p&gt;二进制表达，如例&lt;/p&gt;
+&lt;p&gt;亿字节表达的数的范围&lt;/p&gt;
+&lt;p&gt;0000000 = 0&lt;/p&gt;
+&lt;p&gt;11111111 = 255&lt;/p&gt;
+&lt;p&gt;二进制用补码的方式表达负数，具体表现形式看下面&lt;/p&gt;
+&lt;h2 id=&#34;624整数的范围&#34;&gt;6.2.4整数的范围
+&lt;/h2&gt;&lt;h3 id=&#34;二进制的表示&#34;&gt;二进制的表示
+&lt;/h3&gt;&lt;p&gt;对纯二进制来说，00000000~11111111表示0到255&lt;/p&gt;
+&lt;p&gt;而当作补码来看待时，11111111&lt;del&gt;10000000表示-1&lt;/del&gt;-128，00000001&lt;del&gt;01111111表示1&lt;/del&gt;127&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;首位为0时为正数，首位为1时为负数&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;255&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;255&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;c=%d,i=%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;c=-1,i=255
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;int表达的范围有4字节，即32比特，255转化为二进制后首位数字仍为0，如&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;00000000 00000000 00000000 11111111&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;而char表达的范围仅有1字节，即8比特，255转化为二进制第一位变为1，故变为负数，如&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;11111111&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;各个类型整数表达的范围&#34;&gt;各个类型整数表达的范围
+&lt;/h3&gt;&lt;p&gt;char 1字节 -128~+127&lt;/p&gt;
+&lt;p&gt;short 2字节 -32768~+32767&lt;/p&gt;
+&lt;p&gt;int 取决于编译器(cpu),一般是负的二的三十二减一次方~正的二的三十二减一次方减一&lt;/p&gt;
+&lt;p&gt;使用unsigned语言可以取消二进制被用于补码的情况，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;kt&#34;&gt;unsigned&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;255&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;255&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;c=%d,i=%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;c=255,i=255&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用unsigned后，char的范围扩大一倍，变为0~255&lt;/p&gt;
+&lt;h2 id=&#34;625整数的格式化输入输出&#34;&gt;6.2.5整数的格式化输入输出
+&lt;/h2&gt;&lt;p&gt;%d：用于char，short，int&lt;/p&gt;
+&lt;p&gt;%u：unsigned&lt;/p&gt;
+&lt;p&gt;使用%u时，所有小于int的整数类型都会转化为int输出，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cc&#34; data-lang=&#34;cc&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;char&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;c=%u,i=%u&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;c=4294967295,i=4294967295&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;%ld：  long long&lt;/p&gt;
+&lt;p&gt;%lu： unsigned long long&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;重要的不是计算机中储存的是什么数字，而是我们该如何正确看待并使用&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;626选择整数类型&#34;&gt;6.2.6选择整数类型
+&lt;/h2&gt;&lt;h2 id=&#34;627浮点类型&#34;&gt;6.2.7浮点类型
+&lt;/h2&gt;&lt;h3 id=&#34;1两种浮点类型&#34;&gt;1.两种浮点类型
+&lt;/h3&gt;&lt;p&gt;float：4个字节，输入格式%f，输出格式%f、%e&lt;/p&gt;
+&lt;p&gt;double：8个字节，输入格式%lf，输出格式%f、%e&lt;/p&gt;
+&lt;p&gt;%e用于科学计数法形式的输出，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;double&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ff&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1234.56789&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%e,%f&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ff&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1.234568e+003,1234.567890&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2输出精度&#34;&gt;2.输出精度
+&lt;/h3&gt;&lt;p&gt;%.4f可指定输出格式保留四位小数&lt;/p&gt;
+&lt;p&gt;这种输出遵循四舍五入，仅对要求保留的小数位数的下一小数位进行四舍五入&lt;/p&gt;
+&lt;h2 id=&#34;628浮点数的范围和精度&#34;&gt;6.2.8浮点数的范围和精度
+&lt;/h2&gt;&lt;p&gt;浮点运算无精度，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.345f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;1.123f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;2.468&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;yes&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;not.n = %.10f&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt; not.n = 2.4679999352&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;对c进行四舍五入后结果才为2.468，故浮点数不可直接用来当作判断条件&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;为何数字后要加f：对于一个小数，不加f的话被视为double型浮点数，加上后变为float型浮点数&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何用浮点数做判断条件：可以用fabs( f1 - f2 ) &amp;lt; 1e-12来判断f1与f2是否相等，fabs()语法求括号中运算式的绝对值&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;故不可用浮点数做精密的计算&lt;/p&gt;
+&lt;h2 id=&#34;629字符类型&#34;&gt;6.2.9字符类型
+&lt;/h2&gt;&lt;p&gt;可以用‘1’来表示字符1，此时‘1’ == 49&lt;/p&gt;
+&lt;h2 id=&#34;6210逃逸字符&#34;&gt;6.2.10逃逸字符
+&lt;/h2&gt;&lt;p&gt;\b:回退一行&lt;/p&gt;
+&lt;p&gt;\t：到下一个表格位&lt;/p&gt;
+&lt;p&gt;\n&lt;/p&gt;
+&lt;p&gt;\r：回车&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\&amp;quot;&lt;/code&gt;：双引号&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\&#39;&lt;/code&gt;单引号&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\\&lt;/code&gt;反斜杠本身&lt;/p&gt;
+&lt;p&gt;使用\b时要注意，先看下例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;abc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;说明，\b的作用不是直接删除前面一个元素，正确用法如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;abc&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\b&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;C&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;abC&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;\b的工作顺序是先退回前一个字符的前面，若\b后有字符的话，输出后面的字符代替原来的字符&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>归档</title>

@@ -347,6 +347,23 @@
     </li>
     <li><a href="#622整数类型">6.2.2整数类型</a></li>
     <li><a href="#623整数的内部表达">6.2.3整数的内部表达</a></li>
+    <li><a href="#624整数的范围">6.2.4整数的范围</a>
+      <ol>
+        <li><a href="#二进制的表示">二进制的表示</a></li>
+        <li><a href="#各个类型整数表达的范围">各个类型整数表达的范围</a></li>
+      </ol>
+    </li>
+    <li><a href="#625整数的格式化输入输出">6.2.5整数的格式化输入输出</a></li>
+    <li><a href="#626选择整数类型">6.2.6选择整数类型</a></li>
+    <li><a href="#627浮点类型">6.2.7浮点类型</a>
+      <ol>
+        <li><a href="#1两种浮点类型">1.两种浮点类型</a></li>
+        <li><a href="#2输出精度">2.输出精度</a></li>
+      </ol>
+    </li>
+    <li><a href="#628浮点数的范围和精度">6.2.8浮点数的范围和精度</a></li>
+    <li><a href="#629字符类型">6.2.9字符类型</a></li>
+    <li><a href="#6210逃逸字符">6.2.10逃逸字符</a></li>
   </ol>
 </nav>
         </div>
@@ -415,7 +432,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 5 分钟
+                    阅读时长: 8 分钟
                 </time>
             </div>
         
@@ -1023,7 +1040,228 @@
 <h2 id="622整数类型">6.2.2整数类型
 </h2><p>int无固定大小，取决于寄存器一次处理的大小</p>
 <h2 id="623整数的内部表达">6.2.3整数的内部表达
-</h2>
+</h2><p>二进制表达，如例</p>
+<p>亿字节表达的数的范围</p>
+<p>0000000 = 0</p>
+<p>11111111 = 255</p>
+<p>二进制用补码的方式表达负数，具体表现形式看下面</p>
+<h2 id="624整数的范围">6.2.4整数的范围
+</h2><h3 id="二进制的表示">二进制的表示
+</h3><p>对纯二进制来说，00000000~11111111表示0到255</p>
+<p>而当作补码来看待时，11111111<del>10000000表示-1</del>-128，00000001<del>01111111表示1</del>127</p>
+<p><em>首位为0时为正数，首位为1时为负数</em></p>
+<p>如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;c=%d,i=%d&#34;</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">c=-1,i=255
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>int表达的范围有4字节，即32比特，255转化为二进制后首位数字仍为0，如</p>
+<p><code>00000000 00000000 00000000 11111111</code></p>
+<p>而char表达的范围仅有1字节，即8比特，255转化为二进制第一位变为1，故变为负数，如</p>
+<p><code>11111111</code></p>
+<h3 id="各个类型整数表达的范围">各个类型整数表达的范围
+</h3><p>char 1字节 -128~+127</p>
+<p>short 2字节 -32768~+32767</p>
+<p>int 取决于编译器(cpu),一般是负的二的三十二减一次方~正的二的三十二减一次方减一</p>
+<p>使用unsigned语言可以取消二进制被用于补码的情况，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">	<span class="kt">unsigned</span> <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">255</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;c=%d,i=%d&#34;</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>c=255,i=255</code></p>
+<p>使用unsigned后，char的范围扩大一倍，变为0~255</p>
+<h2 id="625整数的格式化输入输出">6.2.5整数的格式化输入输出
+</h2><p>%d：用于char，short，int</p>
+<p>%u：unsigned</p>
+<p>使用%u时，所有小于int的整数类型都会转化为int输出，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cc" data-lang="cc"><span class="line"><span class="cl"><span class="cp">#include&lt;stdio.h&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">char</span> <span class="n">c</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;c=%u,i=%u&#34;</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>c=4294967295,i=4294967295</code></p>
+<p>%ld：  long long</p>
+<p>%lu： unsigned long long</p>
+<p><strong>重要的不是计算机中储存的是什么数字，而是我们该如何正确看待并使用</strong></p>
+<h2 id="626选择整数类型">6.2.6选择整数类型
+</h2><h2 id="627浮点类型">6.2.7浮点类型
+</h2><h3 id="1两种浮点类型">1.两种浮点类型
+</h3><p>float：4个字节，输入格式%f，输出格式%f、%e</p>
+<p>double：8个字节，输入格式%lf，输出格式%f、%e</p>
+<p>%e用于科学计数法形式的输出，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">double</span> <span class="n">ff</span><span class="o">=</span><span class="mf">1234.56789</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%e,%f&#34;</span><span class="p">,</span><span class="n">ff</span><span class="p">,</span><span class="n">ff</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>1.234568e+003,1234.567890</code></p>
+<h3 id="2输出精度">2.输出精度
+</h3><p>%.4f可指定输出格式保留四位小数</p>
+<p>这种输出遵循四舍五入，仅对要求保留的小数位数的下一小数位进行四舍五入</p>
+<h2 id="628浮点数的范围和精度">6.2.8浮点数的范围和精度
+</h2><p>浮点运算无精度，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="mf">1.345f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="mf">1.123f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="mf">2.468</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;yes</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;not.n = %.10f&#34;</span><span class="p">,</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code> not.n = 2.4679999352</code></p>
+<p>对c进行四舍五入后结果才为2.468，故浮点数不可直接用来当作判断条件</p>
+<p><strong>为何数字后要加f：对于一个小数，不加f的话被视为double型浮点数，加上后变为float型浮点数</strong></p>
+<p><strong>如何用浮点数做判断条件：可以用fabs( f1 - f2 ) &lt; 1e-12来判断f1与f2是否相等，fabs()语法求括号中运算式的绝对值</strong></p>
+<p>故不可用浮点数做精密的计算</p>
+<h2 id="629字符类型">6.2.9字符类型
+</h2><p>可以用‘1’来表示字符1，此时‘1’ == 49</p>
+<h2 id="6210逃逸字符">6.2.10逃逸字符
+</h2><p>\b:回退一行</p>
+<p>\t：到下一个表格位</p>
+<p>\n</p>
+<p>\r：回车</p>
+<p><code>\&quot;</code>：双引号</p>
+<p><code>\'</code>单引号</p>
+<p><code>\\</code>反斜杠本身</p>
+<p>使用\b时要注意，先看下例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;abc</span><span class="se">\b</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>abc</code></p>
+<p>说明，\b的作用不是直接删除前面一个元素，正确用法如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;abc</span><span class="se">\b</span><span class="s">C&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>abC</code></p>
+<p>\b的工作顺序是先退回前一个字符的前面，若\b后有字符的话，输出后面的字符代替原来的字符</p>
+
 </section>
 
 
