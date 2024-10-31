@@ -394,6 +394,25 @@
     <li><a href="#713从函数中返回">7.1.3从函数中返回</a></li>
     <li><a href="#721函数原型">7.2.1函数原型</a></li>
     <li><a href="#722参数传递">7.2.2参数传递</a></li>
+    <li><a href="#723本地变量">7.2.3本地变量</a></li>
+    <li><a href="#724函数庶事">7.2.4函数庶事</a></li>
+    <li><a href="#811初试数组">8.1.1初试数组</a></li>
+    <li><a href="#812定义数组">8.1.2定义数组</a></li>
+    <li><a href="#813数组例子">8.1.3数组例子</a></li>
+    <li><a href="#821数组计算">8.2.1数组计算</a>
+      <ol>
+        <li><a href="#数组集成初始化格式">数组集成初始化格式</a></li>
+        <li><a href="#数组的大小">数组的大小</a></li>
+        <li><a href="#数组的循环">数组的循环</a></li>
+      </ol>
+    </li>
+    <li><a href="#822数组例子素数">8.2.2数组例子：素数</a></li>
+    <li><a href="#823二维数组">8.2.3二维数组</a>
+      <ol>
+        <li><a href="#二维数组的定义">二维数组的定义</a></li>
+        <li><a href="#二维数组的初始化">二维数组的初始化</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -462,7 +481,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 11 分钟
+                    阅读时长: 12 分钟
                 </time>
             </div>
         
@@ -1418,7 +1437,119 @@
 </div>
 </div><h2 id="722参数传递">7.2.2参数传递
 </h2><p>调用函数只会向main函数中传递值，不会影响main中的变量</p>
-
+<h2 id="723本地变量">7.2.3本地变量
+</h2><p>本地变量的生存期和作用域取决于其所定义的块内，块即为大括号，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp"># include&lt;stdio.h&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;a = %d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;a = %d,b = %d&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">a = 0
+</span></span><span class="line"><span class="cl">a = 5,b = 6
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>定义在if内部的a离开if大括号后不再存在，不会影响大括号外部的a</p>
+<h2 id="724函数庶事">7.2.4函数庶事
+</h2><p>调用函数若没有参数，在括号中写void</p>
+<h2 id="811初试数组">8.1.1初试数组
+</h2><p>遍历数组：数组中的每一个数都判断一遍</p>
+<h2 id="812定义数组">8.1.2定义数组
+</h2><p><code>int a[10]</code></p>
+<p>a数组中共可储存十个整型数值，但最大下标仅为9，即a[9]</p>
+<p>即<strong>数组从零开始计数</strong></p>
+<h2 id="813数组例子">8.1.3数组例子
+</h2><p>使用数组前，最好对数组中的每一个数值初始化</p>
+<h2 id="821数组计算">8.2.1数组计算
+</h2><h3 id="数组集成初始化格式">数组集成初始化格式
+</h3><p><code>int a[] = {2,4,3}</code></p>
+<p>编译器自动记录数组的数值个数</p>
+<p>也可以如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="p">[</span><span class="n">number</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时数组a中的值分别为<code>1 0 0</code></p>
+<p>当数组中的数值初始化时，有几个数组不是0，可用下例定义法</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,[</span><span class="mi">5</span><span class="p">]</span><span class="o">=</span><span class="mi">6</span><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>此时数组a的数值为<code>0 2 3 0 0 6    </code></p>
+<p>*3为紧跟前一个下标的下一个数值</p>
+<p>此种定义法也可以规定数组的下标</p>
+<h3 id="数组的大小">数组的大小
+</h3><p>可用<code>sizeof(a)/sizeof(a[0])</code>计算数组的大小</p>
+<h3 id="数组的循环">数组的循环
+</h3><p>多用for循环做遍历数组</p>
+<h2 id="822数组例子素数">8.2.2数组例子：素数
+</h2><h2 id="823二维数组">8.2.3二维数组
+</h2><h3 id="二维数组的定义">二维数组的定义
+</h3><p><code>int a[行数][列数]</code></p>
+<h3 id="二维数组的初始化">二维数组的初始化
+</h3><p>使用集成初始化时数组的列数不可省略，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span><span class="p">[][</span><span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
