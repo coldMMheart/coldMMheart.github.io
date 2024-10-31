@@ -1034,6 +1034,133 @@
 &lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;abC&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;\b的工作顺序是先退回前一个字符的前面，若\b后有字符的话，输出后面的字符代替原来的字符&lt;/p&gt;
+&lt;h2 id=&#34;6211类型转换&#34;&gt;6.2.11类型转换
+&lt;/h2&gt;&lt;h3 id=&#34;自动类型转化&#34;&gt;自动类型转化
+&lt;/h3&gt;&lt;p&gt;运算符两边类型不同时，小的类型向大的类型转换&lt;/p&gt;
+&lt;p&gt;对于printf，任何小于int的类型都会被转化为int；float会自动被转化为double&lt;/p&gt;
+&lt;p&gt;对于scanf，输入格式严格要求，输入short时用%hd，输入long long时用%ld&lt;/p&gt;
+&lt;h3 id=&#34;强制类型转化语法&#34;&gt;强制类型转化语法
+&lt;/h3&gt;&lt;p&gt;用&lt;code&gt;(类型)值&lt;/code&gt;的形式转化值的类型，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;1.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;结果为&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;长类型转化为短类型时，会由于字节容量不同导致错误&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;强制转化类型语法优先级大于所有无括号运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法不会改变后面值本身，而是改变其输出形式&lt;/p&gt;
+&lt;h2 id=&#34;631逻辑类型&#34;&gt;6.3.1逻辑类型
+&lt;/h2&gt;&lt;p&gt;布尔语法bool&lt;/p&gt;
+&lt;p&gt;引入头文件stdbool.h后可以使用bool和true、false&lt;/p&gt;
+&lt;p&gt;bool本质上仍为整数类型，输出时只能输出1或0，输出格式也为%d&lt;/p&gt;
+&lt;h2 id=&#34;632逻辑运算&#34;&gt;6.3.2逻辑运算
+&lt;/h2&gt;&lt;h3 id=&#34;三种逻辑运算符&#34;&gt;三种逻辑运算符
+&lt;/h3&gt;&lt;p&gt;三种逻辑运算符的优先级为! &amp;gt; &amp;amp;&amp;amp; &amp;gt; ||&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;！&lt;/code&gt;逻辑非，示例&lt;code&gt;!a&lt;/code&gt;,当a为true时结果为false，反之亦然&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt;逻辑与，示例&lt;code&gt;a&amp;amp;&amp;amp;b&lt;/code&gt;,只有a和b都是true时结果为true，其他情况结果为false&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;||&lt;/code&gt;逻辑或，示例&lt;code&gt;a||b&lt;/code&gt;,两个都为false时结果为false，其他情况结果为true&lt;/p&gt;
+&lt;h3 id=&#34;优先级&#34;&gt;优先级
+&lt;/h3&gt;&lt;p&gt;逻辑运算符优先级普遍低于比较运算符，但单目运算符优先级大于双目运算符&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;单目双目三目https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&amp;amp;request_id=&amp;amp;biz_id=102&amp;amp;utm_term=%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6&amp;amp;utm_medium=distribute.pc_search_result.none-task-blog-2&lt;del&gt;all&lt;/del&gt;sobaiduweb~default-1-105192252.142^v100^pc_search_result_base7&amp;amp;spm=1018.2226.3001.4187&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;! a &amp;lt; 20&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;上行代码会先判断!a，则上式结果永远为1&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;! (a &amp;lt; 20)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;上行代码会判断条件a&amp;lt;20&lt;/p&gt;
+&lt;p&gt;以下为目前所有运算符的优先级列表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5c1%5cDesktop%5c%e4%bc%98%e5%85%88%e7%ba%a7.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;短路&#34;&gt;短路
+&lt;/h3&gt;&lt;p&gt;逻辑运算符的运算自左向右进行，当左边满足逻辑运算符完成计算时，右边不进行判断&lt;/p&gt;
+&lt;p&gt;即对于&amp;amp;&amp;amp;，左边为false时右边不进行判断；对于||，左边为true时右边不进行判断&lt;/p&gt;
+&lt;p&gt;故不要在逻辑运算式中写自增自减等运算&lt;/p&gt;
+&lt;h2 id=&#34;633条件运算和逗号运算&#34;&gt;6.3.3条件运算和逗号运算
+&lt;/h2&gt;&lt;h3 id=&#34;条件运算&#34;&gt;条件运算
+&lt;/h3&gt;&lt;p&gt;不建议用，可读性差&lt;/p&gt;
+&lt;h3 id=&#34;逗号运算&#34;&gt;逗号运算
+&lt;/h3&gt;&lt;p&gt;一般用于for的条件括号中，用于为for的循环增加多个条件变量，如例&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;for(i = 0 , j = 0 ;...;...)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;711函数&#34;&gt;7.1.1函数
+&lt;/h2&gt;&lt;p&gt;代码重复表示代码质量不良，使用函数可以避免代码重复&lt;/p&gt;
+&lt;h2 id=&#34;712函数的定义与使用&#34;&gt;7.1.2函数的定义与使用
+&lt;/h2&gt;&lt;h3 id=&#34;函数定义&#34;&gt;函数定义
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;begin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;end&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;				&lt;span class=&#34;c1&#34;&gt;//此行为函数头，void叫返回类型，含义为没有，即此函数不返回值；sum为函数名，括号中为参数表
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;						               &lt;span class=&#34;c1&#34;&gt;//大括号中为函数体
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;p&#34;&gt;...;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;调用函数&#34;&gt;调用函数
+&lt;/h3&gt;&lt;p&gt;没有参数时，()不能省略&lt;/p&gt;
+&lt;h2 id=&#34;713从函数中返回&#34;&gt;7.1.3从函数中返回
+&lt;/h2&gt;&lt;p&gt;函数中用return返回输出的值&lt;/p&gt;
+&lt;h2 id=&#34;721函数原型&#34;&gt;7.2.1函数原型
+&lt;/h2&gt;&lt;p&gt;想把调用的函数放在main的下面，需要在main前对函数原型进行声明，如例&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;# include&amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;		&lt;span class=&#34;c1&#34;&gt;//声明;注意要加分号
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nf&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;       &lt;span class=&#34;c1&#34;&gt;//定义
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nf&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;722参数传递&#34;&gt;7.2.2参数传递
+&lt;/h2&gt;&lt;p&gt;调用函数只会向main函数中传递值，不会影响main中的变量&lt;/p&gt;
 </description>
         </item>
         <item>

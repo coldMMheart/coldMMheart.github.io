@@ -364,6 +364,36 @@
     <li><a href="#628浮点数的范围和精度">6.2.8浮点数的范围和精度</a></li>
     <li><a href="#629字符类型">6.2.9字符类型</a></li>
     <li><a href="#6210逃逸字符">6.2.10逃逸字符</a></li>
+    <li><a href="#6211类型转换">6.2.11类型转换</a>
+      <ol>
+        <li><a href="#自动类型转化">自动类型转化</a></li>
+        <li><a href="#强制类型转化语法">强制类型转化语法</a></li>
+      </ol>
+    </li>
+    <li><a href="#631逻辑类型">6.3.1逻辑类型</a></li>
+    <li><a href="#632逻辑运算">6.3.2逻辑运算</a>
+      <ol>
+        <li><a href="#三种逻辑运算符">三种逻辑运算符</a></li>
+        <li><a href="#优先级">优先级</a></li>
+        <li><a href="#短路">短路</a></li>
+      </ol>
+    </li>
+    <li><a href="#633条件运算和逗号运算">6.3.3条件运算和逗号运算</a>
+      <ol>
+        <li><a href="#条件运算">条件运算</a></li>
+        <li><a href="#逗号运算">逗号运算</a></li>
+      </ol>
+    </li>
+    <li><a href="#711函数">7.1.1函数</a></li>
+    <li><a href="#712函数的定义与使用">7.1.2函数的定义与使用</a>
+      <ol>
+        <li><a href="#函数定义">函数定义</a></li>
+        <li><a href="#调用函数">调用函数</a></li>
+      </ol>
+    </li>
+    <li><a href="#713从函数中返回">7.1.3从函数中返回</a></li>
+    <li><a href="#721函数原型">7.2.1函数原型</a></li>
+    <li><a href="#722参数传递">7.2.2参数传递</a></li>
   </ol>
 </nav>
         </div>
@@ -432,7 +462,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 8 分钟
+                    阅读时长: 11 分钟
                 </time>
             </div>
         
@@ -1261,6 +1291,133 @@
 </div><p>结果为</p>
 <p><code>abC</code></p>
 <p>\b的工作顺序是先退回前一个字符的前面，若\b后有字符的话，输出后面的字符代替原来的字符</p>
+<h2 id="6211类型转换">6.2.11类型转换
+</h2><h3 id="自动类型转化">自动类型转化
+</h3><p>运算符两边类型不同时，小的类型向大的类型转换</p>
+<p>对于printf，任何小于int的类型都会被转化为int；float会自动被转化为double</p>
+<p>对于scanf，输入格式严格要求，输入short时用%hd，输入long long时用%ld</p>
+<h3 id="强制类型转化语法">强制类型转化语法
+</h3><p>用<code>(类型)值</code>的形式转化值的类型，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span><span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,(</span><span class="kt">int</span><span class="p">)</span><span class="mf">1.0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>结果为</p>
+<p><code>1</code></p>
+<p>长类型转化为短类型时，会由于字节容量不同导致错误</p>
+<p><strong>强制转化类型语法优先级大于所有无括号运算符</strong></p>
+<p>语法不会改变后面值本身，而是改变其输出形式</p>
+<h2 id="631逻辑类型">6.3.1逻辑类型
+</h2><p>布尔语法bool</p>
+<p>引入头文件stdbool.h后可以使用bool和true、false</p>
+<p>bool本质上仍为整数类型，输出时只能输出1或0，输出格式也为%d</p>
+<h2 id="632逻辑运算">6.3.2逻辑运算
+</h2><h3 id="三种逻辑运算符">三种逻辑运算符
+</h3><p>三种逻辑运算符的优先级为! &gt; &amp;&amp; &gt; ||</p>
+<p><code>！</code>逻辑非，示例<code>!a</code>,当a为true时结果为false，反之亦然</p>
+<p><code>&amp;&amp;</code>逻辑与，示例<code>a&amp;&amp;b</code>,只有a和b都是true时结果为true，其他情况结果为false</p>
+<p><code>||</code>逻辑或，示例<code>a||b</code>,两个都为false时结果为false，其他情况结果为true</p>
+<h3 id="优先级">优先级
+</h3><p>逻辑运算符优先级普遍低于比较运算符，但单目运算符优先级大于双目运算符</p>
+<blockquote>
+<p>单目双目三目https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6&amp;utm_medium=distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-1-105192252.142^v100^pc_search_result_base7&amp;spm=1018.2226.3001.4187</p>
+</blockquote>
+<p>如例</p>
+<p><code>! a &lt; 20</code></p>
+<p>上行代码会先判断!a，则上式结果永远为1</p>
+<p><code>! (a &lt; 20)</code></p>
+<p>上行代码会判断条件a&lt;20</p>
+<p>以下为目前所有运算符的优先级列表</p>
+<p><img src="C:%5cUsers%5c1%5cDesktop%5c%e4%bc%98%e5%85%88%e7%ba%a7.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt=" "
+	
+	
+></p>
+<h3 id="短路">短路
+</h3><p>逻辑运算符的运算自左向右进行，当左边满足逻辑运算符完成计算时，右边不进行判断</p>
+<p>即对于&amp;&amp;，左边为false时右边不进行判断；对于||，左边为true时右边不进行判断</p>
+<p>故不要在逻辑运算式中写自增自减等运算</p>
+<h2 id="633条件运算和逗号运算">6.3.3条件运算和逗号运算
+</h2><h3 id="条件运算">条件运算
+</h3><p>不建议用，可读性差</p>
+<h3 id="逗号运算">逗号运算
+</h3><p>一般用于for的条件括号中，用于为for的循环增加多个条件变量，如例</p>
+<p><code>for(i = 0 , j = 0 ;...;...)</code></p>
+<h2 id="711函数">7.1.1函数
+</h2><p>代码重复表示代码质量不良，使用函数可以避免代码重复</p>
+<h2 id="712函数的定义与使用">7.1.2函数的定义与使用
+</h2><h3 id="函数定义">函数定义
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">begin</span><span class="p">,</span><span class="kt">int</span> <span class="n">end</span><span class="p">)</span>				<span class="c1">//此行为函数头，void叫返回类型，含义为没有，即此函数不返回值；sum为函数名，括号中为参数表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>						               <span class="c1">//大括号中为函数体
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="p">...;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="调用函数">调用函数
+</h3><p>没有参数时，()不能省略</p>
+<h2 id="713从函数中返回">7.1.3从函数中返回
+</h2><p>函数中用return返回输出的值</p>
+<h2 id="721函数原型">7.2.1函数原型
+</h2><p>想把调用的函数放在main的下面，需要在main前对函数原型进行声明，如例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp"># include&lt;stdio.h&gt;
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">void</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="p">,</span><span class="kt">int</span> <span class="p">);</span>		<span class="c1">//声明;注意要加分号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">sum</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span><span class="kt">int</span> <span class="n">b</span><span class="p">)</span>       <span class="c1">//定义
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">b</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="722参数传递">7.2.2参数传递
+</h2><p>调用函数只会向main函数中传递值，不会影响main中的变量</p>
 
 </section>
 
