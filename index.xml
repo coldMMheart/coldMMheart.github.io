@@ -7,7 +7,15 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>coldMMheart</copyright>
-        <lastBuildDate>Thu, 24 Oct 2024 18:06:05 +0800</lastBuildDate><atom:link href="https://coldMMheart.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 10 Nov 2024 01:24:09 +0800</lastBuildDate><atom:link href="https://coldMMheart.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://coldMMheart.github.io/p/test/</link>
+        <pubDate>Sun, 10 Nov 2024 01:24:09 +0800</pubDate>
+        
+        <guid>https://coldMMheart.github.io/p/test/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>人工智能前沿技术讲座</title>
         <link>https://coldMMheart.github.io/p/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF%E8%AE%B2%E5%BA%A7/</link>
         <pubDate>Thu, 24 Oct 2024 18:06:05 +0800</pubDate>
