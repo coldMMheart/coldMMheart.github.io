@@ -1556,16 +1556,7 @@
 &lt;p&gt;&lt;code&gt;! (a &amp;lt; 20)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;上行代码会判断条件a&amp;lt;20&lt;/p&gt;
 &lt;p&gt;以下为目前所有运算符的优先级列表&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;C:%5cUsers%5c1%5cDesktop%5c%e4%bc%98%e5%85%88%e7%ba%a7.png&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34; &#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;img src=&#34;E:\computer science\hugo\MyFirstHugo\content\post\c语言学习笔记\优先级.jpg&#34; style=&#34;zoom:50%;&#34; /&gt;
 &lt;h3 id=&#34;短路&#34;&gt;短路
 &lt;/h3&gt;&lt;p&gt;逻辑运算符的运算自左向右进行，当左边满足逻辑运算符完成计算时，右边不进行判断&lt;/p&gt;
 &lt;p&gt;即对于&amp;amp;&amp;amp;，左边为false时右边不进行判断；对于||，左边为true时右边不进行判断&lt;/p&gt;
