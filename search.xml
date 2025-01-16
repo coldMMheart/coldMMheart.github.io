@@ -1,315 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>JupyterNotebooks笔记</title>
-    <url>/2025/01/15/JupyterNotebooks%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="Jupyter-Notebooks">Jupyter Notebooks</h2>
-<blockquote>
-<p>安装<a href="https://blog.csdn.net/cainiao_python/article/details/125567913">https://blog.csdn.net/cainiao_python/article/details/125567913</a></p>
-<p>这篇好像是linux环境安装的，但是win环境应该也能看懂</p>
-<p>配置的话看这个吧，是win环境的，更明了</p>
-<p><a href="https://blog.csdn.net/weixin_43416960/article/details/137051658">https://blog.csdn.net/weixin_43416960/article/details/137051658</a></p>
-</blockquote>
-<h3 id="1-常用代码操作">1.常用代码操作</h3>
-<h4 id="启动">启动</h4>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
-<h3 id="2-应用的介绍">2. 应用的介绍</h3>
-<blockquote>
-<p>学习自<a href="https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a">https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a</a></p>
-</blockquote>
-<p>​	与其他python不同的是，jupyter notebooks基于代码区块，可运行多个单元格或一个单元格中的代码，这个性质决定了它是学习数据分析、机器学习和人工智能的最好的python编辑和运行的工具</p>
-<h4 id="优点">优点</h4>
-<ul>
-<li>易于学习</li>
-<li>以代码块和单元格的方式运行，可以在运行中查看它的中间变量，易于调试和找出bug</li>
-<li>支持markdown文本</li>
-<li>可以调用%开头的魔法函数？</li>
-<li>文件分享形式多样，可随时转化为HTML、md、pdf等文件格式</li>
-<li>可运行python、JavaScript、r语言、ruby等多种编程语言，是集编程和写作于一身的编辑工具，称之为文学编程</li>
-</ul>
-<h4 id="内核">内核</h4>
-<p>ipython，比python原生附带的编译器更强大的编译器，具有相当强大的代码自动补全命令技术的功能</p>
-<h4 id="页面">页面</h4>
-<blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/32320214">https://zhuanlan.zhihu.com/p/32320214</a></p>
-<p>这篇知乎对页面的各种选项讲解的挺清楚的</p>
-</blockquote>
+    <title>Hello World</title>
+    <url>/2025/01/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>C语言学习笔记</title>
     <url>/2025/01/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1>学习C语言时一些容易忘记的格式和混淆点</h1>
-<blockquote>
+    <content><![CDATA[<h1 id="学习C语言时一些容易忘记的格式和混淆点"><a href="#学习C语言时一些容易忘记的格式和混淆点" class="headerlink" title="学习C语言时一些容易忘记的格式和混淆点"></a>学习C语言时一些容易忘记的格式和混淆点</h1><blockquote>
 <p>学习自b站翁恺</p>
 </blockquote>
-<h2 id="2-1-4变量输入">2.1.4变量输入</h2>
-<h3 id="printf格式">printf格式</h3>
-<p><code>printf(&quot;%d&quot;, a)</code></p>
-<h3 id="scanf格式">scanf格式</h3>
-<p><code>scanf(&quot;%d&quot;,&amp;a)</code></p>
-<h3 id="问题">问题</h3>
-<h4 id="问题一">问题一</h4>
-<p><code>printf(&quot;%d&quot;,a)</code>中的“，”必须加。</p>
-<h4 id="问题二">问题二</h4>
-<p>scanf函数使用过程中，“ ”内的内容必须全部输入，有下例</p>
+<h2 id="2-1-4变量输入"><a href="#2-1-4变量输入" class="headerlink" title="2.1.4变量输入"></a>2.1.4变量输入</h2><h3 id="printf格式"><a href="#printf格式" class="headerlink" title="printf格式"></a>printf格式</h3><p><code>printf(&quot;%d&quot;, a)</code></p>
+<h3 id="scanf格式"><a href="#scanf格式" class="headerlink" title="scanf格式"></a>scanf格式</h3><p><code>scanf(&quot;%d&quot;,&amp;a)</code></p>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><h4 id="问题一"><a href="#问题一" class="headerlink" title="问题一"></a>问题一</h4><p><code>printf(&quot;%d&quot;,a)</code>中的“，”必须加。</p>
+<h4 id="问题二"><a href="#问题二" class="headerlink" title="问题二"></a>问题二</h4><p>scanf函数使用过程中，“ ”内的内容必须全部输入，有下例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> a,b;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d,%d&quot;</span>,&amp;a,&amp;b);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d,%d&quot;</span>,a,b);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>若在输入时省略了“，”，b输出的值错误。</p>
-<h2 id="getchar和putchar函数的用法">getchar和putchar函数的用法</h2>
-<blockquote>
+<h2 id="getchar和putchar函数的用法"><a href="#getchar和putchar函数的用法" class="headerlink" title="getchar和putchar函数的用法"></a>getchar和putchar函数的用法</h2><blockquote>
 <p>学习自<a href="https://blog.csdn.net/m0_65601072/article/details/124650579">https://blog.csdn.net/m0_65601072/article/details/124650579</a></p>
 </blockquote>
-<h2 id="2-2-4复合赋值和递增递减">2.2.4复合赋值和递增递减</h2>
-<h3 id="复合赋值">复合赋值</h3>
-<p>+=，-=，*=，/=</p>
+<h2 id="2-2-4复合赋值和递增递减"><a href="#2-2-4复合赋值和递增递减" class="headerlink" title="2.2.4复合赋值和递增递减"></a>2.2.4复合赋值和递增递减</h2><h3 id="复合赋值"><a href="#复合赋值" class="headerlink" title="复合赋值"></a>复合赋值</h3><p>+&#x3D;，-&#x3D;，*&#x3D;，&#x2F;&#x3D;</p>
 <p>先计算等号右边，后对左侧值进行计算，如例</p>
 <p><code>total *= 12+6</code>等价于<code>total = total * (12+6)</code></p>
-<h3 id="递增递减运算符">递增递减运算符</h3>
-<p>属于单目运算符，只有一个算子，且算子必为变量</p>
-<h4 id="前缀后缀">前缀后缀</h4>
-<p>++，–可放在算子的前后，前缀后缀的不同导致算子的值在某些步骤中不同，如例</p>
+<h3 id="递增递减运算符"><a href="#递增递减运算符" class="headerlink" title="递增递减运算符"></a>递增递减运算符</h3><p>属于单目运算符，只有一个算子，且算子必为变量</p>
+<h4 id="前缀后缀"><a href="#前缀后缀" class="headerlink" title="前缀后缀"></a>前缀后缀</h4><p>++，–可放在算子的前后，前缀后缀的不同导致算子的值在某些步骤中不同，如例</p>
 <p>使用a++时</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a=<span class="number">10</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a++=%d\n&quot;</span>,a++);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a=%d&quot;</span>,a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a++=10</span><br><span class="line">a=11</span><br><span class="line">Process returned 0 (0x0)   execution time : 0.029 s</span><br><span class="line">Press any key to continue.</span><br></pre></td></tr></table></figure>
+
 <p>使用++a时</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a=<span class="number">10</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;++a=%d\n&quot;</span>,++a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a=%d&quot;</span>,a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">++a=11</span><br><span class="line">a=11</span><br><span class="line">Process returned 0 (0x0)   execution time : 0.030 s</span><br><span class="line">Press any key to continue.</span><br></pre></td></tr></table></figure>
+
 <p>可以看出，当使用后缀时，a++的值仍等于a，执行后a的值变为11；使用前缀时，++a的值等于11，执行后a的值也为11。</p>
 <p>即，使用前缀时，先执行使a加上1的步骤；使用后缀时，后执行使a加上1的步骤</p>
-<h2 id="3-2-2判断条件">3.2.2判断条件</h2>
-<p>!=不相等，==相对</p>
+<h2 id="3-2-2判断条件"><a href="#3-2-2判断条件" class="headerlink" title="3.2.2判断条件"></a>3.2.2判断条件</h2><p>!&#x3D;不相等，&#x3D;&#x3D;相对</p>
 <p>判断是否相等的关系运算符优先级小于判断条件运算符</p>
-<h2 id="3-2-3找零计算器——注释">3.2.3找零计算器——注释</h2>
-<p>//用于单行</p>
-<p>/**/用于多行</p>
-<h2 id="3-2-4否则">3.2.4否则</h2>
-<p>if的完整格式</p>
+<h2 id="3-2-3找零计算器——注释"><a href="#3-2-3找零计算器——注释" class="headerlink" title="3.2.3找零计算器——注释"></a>3.2.3找零计算器——注释</h2><p>&#x2F;&#x2F;用于单行</p>
+<p>&#x2F;**&#x2F;用于多行</p>
+<h2 id="3-2-4否则"><a href="#3-2-4否则" class="headerlink" title="3.2.4否则"></a>3.2.4否则</h2><p>if的完整格式</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (条件)&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span>&#123;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>注意:小括号后不接分号</strong></p>
-<h2 id="3-2-5if再探">3.2.5if再探</h2>
-<p>if的另一种形式，如例</p>
+<h2 id="3-2-5if再探"><a href="#3-2-5if再探" class="headerlink" title="3.2.5if再探"></a>3.2.5if再探</h2><p>if的另一种形式，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> ()</span><br><span class="line">	...;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	...;</span><br></pre></td></tr></table></figure>
+
 <p>不接大括号时，执行的语句为紧接的下一句</p>
-<h2 id="3-3-1ifelse嵌套">3.3.1ifelse嵌套</h2>
-<p>else关联最近的if</p>
-<h2 id="3-3-2级联的if">3.3.2级联的if</h2>
-<p>如例</p>
+<h2 id="3-3-1ifelse嵌套"><a href="#3-3-1ifelse嵌套" class="headerlink" title="3.3.1ifelse嵌套"></a>3.3.1ifelse嵌套</h2><p>else关联最近的if</p>
+<h2 id="3-3-2级联的if"><a href="#3-3-2级联的if" class="headerlink" title="3.3.2级联的if"></a>3.3.2级联的if</h2><p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(exp1)</span><br><span class="line">	st1;</span><br><span class="line"><span class="keyword">else</span> <span class="keyword">if</span>(exp2)</span><br><span class="line">	st2;</span><br><span class="line"><span class="keyword">else</span> </span><br><span class="line">	st3;</span><br></pre></td></tr></table></figure>
-<h2 id="3-3-4多路分支-switch-case语句">3.3.4多路分支:switch-case语句</h2>
-<p>switch-case语句格式</p>
+
+<h2 id="3-3-4多路分支-switch-case语句"><a href="#3-3-4多路分支-switch-case语句" class="headerlink" title="3.3.4多路分支:switch-case语句"></a>3.3.4多路分支:switch-case语句</h2><p>switch-case语句格式</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span> ( 控制表达式 ) &#123;</span><br><span class="line">    <span class="keyword">case</span> 常量:</span><br><span class="line">        st1;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> 常量;</span><br><span class="line">        st2;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        stn;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><strong>控制表达式只能是整型的结果</strong></p>
 <p><strong>常量可以是常数，也可以是常数表达式，还可以是整型变量</strong></p>
 <p><em><strong>不可以是逻辑判断式</strong></em></p>
 <p>若没有break，则继续向下一个case执行，直到遇到一个可执行的break，才会跳出整个switch语句</p>
-<h2 id="4-1-1循环">4.1.1循环</h2>
-<h2 id="4-1-2while语句">4.1.2while语句</h2>
-<h3 id="while语句格式">while语句格式</h3>
-<p>如例</p>
+<h2 id="4-1-1循环"><a href="#4-1-1循环" class="headerlink" title="4.1.1循环"></a>4.1.1循环</h2><h2 id="4-1-2while语句"><a href="#4-1-2while语句" class="headerlink" title="4.1.2while语句"></a>4.1.2while语句</h2><h3 id="while语句格式"><a href="#while语句格式" class="headerlink" title="while语句格式"></a>while语句格式</h3><p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> ( 条件 )&#123;</span><br><span class="line">	st1;</span><br><span class="line">	...;</span><br><span class="line">	stn;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="验证">验证</h3>
-<p>常用验证数据:个位数；10；0；负数</p>
-<h3 id="调试">调试</h3>
-<h2 id="4-1-3do-while循环">4.1.3do-while循环</h2>
-<p>格式，如例</p>
+
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><p>常用验证数据:个位数；10；0；负数</p>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><h2 id="4-1-3do-while循环"><a href="#4-1-3do-while循环" class="headerlink" title="4.1.3do-while循环"></a>4.1.3do-while循环</h2><p>格式，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span></span><br><span class="line">&#123;</span><br><span class="line">	循环体语句；</span><br><span class="line">&#125;<span class="keyword">while</span>( 循环条件 )；</span><br></pre></td></tr></table></figure>
-<h2 id="4-2-2猜数">4.2.2猜数</h2>
-<h2 id="4-2-3算平均数">4.2.3算平均数</h2>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> v1=<span class="number">5</span>,v2=<span class="number">2</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%f&quot;</span>,<span class="number">1.0</span>*v1/v2);</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-2-2猜数"><a href="#4-2-2猜数" class="headerlink" title="4.2.2猜数"></a>4.2.2猜数</h2><h2 id="4-2-3算平均数"><a href="#4-2-3算平均数" class="headerlink" title="4.2.3算平均数"></a>4.2.3算平均数</h2><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> v1=<span class="number">5</span>,v2=<span class="number">2</span></span><br><span class="line"><span class="built_in">printf</span>(<span class="string">&quot;%f&quot;</span>,<span class="number">1.0</span>*v1/v2);</span><br></pre></td></tr></table></figure>
+
 <p>1.0可以使两个整型变量运算结果变为浮点型</p>
-<h2 id="4-2-4整数求逆">4.2.4整数求逆</h2>
-<h2 id="5-5-1for循环">5.5.1for循环</h2>
-<p>for的格式</p>
+<h2 id="4-2-4整数求逆"><a href="#4-2-4整数求逆" class="headerlink" title="4.2.4整数求逆"></a>4.2.4整数求逆</h2><h2 id="5-5-1for循环"><a href="#5-5-1for循环" class="headerlink" title="5.5.1for循环"></a>5.5.1for循环</h2><p>for的格式</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for ( 初始动作 ; 循环继续的条件 ; 循环每轮要进行的动作 ) &#123;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><em><strong>第一次进入循环时，循环每轮要进行的动作不进行，通过循环体后进行这个动作，再进行判断条件</strong></em></p>
 <p><em>()内的三个表达式可以任意拿去，但分号不可省</em></p>
-<h2 id="5-1-2循环的计算和选择-计算循环的次数，选择不同的循环">5.1.2循环的计算和选择:计算循环的次数，选择不同的循环</h2>
-<p>for循环等价于while循环</p>
+<h2 id="5-1-2循环的计算和选择-计算循环的次数，选择不同的循环"><a href="#5-1-2循环的计算和选择-计算循环的次数，选择不同的循环" class="headerlink" title="5.1.2循环的计算和选择:计算循环的次数，选择不同的循环"></a>5.1.2循环的计算和选择:计算循环的次数，选择不同的循环</h2><p>for循环等价于while循环</p>
 <p>如果循环有固定次数，用for</p>
 <p>如果必须执行一次，用do-while</p>
 <p>其他情况用while</p>
-<h2 id="5-2-1循环控制，如何用break和continue控制循环">5.2.1循环控制，如何用break和continue控制循环</h2>
-<p>break可用于for语句中用于中止循环</p>
+<h2 id="5-2-1循环控制，如何用break和continue控制循环"><a href="#5-2-1循环控制，如何用break和continue控制循环" class="headerlink" title="5.2.1循环控制，如何用break和continue控制循环"></a>5.2.1循环控制，如何用break和continue控制循环</h2><p>break可用于for语句中用于中止循环</p>
 <p>continue可用于for语句和while语句中用于跳过循环，如例：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == <span class="number">5</span>) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td></tr></table></figure>
+
 <p>例二</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"> </span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (i &lt; <span class="number">10</span>) &#123;</span><br><span class="line">        i++;</span><br><span class="line">        <span class="keyword">if</span> (i % <span class="number">2</span> == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">continue</span>;  <span class="comment">// 跳过偶数</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 3 5 7 9</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>continue相关内容学习自<a href="https://blog.csdn.net/m0_58244165/article/details/130676075">https://blog.csdn.net/m0_58244165/article/details/130676075</a></p>
 </blockquote>
-<h2 id="5-2-2嵌套的循环">5.2.2嵌套的循环</h2>
-<h2 id="5-2-3离开多重循环">5.2.3离开多重循环</h2>
-<p>例题：用一角，两角，五角凑出两元钱，输出所有方法</p>
+<h2 id="5-2-2嵌套的循环"><a href="#5-2-2嵌套的循环" class="headerlink" title="5.2.2嵌套的循环"></a>5.2.2嵌套的循环</h2><h2 id="5-2-3离开多重循环"><a href="#5-2-3离开多重循环" class="headerlink" title="5.2.3离开多重循环"></a>5.2.3离开多重循环</h2><p>例题：用一角，两角，五角凑出两元钱，输出所有方法</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> one, two, five;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (one = <span class="number">1</span>; one &lt;= x * <span class="number">10</span>; one++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (two = <span class="number">1</span>; two &lt;= x * <span class="number">10</span> / <span class="number">2</span>; two++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (five = <span class="number">1</span>; five &lt;= x * <span class="number">10</span> / <span class="number">5</span>; five++) &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;可以用%d个一角,%d个两角,%d个五角凑成%d元\n&quot;</span>, one, two, five, x);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>若想只让其输出一种方法，需要从多重循环中跳出，方法如下</p>
-<h3 id="方法一接力break">方法一接力break</h3>
- <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> one, two, five;</span><br><span class="line">    <span class="type">int</span> v = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (one = <span class="number">1</span>; one &lt;= x * <span class="number">10</span>; one++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (two = <span class="number">1</span>; two &lt;= x * <span class="number">10</span> / <span class="number">2</span>; two++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (five = <span class="number">1</span>; five &lt;= x * <span class="number">10</span> / <span class="number">5</span>; five++) &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;可以用%d个一角,%d个两角,%d个五角凑成%d元\n&quot;</span>, one, two, five, x);</span><br><span class="line">                v = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;    </span><br><span class="line">            <span class="keyword">if</span> (v == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (v == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="方法二goto语句">方法二goto语句</h3>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> one, two, five;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (one = <span class="number">1</span>; one &lt;= x * <span class="number">10</span>; one++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (two = <span class="number">1</span>; two &lt;= x * <span class="number">10</span> / <span class="number">2</span>; two++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (five = <span class="number">1</span>; five &lt;= x * <span class="number">10</span> / <span class="number">5</span>; five++) &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;可以用%d个一角,%d个两角,%d个五角凑成%d元\n&quot;</span>, one, two, five, x);</span><br><span class="line">                <span class="keyword">goto</span> out;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    out:</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="5-3-2整数分解">5.3.2整数分解</h2>
-<h2 id="5-3-3最大公约数">5.3.3最大公约数</h2>
-<h2 id="6-2-1数据类型">6.2.1数据类型</h2>
-<h3 id="1-c语言的类型">1.c语言的类型</h3>
-<ol>
-<li>
-<p>整数</p>
+<h3 id="方法一接力break"><a href="#方法一接力break" class="headerlink" title="方法一接力break"></a>方法一接力break</h3> <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> one, two, five;</span><br><span class="line">    <span class="type">int</span> v = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (one = <span class="number">1</span>; one &lt;= x * <span class="number">10</span>; one++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (two = <span class="number">1</span>; two &lt;= x * <span class="number">10</span> / <span class="number">2</span>; two++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (five = <span class="number">1</span>; five &lt;= x * <span class="number">10</span> / <span class="number">5</span>; five++) &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;可以用%d个一角,%d个两角,%d个五角凑成%d元\n&quot;</span>, one, two, five, x);</span><br><span class="line">                v = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;    </span><br><span class="line">            <span class="keyword">if</span> (v == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (v == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="方法二goto语句"><a href="#方法二goto语句" class="headerlink" title="方法二goto语句"></a>方法二goto语句</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> one, two, five;</span><br><span class="line">    <span class="type">int</span> x = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (one = <span class="number">1</span>; one &lt;= x * <span class="number">10</span>; one++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (two = <span class="number">1</span>; two &lt;= x * <span class="number">10</span> / <span class="number">2</span>; two++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (five = <span class="number">1</span>; five &lt;= x * <span class="number">10</span> / <span class="number">5</span>; five++) &#123;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">&quot;可以用%d个一角,%d个两角,%d个五角凑成%d元\n&quot;</span>, one, two, five, x);</span><br><span class="line">                <span class="keyword">goto</span> out;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    out:</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-3-2整数分解"><a href="#5-3-2整数分解" class="headerlink" title="5.3.2整数分解"></a>5.3.2整数分解</h2><h2 id="5-3-3最大公约数"><a href="#5-3-3最大公约数" class="headerlink" title="5.3.3最大公约数"></a>5.3.3最大公约数</h2><h2 id="6-2-1数据类型"><a href="#6-2-1数据类型" class="headerlink" title="6.2.1数据类型"></a>6.2.1数据类型</h2><h3 id="1-c语言的类型"><a href="#1-c语言的类型" class="headerlink" title="1.c语言的类型"></a>1.c语言的类型</h3><ol>
+<li><p>整数</p>
 <p>char、short、int、long、long long</p>
 </li>
-<li>
-<p>浮点数</p>
+<li><p>浮点数</p>
 <p>float、double、long double</p>
 </li>
-<li>
-<p>逻辑</p>
+<li><p>逻辑</p>
 <p>bool</p>
 </li>
-<li>
-<p>指针</p>
+<li><p>指针</p>
 </li>
-<li>
-<p>自定义类型</p>
+<li><p>自定义类型</p>
 </li>
 </ol>
-<h3 id="2-类型的不同">2.类型的不同</h3>
-<ol>
-<li>
-<p>输入输出时的格式化</p>
+<h3 id="2-类型的不同"><a href="#2-类型的不同" class="headerlink" title="2.类型的不同"></a>2.类型的不同</h3><ol>
+<li><p>输入输出时的格式化</p>
 <blockquote>
 <p>格式表<a href="https://blog.csdn.net/TTTSEP9TH2244/article/details/115742295">https://blog.csdn.net/TTTSEP9TH2244/article/details/115742295</a></p>
 </blockquote>
 </li>
-<li>
-<p>表达的数的范围</p>
+<li><p>表达的数的范围</p>
 <p>char&lt;short&lt;int&lt;float&lt;double</p>
 </li>
-<li>
-<p>内存中占据的大小</p>
+<li><p>内存中占据的大小</p>
 <p>1到16字节</p>
 <p>sizeof(int)能直接取得int类型占据的字节数，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;sizeof(int)=%ld&quot;</span>, <span class="keyword">sizeof</span>(<span class="type">int</span>));</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>sizeof(int)=4</code></p>
 <p><strong>sizeof是静态运算符，结果在编译时就已决定，故不可在括号中做运算</strong></p>
 </li>
-<li>
-<p>内存中的表达形式</p>
+<li><p>内存中的表达形式</p>
 <p>整型是二进制数(补码)，浮点数是编码</p>
 <p><em>所以浮点数之间不可以直接相加减</em></p>
 </li>
 </ol>
-<h2 id="6-2-2整数类型">6.2.2整数类型</h2>
-<p>int无固定大小，取决于寄存器一次处理的大小</p>
-<h2 id="6-2-3整数的内部表达">6.2.3整数的内部表达</h2>
-<p>二进制表达，如例</p>
+<h2 id="6-2-2整数类型"><a href="#6-2-2整数类型" class="headerlink" title="6.2.2整数类型"></a>6.2.2整数类型</h2><p>int无固定大小，取决于寄存器一次处理的大小</p>
+<h2 id="6-2-3整数的内部表达"><a href="#6-2-3整数的内部表达" class="headerlink" title="6.2.3整数的内部表达"></a>6.2.3整数的内部表达</h2><p>二进制表达，如例</p>
 <p>亿字节表达的数的范围</p>
-<p>0000000 = 0</p>
-<p>11111111 = 255</p>
+<p>0000000 &#x3D; 0</p>
+<p>11111111 &#x3D; 255</p>
 <p>二进制用补码的方式表达负数，具体表现形式看下面</p>
-<h2 id="6-2-4整数的范围">6.2.4整数的范围</h2>
-<h3 id="二进制的表示">二进制的表示</h3>
-<p>对纯二进制来说，00000000~11111111表示0到255</p>
-<p>而当作补码来看待时，11111111~10000000表示-1~-128，00000001~01111111表示1~127</p>
+<h2 id="6-2-4整数的范围"><a href="#6-2-4整数的范围" class="headerlink" title="6.2.4整数的范围"></a>6.2.4整数的范围</h2><h3 id="二进制的表示"><a href="#二进制的表示" class="headerlink" title="二进制的表示"></a>二进制的表示</h3><p>对纯二进制来说，00000000~11111111表示0到255</p>
+<p>而当作补码来看待时，11111111<del>10000000表示-1</del>-128，00000001<del>01111111表示1</del>127</p>
 <p><em>首位为0时为正数，首位为1时为负数</em></p>
 <p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">char</span> c = <span class="number">255</span>;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">255</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;c=%d,i=%d&quot;</span>,c,i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">c=-1,i=255</span><br></pre></td></tr></table></figure>
+
 <p>int表达的范围有4字节，即32比特，255转化为二进制后首位数字仍为0，如</p>
 <p><code>00000000 00000000 00000000 11111111</code></p>
 <p>而char表达的范围仅有1字节，即8比特，255转化为二进制第一位变为1，故变为负数，如</p>
 <p><code>11111111</code></p>
-<h3 id="各个类型整数表达的范围">各个类型整数表达的范围</h3>
-<p>char 1字节 -128~+127</p>
+<h3 id="各个类型整数表达的范围"><a href="#各个类型整数表达的范围" class="headerlink" title="各个类型整数表达的范围"></a>各个类型整数表达的范围</h3><p>char 1字节 -128~+127</p>
 <p>short 2字节 -32768~+32767</p>
 <p>int 取决于编译器(cpu),一般是负的二的三十二减一次方~正的二的三十二减一次方减一</p>
 <p>使用unsigned语言可以取消二进制被用于补码的情况，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">	<span class="type">unsigned</span> <span class="type">char</span> c = <span class="number">255</span>;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">255</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;c=%d,i=%d&quot;</span>,c,i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>c=255,i=255</code></p>
 <p>使用unsigned后，char的范围扩大一倍，变为0~255</p>
-<h2 id="6-2-5整数的格式化输入输出">6.2.5整数的格式化输入输出</h2>
-<p>%d：用于char，short，int</p>
+<h2 id="6-2-5整数的格式化输入输出"><a href="#6-2-5整数的格式化输入输出" class="headerlink" title="6.2.5整数的格式化输入输出"></a>6.2.5整数的格式化输入输出</h2><p>%d：用于char，short，int</p>
 <p>%u：unsigned</p>
 <p>使用%u时，所有小于int的整数类型都会转化为int输出，如例</p>
 <figure class="highlight cc"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">char</span> c = <span class="number">-1</span>;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">-1</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;c=%u,i=%u&quot;</span>,c,i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>c=4294967295,i=4294967295</code></p>
 <p>%ld：  long long</p>
 <p>%lu： unsigned long long</p>
 <p><strong>重要的不是计算机中储存的是什么数字，而是我们该如何正确看待并使用</strong></p>
-<h2 id="6-2-6选择整数类型">6.2.6选择整数类型</h2>
-<h2 id="6-2-7浮点类型">6.2.7浮点类型</h2>
-<h3 id="1-两种浮点类型">1.两种浮点类型</h3>
-<p>float：4个字节，输入格式%f，输出格式%f、%e</p>
+<h2 id="6-2-6选择整数类型"><a href="#6-2-6选择整数类型" class="headerlink" title="6.2.6选择整数类型"></a>6.2.6选择整数类型</h2><h2 id="6-2-7浮点类型"><a href="#6-2-7浮点类型" class="headerlink" title="6.2.7浮点类型"></a>6.2.7浮点类型</h2><h3 id="1-两种浮点类型"><a href="#1-两种浮点类型" class="headerlink" title="1.两种浮点类型"></a>1.两种浮点类型</h3><p>float：4个字节，输入格式%f，输出格式%f、%e</p>
 <p>double：8个字节，输入格式%lf，输出格式%f、%e</p>
 <p>%e用于科学计数法形式的输出，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">double</span> ff=<span class="number">1234.56789</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%e,%f&quot;</span>,ff,ff);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>1.234568e+003,1234.567890</code></p>
-<h3 id="2-输出精度">2.输出精度</h3>
-<p><strong>%.4f可指定输出格式保留四位小数</strong></p>
+<h3 id="2-输出精度"><a href="#2-输出精度" class="headerlink" title="2.输出精度"></a>2.输出精度</h3><p><strong>%.4f可指定输出格式保留四位小数</strong></p>
 <p>这种输出遵循四舍五入，仅对要求保留的小数位数的下一小数位进行四舍五入</p>
-<h2 id="6-2-8浮点数的范围和精度">6.2.8浮点数的范围和精度</h2>
-<p>浮点运算无精度，如例</p>
+<h2 id="6-2-8浮点数的范围和精度"><a href="#6-2-8浮点数的范围和精度" class="headerlink" title="6.2.8浮点数的范围和精度"></a>6.2.8浮点数的范围和精度</h2><p>浮点运算无精度，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">float</span> a,b,c;</span><br><span class="line">    a = <span class="number">1.345f</span>;</span><br><span class="line">    b = <span class="number">1.123f</span>;</span><br><span class="line">    c = a + b;</span><br><span class="line">    <span class="keyword">if</span> (c == <span class="number">2.468</span>)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;yes\n&quot;</span>);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;not.n = %.10f&quot;</span>,c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code> not.n = 2.4679999352</code></p>
 <p>对c进行四舍五入后结果才为2.468，故浮点数不可直接用来当作判断条件</p>
 <p><strong>为何数字后要加f：对于一个小数，不加f的话被视为double型浮点数，加上后变为float型浮点数</strong></p>
 <p><strong>如何用浮点数做判断条件：可以用fabs( f1 - f2 ) &lt; 1e-12来判断f1与f2是否相等，fabs()语法求括号中运算式的绝对值</strong></p>
 <p>故不可用浮点数做精密的计算</p>
-<h2 id="6-2-9字符类型">6.2.9字符类型</h2>
-<p>可以用‘1’来表示字符1，此时‘1’ == 49</p>
-<h2 id="6-2-10逃逸字符">6.2.10逃逸字符</h2>
-<p>\b:回退一行</p>
+<h2 id="6-2-9字符类型"><a href="#6-2-9字符类型" class="headerlink" title="6.2.9字符类型"></a>6.2.9字符类型</h2><p>可以用‘1’来表示字符1，此时‘1’ &#x3D;&#x3D; 49</p>
+<h2 id="6-2-10逃逸字符"><a href="#6-2-10逃逸字符" class="headerlink" title="6.2.10逃逸字符"></a>6.2.10逃逸字符</h2><p>\b:回退一行</p>
 <p>\t：到下一个表格位</p>
 <p>\n</p>
 <p>\r：回车</p>
 <p><code>\&quot;</code>：双引号</p>
-<p><code>\'</code>单引号</p>
+<p><code>\&#39;</code>单引号</p>
 <p><code>\\</code>反斜杠本身</p>
 <p>使用\b时要注意，先看下例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;abc\b&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>abc</code></p>
 <p>说明，\b的作用不是直接删除前面一个元素，正确用法如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;abc\bC&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>abC</code></p>
 <p>\b的工作顺序是先退回前一个字符的前面，若\b后有字符的话，输出后面的字符代替原来的字符</p>
-<h2 id="6-2-11类型转换">6.2.11类型转换</h2>
-<h3 id="自动类型转化">自动类型转化</h3>
-<p>运算符两边类型不同时，小的类型向大的类型转换</p>
+<h2 id="6-2-11类型转换"><a href="#6-2-11类型转换" class="headerlink" title="6.2.11类型转换"></a>6.2.11类型转换</h2><h3 id="自动类型转化"><a href="#自动类型转化" class="headerlink" title="自动类型转化"></a>自动类型转化</h3><p>运算符两边类型不同时，小的类型向大的类型转换</p>
 <p>对于printf，任何小于int的类型都会被转化为int；float会自动被转化为double</p>
 <p>对于scanf，输入格式严格要求，输入short时用%hd，输入long long时用%ld</p>
-<h3 id="强制类型转化语法">强制类型转化语法</h3>
-<p>用<code>(类型)值</code>的形式转化值的类型，如例</p>
+<h3 id="强制类型转化语法"><a href="#强制类型转化语法" class="headerlink" title="强制类型转化语法"></a>强制类型转化语法</h3><p>用<code>(类型)值</code>的形式转化值的类型，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,(<span class="type">int</span>)<span class="number">1.0</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <p><code>1</code></p>
 <p>长类型转化为短类型时，会由于字节容量不同导致错误</p>
 <p><strong>强制转化类型语法优先级大于所有无括号运算符</strong></p>
 <p>语法不会改变后面值本身，而是改变其输出形式</p>
-<h2 id="6-3-1逻辑类型">6.3.1逻辑类型</h2>
-<p>布尔语法bool</p>
+<h2 id="6-3-1逻辑类型"><a href="#6-3-1逻辑类型" class="headerlink" title="6.3.1逻辑类型"></a>6.3.1逻辑类型</h2><p>布尔语法bool</p>
 <p>引入头文件stdbool.h后可以使用bool和true、false</p>
 <p>bool本质上仍为整数类型，输出时只能输出1或0，输出格式也为%d</p>
-<h2 id="6-3-2逻辑运算">6.3.2逻辑运算</h2>
-<h3 id="三种逻辑运算符">三种逻辑运算符</h3>
-<p>三种逻辑运算符的优先级为! &gt; &amp;&amp; &gt; ||</p>
+<h2 id="6-3-2逻辑运算"><a href="#6-3-2逻辑运算" class="headerlink" title="6.3.2逻辑运算"></a>6.3.2逻辑运算</h2><h3 id="三种逻辑运算符"><a href="#三种逻辑运算符" class="headerlink" title="三种逻辑运算符"></a>三种逻辑运算符</h3><p>三种逻辑运算符的优先级为! &gt; &amp;&amp; &gt; ||</p>
 <p><code>！</code>逻辑非，示例<code>!a</code>,当a为true时结果为false，反之亦然</p>
 <p><code>&amp;&amp;</code>逻辑与，示例<code>a&amp;&amp;b</code>,只有a和b都是true时结果为true，其他情况结果为false</p>
 <p><code>||</code>逻辑或，示例<code>a||b</code>,两个都为false时结果为false，其他情况结果为true</p>
-<h3 id="优先级">优先级</h3>
-<p>逻辑运算符优先级普遍低于比较运算符，但单目运算符优先级大于双目运算符</p>
+<h3 id="优先级"><a href="#优先级" class="headerlink" title="优先级"></a>优先级</h3><p>逻辑运算符优先级普遍低于比较运算符，但单目运算符优先级大于双目运算符</p>
 <blockquote>
-<p>单目双目三目<a href="https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105192252.142%5Ev100%5Epc_search_result_base7&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=单目运算符&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105192252.142^v100^pc_search_result_base7&amp;spm=1018.2226.3001.4187</a></p>
+<p>单目双目三目<a href="https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&request_id=&biz_id=102&utm_term=%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105192252.142%5Ev100%5Epc_search_result_base7&spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_42615026/article/details/105192252?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=%E5%8D%95%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-105192252.142^v100^pc_search_result_base7&amp;spm=1018.2226.3001.4187</a></p>
 </blockquote>
 <p>如例</p>
 <p><code>! a &lt; 20</code></p>
@@ -317,140 +262,119 @@
 <p><code>! (a &lt; 20)</code></p>
 <p>上行代码会判断条件a&lt;20</p>
 <p>以下为目前所有运算符的优先级列表</p>
-<p><img src="/img/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E7%BA%A7.jpg" alt="" title="优先级"></p>
-<h3 id="短路">短路</h3>
-<p>逻辑运算符的运算自左向右进行，当左边满足逻辑运算符完成计算时，右边不进行判断</p>
+<p><img src="/img/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E4%BC%98%E5%85%88%E7%BA%A7.jpg" title="优先级"></p>
+<h3 id="短路"><a href="#短路" class="headerlink" title="短路"></a>短路</h3><p>逻辑运算符的运算自左向右进行，当左边满足逻辑运算符完成计算时，右边不进行判断</p>
 <p>即对于&amp;&amp;，左边为false时右边不进行判断；对于||，左边为true时右边不进行判断</p>
 <p>故不要在逻辑运算式中写自增自减等运算</p>
-<h2 id="6-3-3条件运算和逗号运算">6.3.3条件运算和逗号运算</h2>
-<h3 id="条件运算">条件运算</h3>
-<p>不建议用，可读性差</p>
-<h3 id="逗号运算">逗号运算</h3>
-<p>一般用于for的条件括号中，用于为for的循环增加多个条件变量，如例</p>
+<h2 id="6-3-3条件运算和逗号运算"><a href="#6-3-3条件运算和逗号运算" class="headerlink" title="6.3.3条件运算和逗号运算"></a>6.3.3条件运算和逗号运算</h2><h3 id="条件运算"><a href="#条件运算" class="headerlink" title="条件运算"></a>条件运算</h3><p>不建议用，可读性差</p>
+<h3 id="逗号运算"><a href="#逗号运算" class="headerlink" title="逗号运算"></a>逗号运算</h3><p>一般用于for的条件括号中，用于为for的循环增加多个条件变量，如例</p>
 <p><code>for(i = 0 , j = 0 ;...;...)</code></p>
-<h2 id="7-1-1函数">7.1.1函数</h2>
-<p>代码重复表示代码质量不良，使用函数可以避免代码重复</p>
-<h2 id="7-1-2函数的定义与使用">7.1.2函数的定义与使用</h2>
-<h3 id="函数定义">函数定义</h3>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> begin,<span class="type">int</span> end)</span>				<span class="comment">//此行为函数头，void叫返回类型，含义为没有，即此函数不返回值；sum为函数名，括号中为参数表</span></span><br><span class="line">&#123;						               <span class="comment">//大括号中为函数体</span></span><br><span class="line">	...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="调用函数">调用函数</h3>
-<p>没有参数时，()不能省略</p>
-<h2 id="7-1-3从函数中返回">7.1.3从函数中返回</h2>
-<p>函数中用return返回输出的值</p>
-<h2 id="7-2-1函数原型">7.2.1函数原型</h2>
-<p>想把调用的函数放在main的下面，需要在main前对函数原型进行声明，如例</p>
+<h2 id="7-1-1函数"><a href="#7-1-1函数" class="headerlink" title="7.1.1函数"></a>7.1.1函数</h2><p>代码重复表示代码质量不良，使用函数可以避免代码重复</p>
+<h2 id="7-1-2函数的定义与使用"><a href="#7-1-2函数的定义与使用" class="headerlink" title="7.1.2函数的定义与使用"></a>7.1.2函数的定义与使用</h2><h3 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> begin,<span class="type">int</span> end)</span>				<span class="comment">//此行为函数头，void叫返回类型，含义为没有，即此函数不返回值；sum为函数名，括号中为参数表</span></span><br><span class="line">&#123;						               <span class="comment">//大括号中为函数体</span></span><br><span class="line">	...;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h3><p>没有参数时，()不能省略</p>
+<h2 id="7-1-3从函数中返回"><a href="#7-1-3从函数中返回" class="headerlink" title="7.1.3从函数中返回"></a>7.1.3从函数中返回</h2><p>函数中用return返回输出的值</p>
+<h2 id="7-2-1函数原型"><a href="#7-2-1函数原型" class="headerlink" title="7.2.1函数原型"></a>7.2.1函数原型</h2><p>想把调用的函数放在main的下面，需要在main前对函数原型进行声明，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> ,<span class="type">int</span> )</span>;		<span class="comment">//声明;注意要加分号</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    sum(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">sum</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span>       <span class="comment">//定义</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(a &gt; b)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,a);</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="7-2-2参数传递">7.2.2参数传递</h2>
-<p>调用函数只会向main函数中传递值，不会影响main中的变量</p>
-<h2 id="7-2-3本地变量">7.2.3本地变量</h2>
-<p>本地变量的生存期和作用域取决于其所定义的块内，块即为大括号，如例</p>
+
+<h2 id="7-2-2参数传递"><a href="#7-2-2参数传递" class="headerlink" title="7.2.2参数传递"></a>7.2.2参数传递</h2><p>调用函数只会向main函数中传递值，不会影响main中的变量</p>
+<h2 id="7-2-3本地变量"><a href="#7-2-3本地变量" class="headerlink" title="7.2.3本地变量"></a>7.2.3本地变量</h2><p>本地变量的生存期和作用域取决于其所定义的块内，块即为大括号，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta"># <span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a,b;</span><br><span class="line">    a = <span class="number">5</span>;</span><br><span class="line">    b = <span class="number">6</span>;</span><br><span class="line">    <span class="keyword">if</span>(<span class="number">1</span> &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="type">int</span> a = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;a = %d\n&quot;</span>,a);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a = %d,b = %d&quot;</span>,a,b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = 0</span><br><span class="line">a = 5,b = 6</span><br></pre></td></tr></table></figure>
+
 <p>定义在if内部的a离开if大括号后不再存在，不会影响大括号外部的a</p>
-<h2 id="7-2-4函数庶事">7.2.4函数庶事</h2>
-<p>调用函数若没有参数，在括号中写void</p>
-<h2 id="8-1-1初试数组">8.1.1初试数组</h2>
-<p>遍历数组：数组中的每一个数都判断一遍</p>
-<h2 id="8-1-2定义数组">8.1.2定义数组</h2>
-<p><code>int a[10]</code></p>
+<h2 id="7-2-4函数庶事"><a href="#7-2-4函数庶事" class="headerlink" title="7.2.4函数庶事"></a>7.2.4函数庶事</h2><p>调用函数若没有参数，在括号中写void</p>
+<h2 id="8-1-1初试数组"><a href="#8-1-1初试数组" class="headerlink" title="8.1.1初试数组"></a>8.1.1初试数组</h2><p>遍历数组：数组中的每一个数都判断一遍</p>
+<h2 id="8-1-2定义数组"><a href="#8-1-2定义数组" class="headerlink" title="8.1.2定义数组"></a>8.1.2定义数组</h2><p><code>int a[10]</code></p>
 <p>a数组中共可储存十个整型数值，但最大下标仅为9，即a[9]</p>
 <p>即<strong>数组从零开始计数</strong></p>
-<h2 id="8-1-3数组例子">8.1.3数组例子</h2>
-<p>使用数组前，最好对数组中的每一个数值初始化</p>
-<h2 id="8-2-1数组计算">8.2.1数组计算</h2>
-<h3 id="数组集成初始化格式">数组集成初始化格式</h3>
-<p><code>int a[] = &#123;2,4,3&#125;</code></p>
+<h2 id="8-1-3数组例子"><a href="#8-1-3数组例子" class="headerlink" title="8.1.3数组例子"></a>8.1.3数组例子</h2><p>使用数组前，最好对数组中的每一个数值初始化</p>
+<h2 id="8-2-1数组计算"><a href="#8-2-1数组计算" class="headerlink" title="8.2.1数组计算"></a>8.2.1数组计算</h2><h3 id="数组集成初始化格式"><a href="#数组集成初始化格式" class="headerlink" title="数组集成初始化格式"></a>数组集成初始化格式</h3><p><code>int a[] = &#123;2,4,3&#125;</code></p>
 <p>编译器自动记录数组的数值个数</p>
 <p>也可以如下</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> number = <span class="number">3</span>;</span><br><span class="line"><span class="type">int</span> a[number] = &#123;<span class="number">1</span>&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>此时数组a中的值分别为<code>1 0 0</code></p>
 <p>当数组中的数值初始化时，有几个数组不是0，可用下例定义法</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a[] = &#123;[<span class="number">1</span>]=<span class="number">2</span>,<span class="number">3</span>,[<span class="number">5</span>]=<span class="number">6</span>&#125;;</span><br></pre></td></tr></table></figure>
+
 <p>此时数组a的数值为<code>0 2 3 0 0 6    </code></p>
 <p>*3为紧跟前一个下标的下一个数值</p>
 <p>此种定义法也可以规定数组的下标</p>
-<h3 id="数组的大小">数组的大小</h3>
-<p>可用<code>sizeof(a)/sizeof(a[0])</code>计算数组的大小</p>
-<h3 id="数组的循环">数组的循环</h3>
-<p>多用for循环做遍历数组</p>
-<h2 id="8-2-2数组例子：素数">8.2.2数组例子：素数</h2>
-<h2 id="8-2-3二维数组">8.2.3二维数组</h2>
-<h3 id="二维数组的定义">二维数组的定义</h3>
-<p><code>int a[行数][列数]</code></p>
-<h3 id="二维数组的初始化">二维数组的初始化</h3>
-<p>使用集成初始化时数组的列数不可省略，如例</p>
+<h3 id="数组的大小"><a href="#数组的大小" class="headerlink" title="数组的大小"></a>数组的大小</h3><p>可用<code>sizeof(a)/sizeof(a[0])</code>计算数组的大小</p>
+<h3 id="数组的循环"><a href="#数组的循环" class="headerlink" title="数组的循环"></a>数组的循环</h3><p>多用for循环做遍历数组</p>
+<h2 id="8-2-2数组例子：素数"><a href="#8-2-2数组例子：素数" class="headerlink" title="8.2.2数组例子：素数"></a>8.2.2数组例子：素数</h2><h2 id="8-2-3二维数组"><a href="#8-2-3二维数组" class="headerlink" title="8.2.3二维数组"></a>8.2.3二维数组</h2><h3 id="二维数组的定义"><a href="#二维数组的定义" class="headerlink" title="二维数组的定义"></a>二维数组的定义</h3><p><code>int a[行数][列数]</code></p>
+<h3 id="二维数组的初始化"><a href="#二维数组的初始化" class="headerlink" title="二维数组的初始化"></a>二维数组的初始化</h3><p>使用集成初始化时数组的列数不可省略，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a[][<span class="number">5</span>] = &#123;</span><br><span class="line">	&#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;,</span><br><span class="line">	&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="9-1-1取地址运算-运算符取得变量地址">9.1.1取地址运算:&amp;运算符取得变量地址</h2>
-<h3 id="sizeof">sizeof</h3>
-<p><code>sizeof(变量或类型)</code>可取得变量或类型所占字节</p>
-<h3 id="运算符">运算符&amp;</h3>
-<p>作用:取得变量地址，操作数必须为变量</p>
+
+<h2 id="9-1-1取地址运算-运算符取得变量地址"><a href="#9-1-1取地址运算-运算符取得变量地址" class="headerlink" title="9.1.1取地址运算:&amp;运算符取得变量地址"></a>9.1.1取地址运算:&amp;运算符取得变量地址</h2><h3 id="sizeof"><a href="#sizeof" class="headerlink" title="sizeof"></a>sizeof</h3><p><code>sizeof(变量或类型)</code>可取得变量或类型所占字节</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符&amp;"></a>运算符&amp;</h3><p>作用:取得变量地址，操作数必须为变量</p>
 <p>地址的输出格式:%p</p>
 <p><em>地址的格式一般为16进制，但输出格式不能使用十六进制的输出格式%x，虽然有的编译器结果相同，但会报错</em></p>
-<h3 id="不能取的地址">&amp;不能取的地址</h3>
-<p>运算式:如<code>a+b</code> <code>i++</code> <code>++i</code></p>
-<h2 id="9-1-2指针">9.1.2指针</h2>
-<h3 id="定义">定义</h3>
-<p>指针是用来保存地址的变量，定义例子如下</p>
+<h3 id="不能取的地址"><a href="#不能取的地址" class="headerlink" title="&amp;不能取的地址"></a>&amp;不能取的地址</h3><p>运算式:如<code>a+b</code> <code>i++</code> <code>++i</code></p>
+<h2 id="9-1-2指针"><a href="#9-1-2指针" class="headerlink" title="9.1.2指针"></a>9.1.2指针</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>指针是用来保存地址的变量，定义例子如下</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i;				<span class="comment">//i在这里作为一个整型变量被定义</span></span><br><span class="line"><span class="type">int</span>* p = &amp;i;		<span class="comment">//p被定义为指针，并储存了i的地址</span></span><br><span class="line"><span class="type">int</span>* p,q;</span><br><span class="line"><span class="type">int</span> *p,q;</span><br><span class="line"><span class="comment">//3和4行都表示定义p为指针，q为整型变量，而不是指针</span></span><br><span class="line"><span class="type">int</span> *p,*q;			<span class="comment">//p和q都被定义为指针</span></span><br></pre></td></tr></table></figure>
-<h3 id="指针变量">指针变量</h3>
-<p>变量的值是内存的地址</p>
+
+<h3 id="指针变量"><a href="#指针变量" class="headerlink" title="指针变量"></a>指针变量</h3><p>变量的值是内存的地址</p>
 <p>普通变量的值是实际的值</p>
 <p>指针变量的值是具有实际值的变量的地址</p>
-<h3 id="作为参数的指针">作为参数的指针</h3>
-<p><code>void f(int *p);</code>在被调用时得到了某个变量的地址</p>
+<h3 id="作为参数的指针"><a href="#作为参数的指针" class="headerlink" title="作为参数的指针"></a>作为参数的指针</h3><p><code>void f(int *p);</code>在被调用时得到了某个变量的地址</p>
 <p>主函数中i的地址被调用到f()函数中，故在f()函数里面可以通过指针访问主函数中的变量i</p>
 <p><em><strong>不同于f(int p)，它只能把main函数中变量i的值取到自己函数中，不能读写i的值</strong></em></p>
-<h3 id="单目运算符">单目运算符*</h3>
-<p>*是一个单目运算符，用来访问指针的值所表示的地址上的变量</p>
+<h3 id="单目运算符"><a href="#单目运算符" class="headerlink" title="单目运算符*"></a>单目运算符*</h3><p>*是一个单目运算符，用来访问指针的值所表示的地址上的变量</p>
 <p>可以做右值也可以做左值，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> k = *p;</span><br><span class="line">*p = k+<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-<h4 id="一些小疑问">一些小疑问</h4>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *p)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">g</span><span class="params">(<span class="type">int</span> k)</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">6</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;i=%p\n&quot;</span>, &amp;i);</span><br><span class="line">    f(&amp;i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *p)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p=%p\n&quot;</span>, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;*p=%d\n&quot;</span>, *p);</span><br><span class="line">    *p = <span class="number">26</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="一些小疑问"><a href="#一些小疑问" class="headerlink" title="一些小疑问"></a>一些小疑问</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *p)</span>;</span><br><span class="line"><span class="type">void</span> <span class="title function_">g</span><span class="params">(<span class="type">int</span> k)</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">6</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;i=%p\n&quot;</span>, &amp;i);</span><br><span class="line">    f(&amp;i);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *p)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p=%p\n&quot;</span>, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;*p=%d\n&quot;</span>, *p);</span><br><span class="line">    *p = <span class="number">26</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ol>
 <li>*p在f()中成为解引用操作符，可以访问p所指向的内存地址中的值</li>
 <li>以%p形式输出变量p时可以输出i的地址</li>
 </ol>
-<h3 id="拓展">拓展</h3>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d,i&quot;</span>);</span><br></pre></td></tr></table></figure>
+<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> i;</span><br><span class="line"><span class="built_in">scanf</span>(<span class="string">&quot;%d,i&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <p>此行代码可以运行，但会报错，原因如下：</p>
 <p>scanf认为输入的整数值为i的地址，如输入整数6，scanf会对地址为6的空间进行操作，而因为地址6中有重要的东西，故会报错</p>
-<h2 id="9-1-3指针的使用">9.1.3指针的使用</h2>
-<h3 id="应用场景一、交换两变量的值">应用场景一、交换两变量的值</h3>
-<p>如例</p>
+<h2 id="9-1-3指针的使用"><a href="#9-1-3指针的使用" class="headerlink" title="9.1.3指针的使用"></a>9.1.3指针的使用</h2><h3 id="应用场景一、交换两变量的值"><a href="#应用场景一、交换两变量的值" class="headerlink" title="应用场景一、交换两变量的值"></a>应用场景一、交换两变量的值</h3><p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> *pa, <span class="type">int</span> *pb)</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">5</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">6</span>;</span><br><span class="line">    swap(&amp;a, &amp;b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a=%d,b=%d\n&quot;</span>, a, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> *pa, <span class="type">int</span> *pb)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> t = *pa;</span><br><span class="line">    *pa = *pb;</span><br><span class="line">    *pb = t;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="应用场景二a、返回多个值">应用场景二a、返回多个值</h3>
-<p>函数返回多个值，某些值就只能通过指针返回</p>
+
+<h3 id="应用场景二a、返回多个值"><a href="#应用场景二a、返回多个值" class="headerlink" title="应用场景二a、返回多个值"></a>应用场景二a、返回多个值</h3><p>函数返回多个值，某些值就只能通过指针返回</p>
 <p>传输的参数实际上时需要保存带回的结果的变量</p>
 <p><em>C或C++中，函数通常只能返回一个值</em></p>
 <p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数声明</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">minmax</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> len, <span class="type">int</span> *min, <span class="type">int</span> *max)</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span> &#123;</span><br><span class="line">    <span class="comment">// 初始化数组</span></span><br><span class="line">    <span class="type">int</span> a[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">16</span>,<span class="number">17</span>,<span class="number">21</span>,<span class="number">23</span>,<span class="number">55</span>&#125;;</span><br><span class="line">    <span class="type">int</span> min, max;</span><br><span class="line">    <span class="comment">// 调用函数</span></span><br><span class="line">    minmax(a, <span class="keyword">sizeof</span>(a)/<span class="keyword">sizeof</span>(a[<span class="number">0</span>]), &amp;min, &amp;max);</span><br><span class="line">    <span class="comment">// 输出结果</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;min=%d,max=%d\n&quot;</span>, min, max);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 函数定义</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">minmax</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> len, <span class="type">int</span> *min, <span class="type">int</span> *max)</span> &#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="comment">// 初始化最小值和最大值</span></span><br><span class="line">    *min = *max = a[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; len; i++) &#123;</span><br><span class="line">        <span class="comment">// 更新最小值</span></span><br><span class="line">        <span class="keyword">if</span> (a[i] &lt; *min) &#123;</span><br><span class="line">            *min = a[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 更新最大值</span></span><br><span class="line">        <span class="keyword">if</span> (a[i] &gt; *max) &#123;</span><br><span class="line">            *max = a[i];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="应用场景二b、">应用场景二b、</h3>
-<p>函数返回运算的状态，结果通过指针返回。</p>
+
+<h3 id="应用场景二b、"><a href="#应用场景二b、" class="headerlink" title="应用场景二b、"></a>应用场景二b、</h3><p>函数返回运算的状态，结果通过指针返回。</p>
 <p>常用的做法是让函数返回特殊的、不属于有效范围内的值来表示出错，例如 - 1 或 0（在文件操作中常见）。</p>
 <p>当任何数值都是有效的可能结果时，就需要分开返回。</p>
 <p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// **</span></span><br><span class="line"><span class="comment">// @return 如果除法成功，返回1；否则返回0</span></span><br><span class="line"><span class="comment">// **</span></span><br><span class="line"><span class="type">int</span> <span class="title function_">divide</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> *result)</span>;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">5</span>;</span><br><span class="line">    <span class="type">int</span> b = <span class="number">2</span>;</span><br><span class="line">    <span class="type">int</span> c;</span><br><span class="line">    <span class="keyword">if</span> (divide(a, b, &amp;c)) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d/%d=%d\n&quot;</span>, a, b, c);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">divide</span><span class="params">(<span class="type">int</span> a, <span class="type">int</span> b, <span class="type">int</span> *result)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> ret = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (b == <span class="number">0</span>) ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        *result = a / b;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>备注：</p>
 <p><code>if</code>判断条件通过调用<code>divide</code>函数并检查其返回值来决定是否执行<code>printf</code>语句。如果<code>divide</code>函数返回 1，表示除法成功，<code>if</code>条件为真；如果<code>divide</code>函数返回 0，表示除法失败，<code>if</code>条件为假。</p>
 <p>后续的编程语言（如 C++、Java）采用了异常机制来解决这个问题。</p>
-<h3 id="常见错误">常见错误</h3>
-<p>没有给指针指向变量，就更改指针的值，会导致指针默认指向的地址中的值被更改，可能导致程序出错。</p>
-<h2 id="9-1-4指针与数组">9.1.4指针与数组</h2>
-<p>数组实际上是一种特别的指针，如例</p>
+<h3 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h3><p>没有给指针指向变量，就更改指针的值，会导致指针默认指向的地址中的值被更改，可能导致程序出错。</p>
+<h2 id="9-1-4指针与数组"><a href="#9-1-4指针与数组" class="headerlink" title="9.1.4指针与数组"></a>9.1.4指针与数组</h2><p>数组实际上是一种特别的指针，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;main a = %p&quot;</span>,a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    f(a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;f a = %p&quot;</span>,a);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">main a = 000000000061FE14</span><br><span class="line">f a = 000000000061FE14</span><br></pre></td></tr></table></figure>
+
 <p>可得，main中的a与f中的a地址相同，故两函数中的数组a为同一数组，可认为main中的数组a以指针形式存在，才可不经过像变量一样不读取地址直接输出其地址，并在两函数中地址相同</p>
 <p>即，如果在f函数中对数组a中的值进行更改，main函数中的值也会随之更改，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a[0] = %d&quot;</span>,a[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    f(a);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;a[0] = %d&quot;</span>,a[<span class="number">0</span>]);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    a[<span class="number">0</span>] = <span class="number">1000</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a[0] = 1</span><br><span class="line">a[0] = 1000</span><br></pre></td></tr></table></figure>
+
 <p>但是在main函数中的数组和在参数表中的数组并不完全相同，参数表中的数组a是完全以指针形式存在的，例子如下</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a[] = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;main sizeof(a) = %d&quot;</span>,<span class="keyword">sizeof</span>(a));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;main sizeof(a[0]) = %d&quot;</span>,<span class="keyword">sizeof</span>(a[<span class="number">0</span>]));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    f(a);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">f</span><span class="params">(<span class="type">int</span> *a)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;f sizeof(a) = %d&quot;</span>,<span class="keyword">sizeof</span>(a));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;f sizeof(a[0]) = %d&quot;</span>,<span class="keyword">sizeof</span>(a[<span class="number">0</span>]));</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">main sizeof(a) = 12</span><br><span class="line">main sizeof(a[0]) = 4</span><br><span class="line">f sizeof(a) = 8</span><br><span class="line">f sizeof(a[0]) = 4</span><br></pre></td></tr></table></figure>
+
 <p>解释</p>
 <p>在<code>main</code>函数中：</p>
 <ul>
@@ -460,102 +384,92 @@
 <p>在<code>f</code>函数中：</p>
 <ul>
 <li><code>sizeof(a)</code>返回<strong>指针</strong><code>a</code>所占用的字节数。在 32 位系统中，指针占 4 字节；在 64 位系统中，指针占 8 字节。</li>
-<li><code>sizeof(a[0])</code>返回<code>a[0]</code>**（通过指针解引用访问的元素）**的字节数，即 4 字节。</li>
+<li><code>sizeof(a[0])</code>返回<code>a[0]</code><strong>（通过指针解引用访问的元素）</strong>的字节数，即 4 字节。</li>
 </ul>
-<h3 id="拓展-2">拓展</h3>
-<h4 id="用于指针">[]用于指针</h4>
-<p>[]也可以作用于指针，如例</p>
+<h3 id="拓展-1"><a href="#拓展-1" class="headerlink" title="拓展"></a>拓展</h3><h4 id="用于指针"><a href="#用于指针" class="headerlink" title="[]用于指针"></a>[]用于指针</h4><p>[]也可以作用于指针，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> a=<span class="number">1</span>;</span><br><span class="line">    <span class="type">int</span> *p=&amp;a;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;*p=%d&quot;</span>,*p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p[0]=%d&quot;</span>,*p);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*p=1</span><br><span class="line">p[0]=1</span><br></pre></td></tr></table></figure>
-<h4 id="数组变量实质">数组变量实质</h4>
-<p>数组变量实质上是const的指针，所以不能被赋值</p>
-<h5 id="细说const">细说const</h5>
-<p>在 C 语言中，<code>const</code>关键字用于定义常量，被它修饰的变量的值是不可以被修改的，这有助于增强程序的安全性和可读性。例如：</p>
+
+<h4 id="数组变量实质"><a href="#数组变量实质" class="headerlink" title="数组变量实质"></a>数组变量实质</h4><p>数组变量实质上是const的指针，所以不能被赋值</p>
+<h5 id="细说const"><a href="#细说const" class="headerlink" title="细说const"></a>细说const</h5><p>在 C 语言中，<code>const</code>关键字用于定义常量，被它修饰的变量的值是不可以被修改的，这有助于增强程序的安全性和可读性。例如：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> num = <span class="number">10</span>;</span><br><span class="line"><span class="comment">// 像这样去修改num的值是错误的，会导致编译报错</span></span><br><span class="line"><span class="comment">// num = 20;</span></span><br></pre></td></tr></table></figure>
+
 <p><code>const</code>修饰指针时有以下几种不同情况：</p>
 <ol>
-<li>
-<p>指向常量的指针（const在*前）</p>
+<li><p>指向常量的指针（const在*前）</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span>* ptr;</span><br><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line">ptr = &amp;a;</span><br><span class="line"><span class="comment">// 下面这行是错误的，不能通过这个指针去修改它所指向的常量值</span></span><br><span class="line"><span class="comment">// *ptr = 20;</span></span><br><span class="line"><span class="type">int</span> b = <span class="number">30</span>;</span><br><span class="line"><span class="comment">// 但这个指针本身可以指向其他变量，以下操作合法</span></span><br><span class="line">ptr = &amp;b;</span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>常量指针（const在*后）</p>
+<li><p>常量指针（const在*后）</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">int</span>* <span class="type">const</span> ptr = &amp;a;</span><br><span class="line"><span class="comment">// 可以通过这个指针修改它所指向的值，以下操作合法</span></span><br><span class="line">*ptr = <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span> b = <span class="number">30</span>;</span><br><span class="line"><span class="comment">// 不过这个指针不能再指向其他变量了，下面操作是错误的</span></span><br><span class="line"><span class="comment">// ptr = &amp;b;</span></span><br></pre></td></tr></table></figure>
 </li>
-<li>
-<p>指向常量的常量指针（const在*前后都有）</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span>* <span class="type">const</span> ptr = &amp;a;</span><br><span class="line"><span class="comment">// 既不能通过这个指针修改它所指向的值，下面操作是错误的</span></span><br><span class="line"><span class="comment">// *ptr = 20;</span></span><br><span class="line"><span class="type">int</span> b = <span class="number">30</span>;</span><br><span class="line"><span class="comment">// 也不能让这个指针再指向其他变量，以下操作错误</span></span><br><span class="line"><span class="comment">// ptr = &amp;b;</span></span><br></pre></td></tr></table></figure>
-</li>
+<li><p>指向常量的常量指针（const在*前后都有）</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span>* <span class="type">const</span> ptr = &amp;a;</span><br><span class="line"><span class="comment">// 既不能通过这个指针修改它所指向的值，下面操作是错误的</span></span><br><span class="line"><span class="comment">// *ptr = 20;</span></span><br><span class="line"><span class="type">int</span> b = <span class="number">30</span>;</span><br><span class="line"><span class="comment">// 也不能让这个指针再指向其他变量，以下操作错误</span></span><br><span class="line"><span class="comment">// ptr = &amp;b;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <p>在函数参数中使用<code>const</code>，可以防止函数内部意外地修改参数的值。比如：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">printValue</span><span class="params">(<span class="type">const</span> <span class="type">int</span> value)</span> &#123;</span><br><span class="line">    <span class="comment">// 下面这行代码是错误的，不能修改被const修饰的参数的值</span></span><br><span class="line">    <span class="comment">// value = 10;</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>, value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">printArray</span><span class="params">(<span class="type">const</span> <span class="type">int</span>* <span class="built_in">array</span>, <span class="type">int</span> size)</span> &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; size; ++i) &#123;</span><br><span class="line">        <span class="comment">// 不能修改const指针指向的值，以下操作错误</span></span><br><span class="line">        <span class="comment">// *array = 10;</span></span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, <span class="built_in">array</span>[i]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="数组">数组</h5>
-<p>数组本质上属于常量指针，即它可以修改所指向的变量的值，但是不能修改指向的变量对象，如例</p>
+
+<h5 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h5><p>数组本质上属于常量指针，即它可以修改所指向的变量的值，但是不能修改指向的变量对象，如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> b[] = a;			<span class="comment">//不可以</span></span><br><span class="line"><span class="type">int</span> *q = a;				<span class="comment">//可以</span></span><br></pre></td></tr></table></figure>
-<h2 id="9-1-5指针与const">9.1.5指针与const</h2>
-<blockquote>
+
+<h2 id="9-1-5指针与const"><a href="#9-1-5指针与const" class="headerlink" title="9.1.5指针与const"></a>9.1.5指针与const</h2><blockquote>
 <p>上节的拓展…</p>
 </blockquote>
-<h3 id="const数组">const数组</h3>
-<p>当想定义一个数组，即常量指针为指向常量的常量指针时，必须对数组中的每个变量进行赋值</p>
-<h2 id="9-2-1指针运算">9.2.1指针运算</h2>
-<h3 id="指针与整数的运算">指针与整数的运算</h3>
-<p>如例</p>
+<h3 id="const数组"><a href="#const数组" class="headerlink" title="const数组"></a>const数组</h3><p>当想定义一个数组，即常量指针为指向常量的常量指针时，必须对数组中的每个变量进行赋值</p>
+<h2 id="9-2-1指针运算"><a href="#9-2-1指针运算" class="headerlink" title="9.2.1指针运算"></a>9.2.1指针运算</h2><h3 id="指针与整数的运算"><a href="#指针与整数的运算" class="headerlink" title="指针与整数的运算"></a>指针与整数的运算</h3><p>如例</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ac[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">char</span> *p = ac;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p = %p\n&quot;</span>, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p+1 = %p\n&quot;</span>, p+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> ai[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">int</span> *q = ai;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;q = %p\n&quot;</span>, q);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;q+1 = %p\n&quot;</span>, q+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">p = 000000000061FE06</span><br><span class="line">p+1 = 000000000061FE07</span><br><span class="line">q = 000000000061FDD0</span><br><span class="line">q+1 = 000000000061FDD4</span><br></pre></td></tr></table></figure>
+
 <p>char的空间为1个字节，int的空间为4个字节，故可得指针与整数之间的运算实际上为对指针所指的地址进行改变，上述代码中即为对p的地址加上了<code>sizeof(char)</code>,对q的地址加上了<code>sizeof(int)</code>。</p>
 <p>得出，我们可以用指针运算的方式得出数组第二位的元素，如下</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ac[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">char</span> *p = ac;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;*(p+1)=%d&quot;</span>,*(p+<span class="number">1</span>));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">*(p+1)=1</span><br></pre></td></tr></table></figure>
-<h3 id="指针与指针的运算">指针与指针的运算</h3>
-<p><em><strong>注: 当你想要获取数组中某个特定元素的地址时，需要使用<code>&amp;</code>符号。例如，<code>&amp;ac[5]</code>表示获取<code>ac</code>数组中第 6 个元素（索引为 5）的地址。</strong></em></p>
+
+<h3 id="指针与指针的运算"><a href="#指针与指针的运算" class="headerlink" title="指针与指针的运算"></a>指针与指针的运算</h3><p><em><strong>注: 当你想要获取数组中某个特定元素的地址时，需要使用<code>&amp;</code>符号。例如，<code>&amp;ac[5]</code>表示获取<code>ac</code>数组中第 6 个元素（索引为 5）的地址。</strong></em></p>
 <p>如例：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ac[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">char</span> *p = ac;</span><br><span class="line">    <span class="type">char</span> *p1 = &amp;ac[<span class="number">5</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p = %p\n&quot;</span>, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p1 = %p\n&quot;</span>,p1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;p1-p = %d\n&quot;</span>, p1-p);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> ai[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">10</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">int</span> *q = ai;</span><br><span class="line">    <span class="type">int</span> *q1 = &amp;ai[<span class="number">6</span>];</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;q = %p\n&quot;</span>, q);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;q1 = %p\n&quot;</span>,q1);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;q1-q = %d&quot;</span>,q1-q);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">p = 000000000061FDF6</span><br><span class="line">p1 = 000000000061FDFB</span><br><span class="line">p1-p = 5</span><br><span class="line">q = 000000000061FDC0</span><br><span class="line">q1 = 000000000061FDD8</span><br><span class="line">q1-q = 6</span><br></pre></td></tr></table></figure>
+
 <p>指针相减的结果为空间的大小，<code>p1-p</code>结果为五个char的大小，即五个字节，<code>q1-q</code> 结果为6，而 <code>4*6=24=十六进制q1-q的值</code>，故</p>
 <p>指针相减的结果为地址数相减后除以类型空间大小</p>
-<h3 id="p">*p++</h3>
-<p>作用：取出p所指的数据，并把p移到下一位置</p>
+<h3 id="p"><a href="#p" class="headerlink" title="*p++"></a>*p++</h3><p>作用：取出p所指的数据，并把p移到下一位置</p>
 <p>注：++优先级大于<code>*</code>；常用于数组类的连续空间操作；某些CPU上，*p++可直接被翻译成一条汇编指令。</p>
 <p>如例：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">(<span class="type">void</span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> ac[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">char</span> *p = &amp;ac[<span class="number">0</span>];</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="keyword">sizeof</span>(ac) / <span class="keyword">sizeof</span>(ac[<span class="number">0</span>]); i++) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, ac[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// for ( p=ac; *p!=-1 ; ) &#123;</span></span><br><span class="line">    <span class="keyword">while</span> (*p!= <span class="number">-1</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *p++);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="type">int</span> ai[] = &#123;<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>&#125;;</span><br><span class="line">    <span class="type">int</span> *q = ai;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p><em>++ 等类似操作计算更快</em></p>
-<h3 id="指针比较">指针比较</h3>
-<h3 id="0地址">0地址</h3>
-<p>注：任何一个进程都有一个虚拟的0地址</p>
+<h3 id="指针比较"><a href="#指针比较" class="headerlink" title="指针比较"></a>指针比较</h3><h3 id="0地址"><a href="#0地址" class="headerlink" title="0地址"></a>0地址</h3><p>注：任何一个进程都有一个虚拟的0地址</p>
 <p>内存中存在0地址，但0地址通常是不能随意访问的。</p>
 <p>指针不应该具有0值。</p>
 <p>0地址可以用来表示一些特殊情况，例如返回的指针无效、指针未被真正初始化（先初始化为0）。</p>
 <p>NULL是一个预定义符号，表示0地址。</p>
 <p>有些编译器不允许用0来表示0地址。</p>
-<h3 id="指针的类型">指针的类型</h3>
-<p>不同类型的指针一般不互相赋值，可能产生问题</p>
-<h3 id="指针的类型转换（新手不要轻易尝试）">指针的类型转换（新手不要轻易尝试）</h3>
-<p>void*表示不知道指向什么东西的指针，计算时与<code>char*</code>相同（但不相通）</p>
+<h3 id="指针的类型"><a href="#指针的类型" class="headerlink" title="指针的类型"></a>指针的类型</h3><p>不同类型的指针一般不互相赋值，可能产生问题</p>
+<h3 id="指针的类型转换（新手不要轻易尝试）"><a href="#指针的类型转换（新手不要轻易尝试）" class="headerlink" title="指针的类型转换（新手不要轻易尝试）"></a>指针的类型转换（新手不要轻易尝试）</h3><p>void*表示不知道指向什么东西的指针，计算时与<code>char*</code>相同（但不相通）</p>
 <p>指针也可以转换类型，如</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> *p = &amp;i;</span><br><span class="line"><span class="type">void</span>*q = (<span class="type">void</span>*)p;</span><br></pre></td></tr></table></figure>
+
 <p>这并没有改变p所指的变量的类型，而是让后人用不同的眼光通过p看它所指的变量</p>
-<h3 id="指针的用处">指针的用处</h3>
-<ul>
+<h3 id="指针的用处"><a href="#指针的用处" class="headerlink" title="指针的用处"></a>指针的用处</h3><ul>
 <li>需要传入较大的数据时用作参数</li>
 <li>传入数组后对数组做操作</li>
 <li>函数返回不止一个结果</li>
 <li>需要用函数来修改不止一个变量</li>
 <li>动态申请的内存…</li>
 </ul>
-<h2 id="9-2-2动态内存分配">9.2.2动态内存分配</h2>
-<blockquote>
+<h2 id="9-2-2动态内存分配"><a href="#9-2-2动态内存分配" class="headerlink" title="9.2.2动态内存分配"></a>9.2.2动态内存分配</h2><blockquote>
 <p>之后再说</p>
 </blockquote>
-<h2 id="10-1-1字符串">10.1.1字符串</h2>
-<h3 id="定义-2">定义</h3>
-<p>字符数组 != 字符串，如例:</p>
-<p>字符数组<code>a[3]=&#123;'a','b','c'&#125;</code></p>
-<p>字符串<code>a[3]=&#123;'a','b','\0'&#125;</code>|| a[3]={‘a’,‘b’,0}</p>
+<h2 id="10-1-1字符串"><a href="#10-1-1字符串" class="headerlink" title="10.1.1字符串"></a>10.1.1字符串</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><p>字符数组 !&#x3D; 字符串，如例:</p>
+<p>字符数组<code>a[3]=&#123;&#39;a&#39;,&#39;b&#39;,&#39;c&#39;&#125;</code></p>
+<p>字符串<code>a[3]=&#123;&#39;a&#39;,&#39;b&#39;,&#39;\0&#39;&#125;</code>|| a[3]&#x3D;{‘a’,’b’,0}</p>
 <p>以0（整数0）结尾的一串字符</p>
 <p>​	0或’\0’是一样的，但是和’0’不同</p>
 <p>​	<em>前两者是char类型，后者是ASCLL中的字符</em></p>
@@ -564,124 +478,345 @@
 <p>字符串以数组的形式存在，以数组或指针的形式访问</p>
 <p>​	更多的是以指针的形式</p>
 <p>string.h里有很多处理字符串的函数</p>
-<h3 id="字符串变量">字符串变量</h3>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> *str = <span class="string">&quot;Hello&quot;</span>;					<span class="comment">//定义了一个名为str的指针，指针指向字符串Hello，但存放地址一会说</span></span><br><span class="line"><span class="type">char</span> word[] = <span class="string">&quot;Hello&quot;</span>;					<span class="comment">//定义了一个字符数组word</span></span><br><span class="line"><span class="type">char</span> line[<span class="number">10</span>] = <span class="string">&quot;Hello&quot;</span>;				<span class="comment">//定义了一个大小为10个字节的字符数组line，向内保存了Hello这串字符，占据line中6个字节的位置（包含\0） </span></span><br></pre></td></tr></table></figure>
-<h3 id="字符串常量">字符串常量</h3>
-<p><code> &quot;Hello&quot;</code> 被称为字符串的字面量，或字符串的常量</p>
+<h3 id="字符串变量"><a href="#字符串变量" class="headerlink" title="字符串变量"></a>字符串变量</h3><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> *str = <span class="string">&quot;Hello&quot;</span>;					<span class="comment">//定义了一个名为str的指针，指针指向字符串Hello，但存放地址一会说</span></span><br><span class="line"><span class="type">char</span> word[] = <span class="string">&quot;Hello&quot;</span>;					<span class="comment">//定义了一个字符数组word</span></span><br><span class="line"><span class="type">char</span> line[<span class="number">10</span>] = <span class="string">&quot;Hello&quot;</span>;				<span class="comment">//定义了一个大小为10个字节的字符数组line，向内保存了Hello这串字符，占据line中6个字节的位置（包含\0） </span></span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串常量"><a href="#字符串常量" class="headerlink" title="字符串常量"></a>字符串常量</h3><p><code> &quot;Hello&quot;</code> 被称为字符串的字面量，或字符串的常量</p>
 <ul>
-<li>
-<p>&quot;Hello&quot;会被编译器变成一个字符数组放在某处，这个数组的长度是6，结尾还有表示结束的0</p>
+<li><p>“Hello”会被编译器变成一个字符数组放在某处，这个数组的长度是6，结尾还有表示结束的0</p>
 </li>
-<li>
-<p>两个相邻的字符串常量会被自动链接起来</p>
+<li><p>两个相邻的字符串常量会被自动链接起来</p>
 </li>
 </ul>
-<h3 id="总结">总结</h3>
-<p>C语言的字符串是以字符数组的形态存在的</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>C语言的字符串是以字符数组的形态存在的</p>
 <ul>
 <li>不能用运算符对字符串做运算</li>
 <li>通过数组的方式可以遍历字符串</li>
 </ul>
 <p>唯一特殊的地方是字符串字面量可以用来初始化字符数组</p>
 <p>标准库提供了一系列字符串函数</p>
-<h2 id="10-1-2-字符串变量">10.1.2 字符串变量</h2>
-<h3 id="字符串常量-2">字符串常量</h3>
-<p>字符串常量 <code>char* s = &quot;Hello, world!&quot;;</code></p>
+<h2 id="10-1-2-字符串变量"><a href="#10-1-2-字符串变量" class="headerlink" title="10.1.2 字符串变量"></a>10.1.2 字符串变量</h2><h3 id="字符串常量-1"><a href="#字符串常量-1" class="headerlink" title="字符串常量"></a>字符串常量</h3><p>字符串常量 <code>char* s = &quot;Hello, world!&quot;;</code></p>
 <ul>
-<li>
-<p>s是一个指针，初始化为指向一个字符串常量。</p>
+<li><p>s是一个指针，初始化为指向一个字符串常量。</p>
 <ul>
 <li>由于这个常量所在的地方，所以实际上s是<code>const char* s</code>，但是由于历史的原因，编译器接受不带<code>const</code>的写法。</li>
 <li>但是试图对s所指的字符串做写入会导致严重的后果。</li>
 </ul>
 <p>示例：</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">int</span> i=<span class="number">0</span>;</span><br><span class="line">    <span class="type">char</span> s[] = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">    <span class="type">char</span> *s1= <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line">    s[<span class="number">0</span>] = <span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">    <span class="type">char</span> *s2 = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;i=%p\n&quot;</span>,&amp;i);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;s1=%p\n&quot;</span>,s);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;s2=%p\n&quot;</span>,s2);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Here!s[0]=%c\n&quot;</span>,s[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Here!s[0]=%c\n&quot;</span>,s1[<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>结果：</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&amp;i=000000000061FE0C</span><br><span class="line">s1=000000000061FE06</span><br><span class="line">s2=0000000000404000</span><br><span class="line">Here!s[0]=B</span><br><span class="line">Here!s[0]=H</span><br></pre></td></tr></table></figure>
+
 <p>可见，指针s1和s2的地址相同，字符串被编译器存在一个地址中，且不可对地址中的内容做出改变，即只可读不可写的变量；而s数组可进行更改</p>
 </li>
-<li>
-<p>如果需要修改字符串，应该用数组： <code>char s[] = &quot;Hello, world!&quot;;</code></p>
+<li><p>如果需要修改字符串，应该用数组： <code>char s[] = &quot;Hello, world!&quot;;</code></p>
 </li>
 </ul>
-<h3 id="指针还是数组？">指针还是数组？</h3>
-<ul>
-<li>char *str = “Hello”;</li>
-<li>char word[] = “Hello”;
-<ul>
-<li>数组：这个字符串在这里
-<ul>
+<h3 id="指针还是数组？"><a href="#指针还是数组？" class="headerlink" title="指针还是数组？"></a>指针还是数组？</h3><ul>
+<li>char *str &#x3D; “Hello”;</li>
+<li>char word[] &#x3D; “Hello”;<ul>
+<li>数组：这个字符串在这里<ul>
 <li>作为本地变量空间自动被回收</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>指针：这个字符串不知道在哪里
-<ul>
+<li>指针：这个字符串不知道在哪里<ul>
 <li>处理参数</li>
 <li>动态分配空间</li>
 </ul>
 </li>
 </ul>
-<h2 id="10-1-3字符串输入输出">10.1.3字符串输入输出</h2>
-<h1>C语言库函数</h1>
-<h2 id="math-h函数库">math.h函数库</h2>
-<p><a href="https://www.runoob.com/cprogramming/c-standard-library-math-h.html">https://www.runoob.com/cprogramming/c-standard-library-math-h.html</a></p>
+<h2 id="10-1-3字符串输入输出"><a href="#10-1-3字符串输入输出" class="headerlink" title="10.1.3字符串输入输出"></a>10.1.3字符串输入输出</h2><h1 id="C语言库函数"><a href="#C语言库函数" class="headerlink" title="C语言库函数"></a>C语言库函数</h1><h2 id="math-h函数库"><a href="#math-h函数库" class="headerlink" title="math.h函数库"></a>math.h函数库</h2><p><a href="https://www.runoob.com/cprogramming/c-standard-library-math-h.html">https://www.runoob.com/cprogramming/c-standard-library-math-h.html</a></p>
 ]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/01/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>JupyterNotebooks笔记</title>
+    <url>/2025/01/15/JupyterNotebooks%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="Jupyter-Notebooks"><a href="#Jupyter-Notebooks" class="headerlink" title="Jupyter Notebooks"></a>Jupyter Notebooks</h2><blockquote>
+<p>安装<a href="https://blog.csdn.net/cainiao_python/article/details/125567913">https://blog.csdn.net/cainiao_python/article/details/125567913</a></p>
+<p>这篇好像是linux环境安装的，但是win环境应该也能看懂</p>
+<p>配置的话看这个吧，是win环境的，更明了</p>
+<p><a href="https://blog.csdn.net/weixin_43416960/article/details/137051658">https://blog.csdn.net/weixin_43416960/article/details/137051658</a></p>
+</blockquote>
+<h3 id="1-常用代码操作"><a href="#1-常用代码操作" class="headerlink" title="1.常用代码操作"></a>1.常用代码操作</h3><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-应用的介绍"><a href="#2-应用的介绍" class="headerlink" title="2. 应用的介绍"></a>2. 应用的介绍</h3><blockquote>
+<p>学习自<a href="https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a">https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a</a></p>
+</blockquote>
+<p>​	与其他python不同的是，jupyter notebooks基于代码区块，可运行多个单元格或一个单元格中的代码，这个性质决定了它是学习数据分析、机器学习和人工智能的最好的python编辑和运行的工具</p>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
+<li>易于学习</li>
+<li>以代码块和单元格的方式运行，可以在运行中查看它的中间变量，易于调试和找出bug</li>
+<li>支持markdown文本</li>
+<li>可以调用%开头的魔法函数？</li>
+<li>文件分享形式多样，可随时转化为HTML、md、pdf等文件格式</li>
+<li>可运行python、JavaScript、r语言、ruby等多种编程语言，是集编程和写作于一身的编辑工具，称之为文学编程</li>
+</ul>
+<h4 id="内核"><a href="#内核" class="headerlink" title="内核"></a>内核</h4><p>ipython，比python原生附带的编译器更强大的编译器，具有相当强大的代码自动补全命令技术的功能</p>
+<h4 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h4><blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/32320214">https://zhuanlan.zhihu.com/p/32320214</a></p>
+<p>这篇知乎对页面的各种选项讲解的挺清楚的</p>
+</blockquote>
 ]]></content>
+  </entry>
+  <entry>
+    <title>Java-Note</title>
+    <url>/2025/01/16/Java-Note/</url>
+    <content><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a>Java学习笔记</h1><blockquote>
+<p>学习自<a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=2&spm_id_from=333.788.player.switch">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=2&amp;spm_id_from=333.788.player.switch</a></p>
+</blockquote>
+<h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><h4 id="计算机简介"><a href="#计算机简介" class="headerlink" title="计算机简介"></a>计算机简介</h4><h5 id="计算机简介-1"><a href="#计算机简介-1" class="headerlink" title="计算机简介"></a>计算机简介</h5><h6 id="计算机发展史"><a href="#计算机发展史" class="headerlink" title="计算机发展史"></a>计算机发展史</h6><p>第一台通用计算机：ENIAC 用于美国国防部的弹道计算</p>
+<p>计算机的目的：对数据进行处理和运算</p>
+<h5 id="数据的存储和运算"><a href="#数据的存储和运算" class="headerlink" title="数据的存储和运算"></a>数据的存储和运算</h5><p>计算机中对于数据的存储和运算，都是通过二进制数据来完成</p>
+<h6 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h6><p>二进制：类比十进制的逢十进一，借一当十，二进制是逢二进一，借一当二</p>
+<p>二进制的出现原因：计算机底层都是硬件电路，可以通过不通电和通电。而二进制中只有两个数字0和1，可以分别用来表示不通电和通电两种状态。所以二进制可以更好的配合计算机硬件去工作。</p>
+<h6 id="补充知识：数据的存储单位"><a href="#补充知识：数据的存储单位" class="headerlink" title="补充知识：数据的存储单位"></a>补充知识：数据的存储单位</h6><p>字节（byte）：一个字节由八个二进制数字组成</p>
+<p>位（bit）：字节中每个二进制位的名称，也称为比特位</p>
+<h5 id="人机交互方式——常用DOS命令"><a href="#人机交互方式——常用DOS命令" class="headerlink" title="人机交互方式——常用DOS命令"></a>人机交互方式——常用DOS命令</h5><h6 id="人机交互方式"><a href="#人机交互方式" class="headerlink" title="人机交互方式"></a>人机交互方式</h6><ul>
+<li>图形化界面</li>
+<li>命令行</li>
+</ul>
+<p>图形化界面的弊端：消耗内存、运行速度慢</p>
+<h6 id="DOS命令行"><a href="#DOS命令行" class="headerlink" title="DOS命令行"></a>DOS命令行</h6><p><em>就是终端啦</em></p>
+<ul>
+<li><p>盘符切换</p>
+<p><code>E:</code>加回车表示切换到E盘</p>
+</li>
+<li><p>呈现当前路径下的内容</p>
+<p><code>dir</code></p>
+</li>
+<li><p>进入目录</p>
+<p><code>cd 文件夹路径</code></p>
+<p>注意：可以进入多级目录</p>
+</li>
+<li><p>回到上一级目录</p>
+<p>·cd..·</p>
+</li>
+<li><p>回退到盘符目录</p>
+<p><code>cd\</code></p>
+</li>
+<li><p>清屏</p>
+<p><code>cls</code></p>
+<p>注意：清屏无法回退</p>
+</li>
+<li><p>退出DOS命令行(命令提示符窗口、终端)</p>
+<p><code>exit</code></p>
+</li>
+</ul>
+<h5 id="Path环境变量"><a href="#Path环境变量" class="headerlink" title="Path环境变量"></a>Path环境变量</h5><h6 id="学习路径"><a href="#学习路径" class="headerlink" title="学习路径"></a>学习路径</h6><ol>
+<li>如何在命令行中启动软件</li>
+<li>配置Path环境变量</li>
+</ol>
+<h6 id="如何在命令行中启动软件"><a href="#如何在命令行中启动软件" class="headerlink" title="如何在命令行中启动软件"></a>如何在命令行中启动软件</h6><p>命令行中进入软件所在路径，直接输入<code>软件名称.exe</code>或者<code>软件名称</code>后回车，即可启动软件。</p>
+<p>可省略的原因：.exe文件输入可执行性文件，无需输入后缀即可启动。可在命令行中输入<code>set pathext</code>查看可执行性文件的后缀。</p>
+<p>细节：如果可执行文件的名称相同，且都用省略后缀的形式启动软件，会有优先循序。优先顺序为用<code>set pathext</code>查看的从左到右优先度递减的顺序。</p>
+<h6 id="配置Path环境变量"><a href="#配置Path环境变量" class="headerlink" title="配置Path环境变量"></a>配置Path环境变量</h6><p>可以解决的问题使用命令行启动软件过程太过繁琐的问题。</p>
+<ul>
+<li>path环境变量：可以理解为系统的管家，帮助用户记录了很多软件的完整路径</li>
+</ul>
+<p>当我们要运行一个程序，而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还会到Path中指定的路径去找</p>
+<p>即，通过path，就可以在任何位置启动我们常用的软件，简便打开开发软件的过程</p>
+<p>配置过程：</p>
+<ol>
+<li>此电脑右键点击属性</li>
+<li>页面中打开高级系统设置</li>
+<li>打开的系统属性页面的高级页面中点击环境变量</li>
+<li>在系统变量中找到Path，选中并编辑</li>
+<li>在编辑环境变量的界面即可管理Path中的应用</li>
+</ol>
+<p><em><strong>注意：不可以变更系统自带的Path路径！！！</strong></em></p>
+<h5 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h5><p>计算机语言：人与计算机沟通交流的表达方式</p>
+<h6 id="发展进程"><a href="#发展进程" class="headerlink" title="发展进程"></a>发展进程</h6><ul>
+<li><p>机器语言</p>
+<p>机器语言就是0&#x2F;1代码。计算机智能识别0和1.</p>
+<p>在计算机内部，无论什么数据，最终保存的都是0&#x2F;1代码。</p>
+</li>
+<li><p>汇编语言</p>
+<p>将一串机器语言转化为英文单词</p>
+</li>
+<li><p>高级语言</p>
+<p>使用普通英语进行编写代码，然后通过编译器翻译成类似于汇编语言的指令，之后再由计算机执行</p>
+</li>
+</ul>
+<h4 id="Java介绍与环境搭建"><a href="#Java介绍与环境搭建" class="headerlink" title="Java介绍与环境搭建"></a>Java介绍与环境搭建</h4><h5 id="Java背景介绍"><a href="#Java背景介绍" class="headerlink" title="Java背景介绍"></a>Java背景介绍</h5><h6 id="历史："><a href="#历史：" class="headerlink" title="历史："></a>历史：</h6><p>最初的名字：oak（橡树）</p>
+<p>现在的名字：JAVA（咖啡的盛产地）</p>
+<p>JAVA语言是每美国Sun公司在1995年推出的计算机语言，后被Oracle公司收购</p>
+<p>JAVA之父：詹姆斯高斯林</p>
+<h6 id="JAVA三大平台"><a href="#JAVA三大平台" class="headerlink" title="JAVA三大平台"></a>JAVA三大平台</h6><ul>
+<li><p>Java SE</p>
+<p>java语言的标准版，用于桌面应用的开发，是其他两个版本的基础</p>
+<p>桌面应用：用户只要打开程序，程序的界面会让用户在最短的时间内找到他们需要的功能，同时主动带领用户完成他们的工作并得到最好的体验</p>
+<p>学习的目的：为今后从事JAVA EE开发打基础</p>
+</li>
+<li><p>Java ME</p>
+<p>java语言的小型版，用于嵌入式消费类电子设备</p>
+<p><em>退出历史舞台</em></p>
+</li>
+<li><p>Java EE</p>
+<p>java语言的企业版，用于Web方向的网站开发</p>
+<p>网页：用于数据展示</p>
+<p>网站：网页+后台服务器</p>
+</li>
+</ul>
+<h5 id="Java跨平台工作原理"><a href="#Java跨平台工作原理" class="headerlink" title="Java跨平台工作原理"></a>Java跨平台工作原理</h5><h6 id="平台与跨平台"><a href="#平台与跨平台" class="headerlink" title="平台与跨平台"></a>平台与跨平台</h6><p>平台：操作系统发</p>
+<ul>
+<li>Windows</li>
+<li>MacOS</li>
+<li>Linux</li>
+</ul>
+<p>跨平台：Java程序可以在任意操作系统上运行</p>
+<h6 id="跨平台原理"><a href="#跨平台原理" class="headerlink" title="跨平台原理"></a>跨平台原理</h6><p>JAVA运行在JVM虚拟机上，只要在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（JVM Java Virtual Machine）即可</p>
+<h5 id="JDK下载和安装"><a href="#JDK下载和安装" class="headerlink" title="JDK下载和安装"></a>JDK下载和安装</h5><h6 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h6><p>三种长期支持版本（LTS，即long-term support）</p>
+<ul>
+<li><p>Java8.0</p>
+<p>企业普遍使用，兼容性好，普适性强</p>
+</li>
+<li><p>Java11.0</p>
+</li>
+<li><p>Java17.0</p>
+</li>
+<li><p>现在的是Java21.0</p>
+</li>
+</ul>
+<h5 id="HelloWorld程序"><a href="#HelloWorld程序" class="headerlink" title="HelloWorld程序"></a>HelloWorld程序</h5><h6 id="java开发的三个步骤"><a href="#java开发的三个步骤" class="headerlink" title="java开发的三个步骤"></a>java开发的三个步骤</h6><ol>
+<li><p>编写代码</p>
+<p>新建后缀为.java的文档，用记事本编写文档</p>
+</li>
+<li><p>编译代码</p>
+<p>JDK的几种工具在bin文件夹里</p>
+<ul>
+<li><p>javac.exe</p>
+<p>编译工具</p>
+</li>
+<li><p>java.exe</p>
+<p>运行工具</p>
+</li>
+</ul>
+<p>这两种工具都要在命令行中使用</p>
+<p>将编写的文档放在bin目录中，使用<code>javac 文档名.java</code>编译文件，生成.class文件</p>
+</li>
+<li><p>运行代码</p>
+<p>生成.class字节码文件后，输入<code>java 文件名</code>运行代码</p>
+<p>注意：不要带.class</p>
+</li>
+</ol>
+<h5 id="HelloWorld案例详解"><a href="#HelloWorld案例详解" class="headerlink" title="HelloWorld案例详解"></a>HelloWorld案例详解</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;			</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot; HelloWorld &quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/JavaNote/Day1/DAY1.1.png"></p>
+<p>类名称通常与文件名称相同</p>
+<h5 id="HelloWorld案例常见问题"><a href="#HelloWorld案例常见问题" class="headerlink" title="HelloWorld案例常见问题"></a>HelloWorld案例常见问题</h5><ol>
+<li>windows扩展名没有勾选</li>
+<li>没保存</li>
+<li>文件名与类名不一致</li>
+<li>大小写错误。单词拼写错误，存在中文符号</li>
+<li>括号不配对</li>
+<li>编译、执行使用不当</li>
+</ol>
+<h5 id="JDK的组成和配置JAVA-HOME"><a href="#JDK的组成和配置JAVA-HOME" class="headerlink" title="JDK的组成和配置JAVA_HOME"></a>JDK的组成和配置JAVA_HOME</h5><h6 id="JDK的组成"><a href="#JDK的组成" class="headerlink" title="JDK的组成"></a>JDK的组成</h6><p>JDK由JVM、核心类库、开发工具组成</p>
+<ul>
+<li>JVM（Java Virtual Machine）：JDK最核心的组成部分——JVM，它是Java虚拟机，真正运行Java程序的地方。</li>
+<li>核心类库：是Java本身写好的一些程序，给程序员调用的。 Java程序员并不是凭空开始写代码，是要基于核心类库提供的一些基础代码，进行编程。</li>
+<li>JRE（Java Runtime Enviroment）：意思是Java的运行环境；它是由JVM和核心类库组成的；如果你不是开发人员，只需要在电脑上安装JRE就可以运行Java程序。</li>
+<li>开发工具：Java程序员写好源代码之后，需要编译成字节码，这里会提供一个编译工具叫做javac.exe，编写好源代码之后，想要把class文件加载到内存中运行，这里需要用到运行工具java.exe。<br>除了编译工具和运行工具，还有一些其他的反编译工具、文档工具等等..</li>
+</ul>
+<h6 id="JAVA-HOME配置"><a href="#JAVA-HOME配置" class="headerlink" title="JAVA_HOME配置"></a>JAVA_HOME配置</h6><p>默认配置的工具不全</p>
+<blockquote>
+<p> 跟着视频配就好了，没啥记的必要</p>
+<p> <a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&spm_id_from=333.788.player.switch&p=13">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=13</a></p>
+<p> 9:40</p>
+</blockquote>
+<p>注意：win8后环境变量配置可能会在重启后失效，需要回到Path环境配置页面重新点一遍确认</p>
+<h4 id="IDEA开发工具"><a href="#IDEA开发工具" class="headerlink" title="IDEA开发工具"></a>IDEA开发工具</h4><h5 id="IDEA概述"><a href="#IDEA概述" class="headerlink" title="IDEA概述"></a>IDEA概述</h5><p>集成开发环境（Integrated Development Environment ，简称IDE），适用于Java语言开发的集成环境，是业界公认的目前用于Java程序开发最好的工具。</p>
+<p>集成环境：它能够将写代码、编译、运行等工具集成到一起。</p>
+<p>除此之外，IDEA还有代码提示、检查代码错误等功能，从而提高程序员的开发效率。</p>
+<p>IDE有很多种，常见的Eclipse、MyEclipse、Intellij IDEA、JBuilder、NetBeans等。但是这些IDE中目前比较火的是Intellij IDEA（以下简称IDEA），被众多Java程序员视为最好用的Java集成开发环境。</p>
+<h5 id="IDE下载和安装"><a href="#IDE下载和安装" class="headerlink" title="IDE下载和安装"></a>IDE下载和安装</h5><h5 id="IDEA中的第一个代码"><a href="#IDEA中的第一个代码" class="headerlink" title="IDEA中的第一个代码"></a>IDEA中的第一个代码</h5><h6 id="IDEA项目结构介绍"><a href="#IDEA项目结构介绍" class="headerlink" title="IDEA项目结构介绍"></a>IDEA项目结构介绍</h6><ul>
+<li>project（项目、工程）</li>
+<li>module（模块）</li>
+<li>package（包）</li>
+<li>class（类）</li>
+</ul>
+<p>前三个玩应本质都是文件夹，为了能更好管理类文件而设计</p>
+<p>类必须创建在src文件夹里！！！</p>
+<h5 id="IDEA运行细节和基本设置"><a href="#IDEA运行细节和基本设置" class="headerlink" title="IDEA运行细节和基本设置"></a>IDEA运行细节和基本设置</h5><h6 id="自动编译"><a href="#自动编译" class="headerlink" title="自动编译"></a>自动编译</h6><p>编译后产生的.class文件在项目文件夹中的out文件夹</p>
+<h5 id="IDEA中类、模块、项目相关操作"><a href="#IDEA中类、模块、项目相关操作" class="headerlink" title="IDEA中类、模块、项目相关操作"></a>IDEA中类、模块、项目相关操作</h5><h6 id="IDEA中的类操作"><a href="#IDEA中的类操作" class="headerlink" title="IDEA中的类操作"></a>IDEA中的类操作</h6><ul>
+<li><p>新建类文件</p>
+</li>
+<li><p>删除类文件</p>
+<p>这个删除是直接粉碎，莫得回收，不要删错了</p>
+</li>
+<li><p>修改类文件</p>
+</li>
+</ul>
+<h6 id="IDEA中的模块操作"><a href="#IDEA中的模块操作" class="headerlink" title="IDEA中的模块操作"></a>IDEA中的模块操作</h6><ul>
+<li><p>新建模块</p>
+<p>要在文件页面选择项目结构来创建</p>
+</li>
+<li><p>删除模块</p>
+<p>右键一个模块是没有删除选项的，选择移除（remove），再到模块所在文件夹删除模块</p>
+</li>
+<li><p>导入模块</p>
+<p>跟创建模块在一个地方</p>
+</li>
+<li><p>修改模块</p>
+<p>右键重构模块有重命名，并选择同时修改</p>
+</li>
+</ul>
+<h6 id="IDEA中的项目操作"><a href="#IDEA中的项目操作" class="headerlink" title="IDEA中的项目操作"></a>IDEA中的项目操作</h6><ul>
+<li><p>关闭项目</p>
+<p>文件中有关闭项目的选项</p>
+</li>
+<li><p>打开项目</p>
+<p>傻子都会了）</p>
+</li>
+<li><p>删除项目</p>
+<p>主页面列表中对项目进行remove</p>
+</li>
+<li><p>修改项目</p>
+<p>选择文件中的项目结构</p>
+<p>编译版本要和JDK版本保持一致</p>
+<p>注意：编译器输出目录不要更改</p>
+<p>修改项目名称的话不能在项目结构改完就不管了，以下是具体操作</p>
+<ol>
+<li>关闭项目</li>
+<li>移除项目</li>
+<li>在项目所在文件夹中更改项目文件夹的名字</li>
+<li>重新打开</li>
+</ol>
+</li>
+<li><p>新建项目</p>
+<p>在列表界面中重新新建项目</p>
+<p>注意：新建项目时的路径一定要把\改成一个\、</p>
+</li>
+</ul>
+<h4 id="JAVA基础语法"><a href="#JAVA基础语法" class="headerlink" title="JAVA基础语法"></a>JAVA基础语法</h4><h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><h5 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h5><h5 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h5><h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><h5 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h5><h5 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h5><h5 id="Scanner键盘录入"><a href="#Scanner键盘录入" class="headerlink" title="Scanner键盘录入"></a>Scanner键盘录入</h5>]]></content>
   </entry>
   <entry>
     <title>Machine Learning Note</title>
     <url>/2025/01/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1>Machine Learning</h1>
-<h2 id="了解什么是机器学习">了解什么是机器学习</h2>
-<blockquote>
+    <content><![CDATA[<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><h2 id="了解什么是机器学习"><a href="#了解什么是机器学习" class="headerlink" title="了解什么是机器学习"></a>了解什么是机器学习</h2><blockquote>
 <p>摘自<a href="https://blog.csdn.net/kenan6545456/article/details/139990438">https://blog.csdn.net/kenan6545456/article/details/139990438</a></p>
 </blockquote>
-<h3 id="一、到底什么是机器学习？">一、到底什么是机器学习？</h3>
-<h4 id="1-机器学习的根本原理是什么？">1.机器学习的根本原理是什么？</h4>
-<blockquote>
-<p>​	机器学习的根本原理就是是通过让机器自动从庞大的数据中学习和寻找规律的一种过程或者是模式，进而做出预测或者做出决策。这可以通过构建和训练<a href="https://so.csdn.net/so/search?q=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B&amp;spm=1001.2101.3001.7020">机器学习模型</a>来实现，模型会自动学习从输入到输出之间的映射关系。</p>
+<h3 id="一、到底什么是机器学习？"><a href="#一、到底什么是机器学习？" class="headerlink" title="一、到底什么是机器学习？"></a>一、到底什么是机器学习？</h3><h4 id="1-机器学习的根本原理是什么？"><a href="#1-机器学习的根本原理是什么？" class="headerlink" title="1.机器学习的根本原理是什么？"></a>1.机器学习的根本原理是什么？</h4><blockquote>
+<p>​	机器学习的根本原理就是是通过让机器自动从庞大的数据中学习和寻找规律的一种过程或者是模式，进而做出预测或者做出决策。这可以通过构建和训练<a href="https://so.csdn.net/so/search?q=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A8%A1%E5%9E%8B&spm=1001.2101.3001.7020">机器学习模型</a>来实现，模型会自动学习从输入到输出之间的映射关系。</p>
 </blockquote>
 <p>​	可以简单理解为人从一出生就是一张白纸，这张白纸上可能写上任何东西，怎么写，怎么用，怎么判断是非对错，都是在学习中产生的，机器学习算法就像是一个婴儿，它并不了解任何事情，需要从头开始学习。就像婴儿通过观察和经验逐渐学会认识和理解世界一样，机器学习算法的根本原理就是通过对数据的观察和分析来学习和理解不同的模式和规律。</p>
-<h4 id="2-机器学习是什么？">2.机器学习是什么？</h4>
-<blockquote>
+<h4 id="2-机器学习是什么？"><a href="#2-机器学习是什么？" class="headerlink" title="2.机器学习是什么？"></a>2.机器学习是什么？</h4><blockquote>
 <p>​	机器学习是一种人工智能 (AI)领域的技术和方法，旨在使计算机能够从数据中学习和改进性能，而无需显式地进行编程。机器学习算法通过对大量数据的分析和模式识别，自动发现数据中的规律和趋势，并利用这些规律和趋势来进行预测、分类、聚类等任务。</p>
 </blockquote>
 <p>举个例子：</p>
 <ol>
-<li>
-<p>假设你想训练一个机器学习模型来自动识别猫和狗的图片。你可以收集大量的带有标签（指明是猫还是狗）的图片作为训练数据。然后，你可以使用机器学习算法，例如卷积神经网络（Convolutional Neural Network，CNN）</p>
-<p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/what/what1.jpg" alt="" title="what 1"></p>
+<li><p>假设你想训练一个机器学习模型来自动识别猫和狗的图片。你可以收集大量的带有标签（指明是猫还是狗）的图片作为训练数据。然后，你可以使用机器学习算法，例如卷积神经网络（Convolutional Neural Network，CNN）</p>
+<p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/what/what1.jpg" title="what 1"></p>
 </li>
-<li>
-<p>让模型通过观察这些图片的特征来学习如何区分猫和狗。在训练过程中，模型会自动学习到猫和狗的特征，例如耳朵的形状、眼睛的位置、颜色等。它会通过分析这些特征与标签之间的关系，逐渐提高自己的准确性。</p>
+<li><p>让模型通过观察这些图片的特征来学习如何区分猫和狗。在训练过程中，模型会自动学习到猫和狗的特征，例如耳朵的形状、眼睛的位置、颜色等。它会通过分析这些特征与标签之间的关系，逐渐提高自己的准确性。</p>
 <p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/what/what2.jpg" alt="machine learning" title="what 2"></p>
 </li>
-<li>
-<p>一旦模型训练完毕，你就可以用它来预测新的图片是猫还是狗。当你输入一张新的图片时，模型会自动提取图片的特征，并与之前学到的模式进行对比。然后，它会给出一个预测结果，告诉你这张图片是猫还是狗。</p>
+<li><p>一旦模型训练完毕，你就可以用它来预测新的图片是猫还是狗。当你输入一张新的图片时，模型会自动提取图片的特征，并与之前学到的模式进行对比。然后，它会给出一个预测结果，告诉你这张图片是猫还是狗。</p>
 </li>
 </ol>
-<h3 id="二、机器学习可以分为哪几个阶段？">二、机器学习可以分为哪几个阶段？</h3>
-<blockquote>
+<h3 id="二、机器学习可以分为哪几个阶段？"><a href="#二、机器学习可以分为哪几个阶段？" class="headerlink" title="二、机器学习可以分为哪几个阶段？"></a>二、机器学习可以分为哪几个阶段？</h3><blockquote>
 <p>这部分涉及了很多专业技术名词，搞不懂也暂时用不上，就不放了</p>
 </blockquote>
 <ol>
@@ -691,169 +826,127 @@
 <li>模型评估和调优</li>
 <li>部署和应用</li>
 </ol>
-<h3 id="三、机器学习有什么用">三、机器学习有什么用</h3>
-<blockquote>
+<h3 id="三、机器学习有什么用"><a href="#三、机器学习有什么用" class="headerlink" title="三、机器学习有什么用"></a>三、机器学习有什么用</h3><blockquote>
 <p>机器学习在很多领域都有广泛应用，将是未来发展的方向，大势所趋</p>
 </blockquote>
 <p>比如：自动驾驶、推荐系统、金融领域、医疗保健、自然语言处理等各行各业都能够用得到，这就是财富密码！</p>
-<p>​	就连成立于1993年的英伟达，最初以制造处理图形的计算机芯片而闻名，特别是用于电脑游戏。早在AI革命之前，该公司就开始在其芯片中添加有助于机器学习的功能，这帮助它增加了市场份额。现在，它被视为观察AI技术在商业世界中传播速度的重要公司。其CEO黄仁勋也将这一转变称为“下一个工业革命”的曙光。人工智能热潮推动英伟达（Nvidia）市值攀升，已经使其成为全球第一大市值公司！<br>
-​	二十年互联网革命里程碑经历了包括万维网诞生、互联网浏览器普及、谷歌成立、社交媒体兴起、智能手机普及、移动应用繁荣、云计算兴起、共享经济兴起、区块链技术兴起、机器学习、人工智能AI突破。千万别再说三十年河东三十年河西了，互联网高速发展的这二十年，已经改变得太多太多了，技术变革，日新月异！</p>
+<p>​	就连成立于1993年的英伟达，最初以制造处理图形的计算机芯片而闻名，特别是用于电脑游戏。早在AI革命之前，该公司就开始在其芯片中添加有助于机器学习的功能，这帮助它增加了市场份额。现在，它被视为观察AI技术在商业世界中传播速度的重要公司。其CEO黄仁勋也将这一转变称为“下一个工业革命”的曙光。人工智能热潮推动英伟达（Nvidia）市值攀升，已经使其成为全球第一大市值公司！<br>​	二十年互联网革命里程碑经历了包括万维网诞生、互联网浏览器普及、谷歌成立、社交媒体兴起、智能手机普及、移动应用繁荣、云计算兴起、共享经济兴起、区块链技术兴起、机器学习、人工智能AI突破。千万别再说三十年河东三十年河西了，互联网高速发展的这二十年，已经改变得太多太多了，技术变革，日新月异！</p>
 <p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/what/what3.jpg" alt="machine learning" title="what 3"></p>
-<h2 id="Machine-Learning-Specialization——吴恩达机器学习">Machine Learning Specialization——吴恩达机器学习</h2>
-<blockquote>
-<p><a href="https://www.bilibili.com/video/BV1Bq421A74G/?vd_source=9e80a59d3e1a5501280715e3eb40d909&amp;share_source=weixin">https://www.bilibili.com/video/BV1Bq421A74G/?vd_source=9e80a59d3e1a5501280715e3eb40d909&amp;share_source=weixin</a></p>
+<h2 id="Machine-Learning-Specialization——吴恩达机器学习"><a href="#Machine-Learning-Specialization——吴恩达机器学习" class="headerlink" title="Machine Learning Specialization——吴恩达机器学习"></a>Machine Learning Specialization——吴恩达机器学习</h2><blockquote>
+<p><a href="https://www.bilibili.com/video/BV1Bq421A74G/?vd_source=9e80a59d3e1a5501280715e3eb40d909&share_source=weixin">https://www.bilibili.com/video/BV1Bq421A74G/?vd_source=9e80a59d3e1a5501280715e3eb40d909&amp;share_source=weixin</a></p>
 </blockquote>
-<h3 id="第一章">第一章</h3>
-<h4 id="1-1欢迎来到机器学习">1.1欢迎来到机器学习!</h4>
-<p>​	举了一些机器学习在生活中的例子</p>
-<h4 id="1-2机器学习的应用">1.2机器学习的应用</h4>
-<ul>
+<h3 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h3><h4 id="1-1欢迎来到机器学习"><a href="#1-1欢迎来到机器学习" class="headerlink" title="1.1欢迎来到机器学习!"></a>1.1欢迎来到机器学习!</h4><p>​	举了一些机器学习在生活中的例子</p>
+<h4 id="1-2机器学习的应用"><a href="#1-2机器学习的应用" class="headerlink" title="1.2机器学习的应用"></a>1.2机器学习的应用</h4><ul>
 <li>机器学习是人工智能的一个子领域</li>
 <li>人工通用智能(Artificial General Intelligence,or AGI)与人一样聪明的机器</li>
 </ul>
-<h3 id="第二章">第二章</h3>
-<h4 id="2-1什么是机器学习？">2.1什么是机器学习？</h4>
-<p>阿瑟塞缪尔定义：最早的机器学习定义，但非正式</p>
-<h5 id="机器学习算法（Machine-learning-algorithms）">机器学习算法（Machine learning algorithms）</h5>
-<ul>
-<li>
-<p>监督学习（最多使用）（Superbised learning）</p>
+<h3 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h3><h4 id="2-1什么是机器学习？"><a href="#2-1什么是机器学习？" class="headerlink" title="2.1什么是机器学习？"></a>2.1什么是机器学习？</h4><p>阿瑟塞缪尔定义：最早的机器学习定义，但非正式</p>
+<h5 id="机器学习算法（Machine-learning-algorithms）"><a href="#机器学习算法（Machine-learning-algorithms）" class="headerlink" title="机器学习算法（Machine learning algorithms）"></a>机器学习算法（Machine learning algorithms）</h5><ul>
+<li><p>监督学习（最多使用）（Superbised learning）</p>
 </li>
-<li>
-<p>无监督学习（Unsupervised learning）</p>
+<li><p>无监督学习（Unsupervised learning）</p>
 </li>
-<li>
-<p>强化学习（用的不多）（Reinforcement learning）</p>
+<li><p>强化学习（用的不多）（Reinforcement learning）</p>
 </li>
 </ul>
 <blockquote>
 <p>课程好像不会详细介绍强化学习，先贴个链接</p>
 <p><a href="https://blog.csdn.net/weixin_45560318/article/details/112981006">https://blog.csdn.net/weixin_45560318/article/details/112981006</a></p>
 </blockquote>
-<h5 id="应用学习算法的使用建议">应用学习算法的使用建议</h5>
-<p>学习工具及怎样有效使用</p>
-<h4 id="2-2监督学习Part-1">2.2监督学习Part 1</h4>
-<h5 id="定义">定义</h5>
-<p>监督学习是指从输入x到输出y中映射的算法，关键是训练者给机器提供的输入样本</p>
+<h5 id="应用学习算法的使用建议"><a href="#应用学习算法的使用建议" class="headerlink" title="应用学习算法的使用建议"></a>应用学习算法的使用建议</h5><p>学习工具及怎样有效使用</p>
+<h4 id="2-2监督学习Part-1"><a href="#2-2监督学习Part-1" class="headerlink" title="2.2监督学习Part 1"></a>2.2监督学习Part 1</h4><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>监督学习是指从输入x到输出y中映射的算法，关键是训练者给机器提供的输入样本</p>
 <p>示例:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">输入（x）</th>
-<th style="text-align:center">输出（y）</th>
-<th style="text-align:center">应用</th>
+<th align="center">输入（x）</th>
+<th align="center">输出（y）</th>
+<th align="center">应用</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:center">各种邮件</td>
-<td style="text-align:center">是否为垃圾邮件</td>
-<td style="text-align:center">垃圾邮件分类器</td>
+<tbody><tr>
+<td align="center">各种邮件</td>
+<td align="center">是否为垃圾邮件</td>
+<td align="center">垃圾邮件分类器</td>
 </tr>
 <tr>
-<td style="text-align:center">音频</td>
-<td style="text-align:center">音频的文本内容</td>
-<td style="text-align:center">语音识别</td>
+<td align="center">音频</td>
+<td align="center">音频的文本内容</td>
+<td align="center">语音识别</td>
 </tr>
 <tr>
-<td style="text-align:center">英文</td>
-<td style="text-align:center">其他语言</td>
-<td style="text-align:center">翻译器</td>
+<td align="center">英文</td>
+<td align="center">其他语言</td>
+<td align="center">翻译器</td>
 </tr>
 <tr>
-<td style="text-align:center">广告、用户信息</td>
-<td style="text-align:center">用户是否点击了广告</td>
-<td style="text-align:center">在线广告</td>
+<td align="center">广告、用户信息</td>
+<td align="center">用户是否点击了广告</td>
+<td align="center">在线广告</td>
 </tr>
 <tr>
-<td style="text-align:center">图像、雷达…</td>
-<td style="text-align:center">道路信息</td>
-<td style="text-align:center">自动驾驶</td>
+<td align="center">图像、雷达……</td>
+<td align="center">道路信息</td>
+<td align="center">自动驾驶</td>
 </tr>
 <tr>
-<td style="text-align:center">工业产品的图像</td>
-<td style="text-align:center">产品的损坏程度</td>
-<td style="text-align:center">目视检查</td>
+<td align="center">工业产品的图像</td>
+<td align="center">产品的损坏程度</td>
+<td align="center">目视检查</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <p>经过训练后，机器可以对全新的输入x输出适当的对应输出y</p>
-<h5 id="回归（Regression）">回归（Regression）</h5>
-<p>​	回归是监督学习算法的其中一个类型，它可以根据输入的数字，按照一定目的，从无数多种数字中选出适当的数字输出。</p>
+<h5 id="回归（Regression）"><a href="#回归（Regression）" class="headerlink" title="回归（Regression）"></a>回归（Regression）</h5><p>​	回归是监督学习算法的其中一个类型，它可以根据输入的数字，按照一定目的，从无数多种数字中选出适当的数字输出。</p>
 <p>​	回归类型有很多种算法，如拟合直线、拟合曲线等，合适的算法会给出更合适的输出</p>
-<h4 id="2-3监督学习Part2">2.3监督学习Part2</h4>
-<h5 id="分类（Classification）">分类（Classification）</h5>
-<p>​	分类是监督学习算法的另一个类型，可以根据输入的数据，按照设计目的，输出输入数据所属的类别</p>
+<h4 id="2-3监督学习Part2"><a href="#2-3监督学习Part2" class="headerlink" title="2.3监督学习Part2"></a>2.3监督学习Part2</h4><h5 id="分类（Classification）"><a href="#分类（Classification）" class="headerlink" title="分类（Classification）"></a>分类（Classification）</h5><p>​	分类是监督学习算法的另一个类型，可以根据输入的数据，按照设计目的，输出输入数据所属的类别</p>
 <p>​	示例：肿瘤严重程度的判断</p>
 <p>​	训练者可以根据提供肿瘤的大小，作为一个判断标准，判断肿瘤属于良性还是恶性</p>
 <p>​	当然，输入数据可以输入多种，如在判断肿瘤严重程度中年龄也是一个重要的判断标准，输入数据越多，机器分类的精度越高</p>
 <p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/machine%20learning/machine%20learning2.3.1.jpg" alt="machine learning" title="machine learning  2.3 1"></p>
 <p>​	同样的，也可以划分不仅两种输出类别</p>
-<h4 id="2-4无监督学习Part1">2.4无监督学习Part1</h4>
-<p>​	无监督学习与监督学习都有着各自的功能，并不会因为&quot;无&quot;而比监督算法低级</p>
+<h4 id="2-4无监督学习Part1"><a href="#2-4无监督学习Part1" class="headerlink" title="2.4无监督学习Part1"></a>2.4无监督学习Part1</h4><p>​	无监督学习与监督学习都有着各自的功能，并不会因为”无”而比监督算法低级</p>
 <p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/machine%20learning/machine%20learning2.4.1.jpg" alt="machine learning" title="machine learning 2.4 1"></p>
-<h5 id="定义-2">定义</h5>
-<p>​	“无监督”指的是训练者不希望机器根据输入的数据和目的，给出任何适当的输出，而是发现输入数据中可能存在什么模式或结构</p>
-<h5 id="聚类算法（Clustering-Algorithm）">聚类算法（Clustering Algorithm）</h5>
-<p>​	聚类算法是无监督学习中的一种算法，它能够将数据集（输入的数据）中未标记的数据放入不同的集群中</p>
+<h5 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h5><p>​	“无监督”指的是训练者不希望机器根据输入的数据和目的，给出任何适当的输出，而是发现输入数据中可能存在什么模式或结构</p>
+<h5 id="聚类算法（Clustering-Algorithm）"><a href="#聚类算法（Clustering-Algorithm）" class="headerlink" title="聚类算法（Clustering Algorithm）"></a>聚类算法（Clustering Algorithm）</h5><p>​	聚类算法是无监督学习中的一种算法，它能够将数据集（输入的数据）中未标记的数据放入不同的集群中</p>
 <p>​	示例：Google news</p>
 <p>​	Google news会每天查看互联网上数十万篇新闻文章，并将相关故事组合在一起</p>
 <p><img src="/img/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/machine%20learning/machine%20learning2.4.2.jpg" alt="machine learning" title="machine learning 2.4 2"></p>
 <p>​	Google news中的聚类算法从当天互联网上的数十万篇新闻文章中，找到提到相似词的文章并将它们分组到集群中，并自行计算出哪些词按时某些文章属于同一组，而这个过程是完全没有训练者介入的，因此其被称为无监督学习</p>
 <blockquote>
 <p>视频中还有两个便于理解的例子，这里不多赘述，给你链接和时间</p>
-<p><a href="https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=6">https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=6</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&spm_id_from=333.788.player.switch&p=6">https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=6</a></p>
 <p>4:25</p>
 </blockquote>
-<h4 id="2-5无监督学习Part2">2.5无监督学习Part2</h4>
-<h5 id="无监督学习的分类">无监督学习的分类</h5>
-<ul>
-<li>
-<p>聚类算法（Clustering）</p>
+<h4 id="2-5无监督学习Part2"><a href="#2-5无监督学习Part2" class="headerlink" title="2.5无监督学习Part2"></a>2.5无监督学习Part2</h4><h5 id="无监督学习的分类"><a href="#无监督学习的分类" class="headerlink" title="无监督学习的分类"></a>无监督学习的分类</h5><ul>
+<li><p>聚类算法（Clustering）</p>
 <p>上文所述</p>
 </li>
-<li>
-<p>异常检测算法（Anomaly detection）</p>
+<li><p>异常检测算法（Anomaly detection）</p>
 <p>用于检测异常事件，用于金融系统中的欺诈检测</p>
 </li>
-<li>
-<p>降维算法（Dimensionality reduction）</p>
+<li><p>降维算法（Dimensionality reduction）</p>
 <p>将一个大数据集压缩为一个小得多的数据集，同时丢失尽可能少的信息</p>
 </li>
 </ul>
-<h4 id="2-6Jupyter-Notebooks">2.6Jupyter Notebooks</h4>
-<p>可以用shift+enter运行Jupyter Notebooks中的代码</p>
-<h3 id="第三章">第三章</h3>
-<h4 id="3-1线性回归模型-linear-regression-Part1">3.1线性回归模型(linear regression)Part1</h4>
-<h5 id="术语">术语</h5>
-<p>训练集：用于训练模型的数据</p>
-<p>输入（input）：写作&quot;x&quot;，也称输入变量（input variable）、特征或输入特征（feature）</p>
-<p>输出（output）：写作&quot;y&quot;，也称输出变量（output variable）、目标变量（target variable）</p>
-<p>训练样本总数（number of training examples）：写作&quot;m&quot;</p>
+<h4 id="2-6Jupyter-Notebooks"><a href="#2-6Jupyter-Notebooks" class="headerlink" title="2.6Jupyter Notebooks"></a>2.6Jupyter Notebooks</h4><p>可以用shift+enter运行Jupyter Notebooks中的代码</p>
+<h3 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h3><h4 id="3-1线性回归模型-linear-regression-Part1"><a href="#3-1线性回归模型-linear-regression-Part1" class="headerlink" title="3.1线性回归模型(linear regression)Part1"></a>3.1线性回归模型(linear regression)Part1</h4><h5 id="术语"><a href="#术语" class="headerlink" title="术语"></a>术语</h5><p>训练集：用于训练模型的数据</p>
+<p>输入（input）：写作”x”，也称输入变量（input variable）、特征或输入特征（feature）</p>
+<p>输出（output）：写作”y”，也称输出变量（output variable）、目标变量（target variable）</p>
+<p>训练样本总数（number of training examples）：写作”m”</p>
 <p>单个训练示例（single training example）：写作（x,y）</p>
 <p>第i个训练示例（i^th^training example）：写作（x^(i)^,y^(i)^）</p>
-<h4 id="3-2线性回归模型Part2">3.2线性回归模型Part2</h4>
-<h5 id="监督学习的工作过程">监督学习的工作过程</h5>
-<ol>
-<li>
-<p>准备带有输入特征和目标变量的训练集</p>
+<h4 id="3-2线性回归模型Part2"><a href="#3-2线性回归模型Part2" class="headerlink" title="3.2线性回归模型Part2"></a>3.2线性回归模型Part2</h4><h5 id="监督学习的工作过程"><a href="#监督学习的工作过程" class="headerlink" title="监督学习的工作过程"></a>监督学习的工作过程</h5><ol>
+<li><p>准备带有输入特征和目标变量的训练集</p>
 </li>
-<li>
-<p>输入到监督学习算法中</p>
+<li><p>输入到监督学习算法中</p>
 </li>
-<li>
-<p>产生带有函数的模型</p>
+<li><p>产生带有函数的模型</p>
 <p>函数（function）：写作f，可以根据输入特征进行估计和预测</p>
 <p>y-hat：是y（目标变量）的估计和预测（estimated y），由函数输出</p>
 </li>
 </ol>
-<h5 id="线性回归函数的表示">线性回归函数的表示</h5>
-<p><code>f~w,b~=wx+b</code>或者<code>f(x)</code></p>
+<h5 id="线性回归函数的表示"><a href="#线性回归函数的表示" class="headerlink" title="线性回归函数的表示"></a>线性回归函数的表示</h5><p><code>f~w,b~=wx+b</code>或者<code>f(x)</code></p>
 <p>可被称为具有单一变量的线性回归（Linear regression with one variable），或单变量线性回归（Univariate linear regression）</p>
-<h4 id="3-3代价函数">3.3代价函数</h4>
-<h4 id="3-4代价函数的直观理解">3.4代价函数的直观理解</h4>
-<h4 id="3-5可视化代价函数">3.5可视化代价函数</h4>
-<h4 id="3-6可视化的例子">3.6可视化的例子</h4>
-]]></content>
+<h4 id="3-3代价函数"><a href="#3-3代价函数" class="headerlink" title="3.3代价函数"></a>3.3代价函数</h4><h4 id="3-4代价函数的直观理解"><a href="#3-4代价函数的直观理解" class="headerlink" title="3.4代价函数的直观理解"></a>3.4代价函数的直观理解</h4><h4 id="3-5可视化代价函数"><a href="#3-5可视化代价函数" class="headerlink" title="3.5可视化代价函数"></a>3.5可视化代价函数</h4><h4 id="3-6可视化的例子"><a href="#3-6可视化的例子" class="headerlink" title="3.6可视化的例子"></a>3.6可视化的例子</h4>]]></content>
   </entry>
 </search>
