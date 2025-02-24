@@ -1,520 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Java-Note</title>
-    <url>/2025/01/16/Java-Note/</url>
-    <content><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a>Java学习笔记</h1><blockquote>
-<p>学习自<a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=2&spm_id_from=333.788.player.switch">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=2&amp;spm_id_from=333.788.player.switch</a></p>
-</blockquote>
-<h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><h4 id="计算机简介"><a href="#计算机简介" class="headerlink" title="计算机简介"></a>计算机简介</h4><h5 id="计算机简介-1"><a href="#计算机简介-1" class="headerlink" title="计算机简介"></a>计算机简介</h5><h6 id="计算机发展史"><a href="#计算机发展史" class="headerlink" title="计算机发展史"></a>计算机发展史</h6><p>第一台通用计算机：ENIAC 用于美国国防部的弹道计算</p>
-<p>计算机的目的：对数据进行处理和运算</p>
-<h5 id="数据的存储和运算"><a href="#数据的存储和运算" class="headerlink" title="数据的存储和运算"></a>数据的存储和运算</h5><p>计算机中对于数据的存储和运算，都是通过二进制数据来完成</p>
-<h6 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h6><p>二进制：类比十进制的逢十进一，借一当十，二进制是逢二进一，借一当二</p>
-<p>二进制的出现原因：计算机底层都是硬件电路，可以通过不通电和通电。而二进制中只有两个数字0和1，可以分别用来表示不通电和通电两种状态。所以二进制可以更好的配合计算机硬件去工作。</p>
-<h6 id="补充知识：数据的存储单位"><a href="#补充知识：数据的存储单位" class="headerlink" title="补充知识：数据的存储单位"></a>补充知识：数据的存储单位</h6><p>字节（byte）：一个字节由八个二进制数字组成</p>
-<p>位（bit）：字节中每个二进制位的名称，也称为比特位</p>
-<h5 id="人机交互方式——常用DOS命令"><a href="#人机交互方式——常用DOS命令" class="headerlink" title="人机交互方式——常用DOS命令"></a>人机交互方式——常用DOS命令</h5><h6 id="人机交互方式"><a href="#人机交互方式" class="headerlink" title="人机交互方式"></a>人机交互方式</h6><ul>
-<li>图形化界面</li>
-<li>命令行</li>
-</ul>
-<p>图形化界面的弊端：消耗内存、运行速度慢</p>
-<h6 id="DOS命令行"><a href="#DOS命令行" class="headerlink" title="DOS命令行"></a>DOS命令行</h6><p><em>就是终端啦</em></p>
-<ul>
-<li><p>盘符切换</p>
-<p><code>E:</code>加回车表示切换到E盘</p>
-</li>
-<li><p>呈现当前路径下的内容</p>
-<p><code>dir</code></p>
-</li>
-<li><p>进入目录</p>
-<p><code>cd 文件夹路径</code></p>
-<p>注意：可以进入多级目录</p>
-</li>
-<li><p>回到上一级目录</p>
-<p>·cd..·</p>
-</li>
-<li><p>回退到盘符目录</p>
-<p><code>cd\</code></p>
-</li>
-<li><p>清屏</p>
-<p><code>cls</code></p>
-<p>注意：清屏无法回退</p>
-</li>
-<li><p>退出DOS命令行(命令提示符窗口、终端)</p>
-<p><code>exit</code></p>
-</li>
-</ul>
-<h5 id="Path环境变量"><a href="#Path环境变量" class="headerlink" title="Path环境变量"></a>Path环境变量</h5><h6 id="学习路径"><a href="#学习路径" class="headerlink" title="学习路径"></a>学习路径</h6><ol>
-<li>如何在命令行中启动软件</li>
-<li>配置Path环境变量</li>
-</ol>
-<h6 id="如何在命令行中启动软件"><a href="#如何在命令行中启动软件" class="headerlink" title="如何在命令行中启动软件"></a>如何在命令行中启动软件</h6><p>命令行中进入软件所在路径，直接输入<code>软件名称.exe</code>或者<code>软件名称</code>后回车，即可启动软件。</p>
-<p>可省略的原因：.exe文件输入可执行性文件，无需输入后缀即可启动。可在命令行中输入<code>set pathext</code>查看可执行性文件的后缀。</p>
-<p>细节：如果可执行文件的名称相同，且都用省略后缀的形式启动软件，会有优先循序。优先顺序为用<code>set pathext</code>查看的从左到右优先度递减的顺序。</p>
-<h6 id="配置Path环境变量"><a href="#配置Path环境变量" class="headerlink" title="配置Path环境变量"></a>配置Path环境变量</h6><p>可以解决的问题使用命令行启动软件过程太过繁琐的问题。</p>
-<ul>
-<li>path环境变量：可以理解为系统的管家，帮助用户记录了很多软件的完整路径</li>
-</ul>
-<p>当我们要运行一个程序，而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还会到Path中指定的路径去找</p>
-<p>即，通过path，就可以在任何位置启动我们常用的软件，简便打开开发软件的过程</p>
-<p>配置过程：</p>
-<ol>
-<li>此电脑右键点击属性</li>
-<li>页面中打开高级系统设置</li>
-<li>打开的系统属性页面的高级页面中点击环境变量</li>
-<li>在系统变量中找到Path，选中并编辑</li>
-<li>在编辑环境变量的界面即可管理Path中的应用</li>
-</ol>
-<p><em><strong>注意：不可以变更系统自带的Path路径！！！</strong></em></p>
-<h5 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h5><p>计算机语言：人与计算机沟通交流的表达方式</p>
-<h6 id="发展进程"><a href="#发展进程" class="headerlink" title="发展进程"></a>发展进程</h6><ul>
-<li><p>机器语言</p>
-<p>机器语言就是0&#x2F;1代码。计算机智能识别0和1.</p>
-<p>在计算机内部，无论什么数据，最终保存的都是0&#x2F;1代码。</p>
-</li>
-<li><p>汇编语言</p>
-<p>将一串机器语言转化为英文单词</p>
-</li>
-<li><p>高级语言</p>
-<p>使用普通英语进行编写代码，然后通过编译器翻译成类似于汇编语言的指令，之后再由计算机执行</p>
-</li>
-</ul>
-<h4 id="Java介绍与环境搭建"><a href="#Java介绍与环境搭建" class="headerlink" title="Java介绍与环境搭建"></a>Java介绍与环境搭建</h4><h5 id="Java背景介绍"><a href="#Java背景介绍" class="headerlink" title="Java背景介绍"></a>Java背景介绍</h5><h6 id="历史："><a href="#历史：" class="headerlink" title="历史："></a>历史：</h6><p>最初的名字：oak（橡树）</p>
-<p>现在的名字：JAVA（咖啡的盛产地）</p>
-<p>JAVA语言是每美国Sun公司在1995年推出的计算机语言，后被Oracle公司收购</p>
-<p>JAVA之父：詹姆斯高斯林</p>
-<h6 id="JAVA三大平台"><a href="#JAVA三大平台" class="headerlink" title="JAVA三大平台"></a>JAVA三大平台</h6><ul>
-<li><p>Java SE</p>
-<p>java语言的标准版，用于桌面应用的开发，是其他两个版本的基础</p>
-<p>桌面应用：用户只要打开程序，程序的界面会让用户在最短的时间内找到他们需要的功能，同时主动带领用户完成他们的工作并得到最好的体验</p>
-<p>学习的目的：为今后从事JAVA EE开发打基础</p>
-</li>
-<li><p>Java ME</p>
-<p>java语言的小型版，用于嵌入式消费类电子设备</p>
-<p><em>退出历史舞台</em></p>
-</li>
-<li><p>Java EE</p>
-<p>java语言的企业版，用于Web方向的网站开发</p>
-<p>网页：用于数据展示</p>
-<p>网站：网页+后台服务器</p>
-</li>
-</ul>
-<h5 id="Java跨平台工作原理"><a href="#Java跨平台工作原理" class="headerlink" title="Java跨平台工作原理"></a>Java跨平台工作原理</h5><h6 id="平台与跨平台"><a href="#平台与跨平台" class="headerlink" title="平台与跨平台"></a>平台与跨平台</h6><p>平台：操作系统发</p>
-<ul>
-<li>Windows</li>
-<li>MacOS</li>
-<li>Linux</li>
-</ul>
-<p>跨平台：Java程序可以在任意操作系统上运行</p>
-<h6 id="跨平台原理"><a href="#跨平台原理" class="headerlink" title="跨平台原理"></a>跨平台原理</h6><p>JAVA运行在JVM虚拟机上，只要在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（JVM Java Virtual Machine）即可</p>
-<h5 id="JDK下载和安装"><a href="#JDK下载和安装" class="headerlink" title="JDK下载和安装"></a>JDK下载和安装</h5><h6 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h6><p>三种长期支持版本（LTS，即long-term support）</p>
-<ul>
-<li><p>Java8.0</p>
-<p>企业普遍使用，兼容性好，普适性强</p>
-</li>
-<li><p>Java11.0</p>
-</li>
-<li><p>Java17.0</p>
-</li>
-<li><p>现在的是Java21.0</p>
-</li>
-</ul>
-<h5 id="HelloWorld程序"><a href="#HelloWorld程序" class="headerlink" title="HelloWorld程序"></a>HelloWorld程序</h5><h6 id="java开发的三个步骤"><a href="#java开发的三个步骤" class="headerlink" title="java开发的三个步骤"></a>java开发的三个步骤</h6><ol>
-<li><p>编写代码</p>
-<p>新建后缀为.java的文档，用记事本编写文档</p>
-</li>
-<li><p>编译代码</p>
-<p>JDK的几种工具在bin文件夹里</p>
-<ul>
-<li><p>javac.exe</p>
-<p>编译工具</p>
-</li>
-<li><p>java.exe</p>
-<p>运行工具</p>
-</li>
-</ul>
-<p>这两种工具都要在命令行中使用</p>
-<p>将编写的文档放在bin目录中，使用<code>javac 文档名.java</code>编译文件，生成.class文件</p>
-</li>
-<li><p>运行代码</p>
-<p>生成.class字节码文件后，输入<code>java 文件名</code>运行代码</p>
-<p>注意：不要带.class</p>
-</li>
-</ol>
-<h5 id="HelloWorld案例详解"><a href="#HelloWorld案例详解" class="headerlink" title="HelloWorld案例详解"></a>HelloWorld案例详解</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;			</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot; HelloWorld &quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/img/JavaNote/Day1/DAY1.1.png"></p>
-<p>类名称通常与文件名称相同</p>
-<h5 id="HelloWorld案例常见问题"><a href="#HelloWorld案例常见问题" class="headerlink" title="HelloWorld案例常见问题"></a>HelloWorld案例常见问题</h5><ol>
-<li>windows扩展名没有勾选</li>
-<li>没保存</li>
-<li>文件名与类名不一致</li>
-<li>大小写错误。单词拼写错误，存在中文符号</li>
-<li>括号不配对</li>
-<li>编译、执行使用不当</li>
-</ol>
-<h5 id="JDK的组成和配置JAVA-HOME"><a href="#JDK的组成和配置JAVA-HOME" class="headerlink" title="JDK的组成和配置JAVA_HOME"></a>JDK的组成和配置JAVA_HOME</h5><h6 id="JDK的组成"><a href="#JDK的组成" class="headerlink" title="JDK的组成"></a>JDK的组成</h6><p>JDK由JVM、核心类库、开发工具组成</p>
-<ul>
-<li>JVM（Java Virtual Machine）：JDK最核心的组成部分——JVM，它是Java虚拟机，真正运行Java程序的地方。</li>
-<li>核心类库：是Java本身写好的一些程序，给程序员调用的。 Java程序员并不是凭空开始写代码，是要基于核心类库提供的一些基础代码，进行编程。</li>
-<li>JRE（Java Runtime Enviroment）：意思是Java的运行环境；它是由JVM和核心类库组成的；如果你不是开发人员，只需要在电脑上安装JRE就可以运行Java程序。</li>
-<li>开发工具：Java程序员写好源代码之后，需要编译成字节码，这里会提供一个编译工具叫做javac.exe，编写好源代码之后，想要把class文件加载到内存中运行，这里需要用到运行工具java.exe。<br>除了编译工具和运行工具，还有一些其他的反编译工具、文档工具等等..</li>
-</ul>
-<h6 id="JAVA-HOME配置"><a href="#JAVA-HOME配置" class="headerlink" title="JAVA_HOME配置"></a>JAVA_HOME配置</h6><p>默认配置的工具不全</p>
-<blockquote>
-<p> 跟着视频配就好了，没啥记的必要</p>
-<p> <a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&spm_id_from=333.788.player.switch&p=13">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=13</a></p>
-<p> 9:40</p>
-</blockquote>
-<p>注意：win8后环境变量配置可能会在重启后失效，需要回到Path环境配置页面重新点一遍确认</p>
-<h4 id="IDEA开发工具"><a href="#IDEA开发工具" class="headerlink" title="IDEA开发工具"></a>IDEA开发工具</h4><h5 id="IDEA概述"><a href="#IDEA概述" class="headerlink" title="IDEA概述"></a>IDEA概述</h5><p>集成开发环境（Integrated Development Environment ，简称IDE），适用于Java语言开发的集成环境，是业界公认的目前用于Java程序开发最好的工具。</p>
-<p>集成环境：它能够将写代码、编译、运行等工具集成到一起。</p>
-<p>除此之外，IDEA还有代码提示、检查代码错误等功能，从而提高程序员的开发效率。</p>
-<p>IDE有很多种，常见的Eclipse、MyEclipse、Intellij IDEA、JBuilder、NetBeans等。但是这些IDE中目前比较火的是Intellij IDEA（以下简称IDEA），被众多Java程序员视为最好用的Java集成开发环境。</p>
-<h5 id="IDE下载和安装"><a href="#IDE下载和安装" class="headerlink" title="IDE下载和安装"></a>IDE下载和安装</h5><h5 id="IDEA中的第一个代码"><a href="#IDEA中的第一个代码" class="headerlink" title="IDEA中的第一个代码"></a>IDEA中的第一个代码</h5><h6 id="IDEA项目结构介绍"><a href="#IDEA项目结构介绍" class="headerlink" title="IDEA项目结构介绍"></a>IDEA项目结构介绍</h6><ul>
-<li>project（项目、工程）</li>
-<li>module（模块）</li>
-<li>package（包）</li>
-<li>class（类）</li>
-</ul>
-<p>前三个玩应本质都是文件夹，为了能更好管理类文件而设计</p>
-<p>类必须创建在src文件夹里！！！</p>
-<h5 id="IDEA运行细节和基本设置"><a href="#IDEA运行细节和基本设置" class="headerlink" title="IDEA运行细节和基本设置"></a>IDEA运行细节和基本设置</h5><h6 id="自动编译"><a href="#自动编译" class="headerlink" title="自动编译"></a>自动编译</h6><p>编译后产生的.class文件在项目文件夹中的out文件夹</p>
-<h5 id="IDEA中类、模块、项目相关操作"><a href="#IDEA中类、模块、项目相关操作" class="headerlink" title="IDEA中类、模块、项目相关操作"></a>IDEA中类、模块、项目相关操作</h5><h6 id="IDEA中的类操作"><a href="#IDEA中的类操作" class="headerlink" title="IDEA中的类操作"></a>IDEA中的类操作</h6><ul>
-<li><p>新建类文件</p>
-</li>
-<li><p>删除类文件</p>
-<p>这个删除是直接粉碎，莫得回收，不要删错了</p>
-</li>
-<li><p>修改类文件</p>
-</li>
-</ul>
-<h6 id="IDEA中的模块操作"><a href="#IDEA中的模块操作" class="headerlink" title="IDEA中的模块操作"></a>IDEA中的模块操作</h6><ul>
-<li><p>新建模块</p>
-<p>要在文件页面选择项目结构来创建</p>
-</li>
-<li><p>删除模块</p>
-<p>右键一个模块是没有删除选项的，选择移除（remove），再到模块所在文件夹删除模块</p>
-</li>
-<li><p>导入模块</p>
-<p>跟创建模块在一个地方</p>
-</li>
-<li><p>修改模块</p>
-<p>右键重构模块有重命名，并选择同时修改</p>
-</li>
-</ul>
-<h6 id="IDEA中的项目操作"><a href="#IDEA中的项目操作" class="headerlink" title="IDEA中的项目操作"></a>IDEA中的项目操作</h6><ul>
-<li><p>关闭项目</p>
-<p>文件中有关闭项目的选项</p>
-</li>
-<li><p>打开项目</p>
-<p>傻子都会了）</p>
-</li>
-<li><p>删除项目</p>
-<p>主页面列表中对项目进行remove</p>
-</li>
-<li><p>修改项目</p>
-<p>选择文件中的项目结构</p>
-<p>编译版本要和JDK版本保持一致</p>
-<p>注意：编译器输出目录不要更改</p>
-<p>修改项目名称的话不能在项目结构改完就不管了，以下是具体操作</p>
-<ol>
-<li>关闭项目</li>
-<li>移除项目</li>
-<li>在项目所在文件夹中更改项目文件夹的名字</li>
-<li>重新打开</li>
-</ol>
-</li>
-<li><p>新建项目</p>
-<p>在列表界面中重新新建项目</p>
-<p>注意：新建项目时的路径一定要把\改成一个\</p>
-</li>
-</ul>
-<h4 id="JAVA基础语法"><a href="#JAVA基础语法" class="headerlink" title="JAVA基础语法"></a>JAVA基础语法</h4><h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><h6 id="注释介绍"><a href="#注释介绍" class="headerlink" title="注释介绍"></a>注释介绍</h6><p>注释是解释说明程序的问题，方便自己和别人阅读代码</p>
-<h6 id="注释格式"><a href="#注释格式" class="headerlink" title="注释格式"></a>注释格式</h6><ul>
-<li><p>单行注释</p>
-<p>格式：<code>// 注释信息</code></p>
-</li>
-<li><p>多行注释</p>
-<p>格式</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	注释信息1</span></span><br><span class="line"><span class="comment">	注释信息2</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文档注释</p>
-</li>
-<li><p>格式</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	注释信息1</span></span><br><span class="line"><span class="comment">	注释信息2</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-
-<p>暂时用不上</p>
-</li>
-</ul>
-<p>注意：被注释内容不会参与编辑与运行</p>
-<h6 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h6><p>Ctrl + &#x2F; 	单行注释（对当前行进行注释）<br>Ctrl + Shift + &#x2F; 	对选中的代码进行多行注释。</p>
-<h5 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h5><p>关键字是java语言中有特殊含义的单词。比如用int表示整数，用double表示小数，等等！</p>
-<p>注意：关键字是java用了的，我们就不能用来为做为：类名、变量名，否则会报错！</p>
-<h5 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h5><p>数据在程序中的书写格式</p>
-<p><img src="/img/JavaNote/Day1/DAY1.2.png"></p>
-<h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><h4 id="JAVA基础语法-1"><a href="#JAVA基础语法-1" class="headerlink" title="JAVA基础语法"></a>JAVA基础语法</h4><h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>内存中的存储空间，空间中存储着经常发生改变的数据</p>
-<p>定义形式：</p>
-<p><code>数据类型 变量名 = 数据值;</code></p>
-<h6 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h6><ul>
-<li>阅读代码中的等号最好从右往左读</li>
-</ul>
-<h5 id="Debug调试工具"><a href="#Debug调试工具" class="headerlink" title="Debug调试工具"></a>Debug调试工具</h5><p>Debug：是供程序员使用的程序调试工具，可以用于查看程序的执行流程，也可以用于追踪程序执行过程来调试程序</p>
-<h6 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h6><p>基本操作与codeblock的调试相同（byd那个codeblock的调试环境是真难配），记一下不同的操作</p>
-<ul>
-<li><p>批量删除断点</p>
-<p>调试页面有一个查看断点的选项，点开可以批量管理断点</p>
-</li>
-<li><p>添加多个断点</p>
-<p>调试页面有个恢复程序的按钮，可以让当前断点直接运行到下一个断点</p>
-</li>
-</ul>
-<h5 id="变量的注意事项"><a href="#变量的注意事项" class="headerlink" title="变量的注意事项"></a>变量的注意事项</h5><ol>
-<li>变量名不允许重复定义</li>
-<li>一条语句可以定义出多个变量，中间需要用逗号分隔</li>
-<li>变量在使用之前必须完成赋值</li>
-<li>变量有作用域</li>
-</ol>
-<h6 id="细节-1"><a href="#细节-1" class="headerlink" title="细节"></a>细节</h6><p>IDEA为注释提供了一种特殊的标记，当在注释中输入<code>TODO:</code>时，进度条会有特殊标识</p>
-<h5 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h5><p>标志符就是名字，我们写程序时会起一些名字，如类名、变量名等等都是标识符。</p>
-<h6 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h6><p>​	1.字母、数字、下划线、$组成<br>​	2.不能以数字开头<br>​	3.不能是Java的关键字</p>
-<h6 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h6><ol>
-<li><p>大驼峰命名法：类</p>
-<p>所有单词的首字母大写</p>
-</li>
-<li><p>小驼峰命名法：变量</p>
-<p>首个单词的首字母小写，其余的首字母大写</p>
-</li>
-<li><p>见名知意，便于自己和别人阅读</p>
-<p>就是写拼音</p>
-</li>
-</ol>
-<h5 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h5><p>数据类型有两类</p>
-<ul>
-<li>基本数据类型</li>
-<li>引用数据类型（Day5学）</li>
-</ul>
-<h6 id="基本数据类型介绍"><a href="#基本数据类型介绍" class="headerlink" title="基本数据类型介绍"></a>基本数据类型介绍</h6><p><img src="/img/JavaNote/Day2/Day2.1.png"></p>
-<p>前两列需要记住，第三列需要记住红字</p>
-<h6 id="定义思路"><a href="#定义思路" class="headerlink" title="定义思路"></a>定义思路</h6><ol>
-<li><p>整数：首选int，装不下了用long类型</p>
-<p>定义long类型的时候要在数字后加一个L</p>
-</li>
-<li><p>小数：首选double（计算更准确），用float类型时，数字后要加F</p>
-</li>
-</ol>
-<h6 id="细节-2"><a href="#细节-2" class="headerlink" title="细节"></a>细节</h6><ol>
-<li><p>所有直接输出的整数默认是int类型，小数是double类型</p>
-</li>
-<li><p>ASCLL编码表</p>
-<p>是计算机中字节到字符的一套对应关系</p>
-<p>所有字符在计算机底层都会有一个数值的表示形式</p>
-</li>
-</ol>
-<h5 id="Scanner键盘录入"><a href="#Scanner键盘录入" class="headerlink" title="Scanner键盘录入"></a>Scanner键盘录入</h5><h6 id="键盘录入效果介绍"><a href="#键盘录入效果介绍" class="headerlink" title="键盘录入效果介绍"></a>键盘录入效果介绍</h6><p>可以让程序中使用的数据更加灵活</p>
-<h6 id="键盘录入的三个步骤"><a href="#键盘录入的三个步骤" class="headerlink" title="键盘录入的三个步骤"></a>键盘录入的三个步骤</h6><ol>
-<li><p>在class类上导包</p>
-<p><code>import java.util.Scanner</code></p>
-</li>
-<li><p>得到一个用于键盘扫描器对象</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Scanner是键盘扫描器对象(你就把它理解成一个东西)，这个东西有录入的功能</span></span><br><span class="line"><span class="comment">//sc是给这个东西取的名字，只有sc可以变，别的都不能变</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">// 写的时候直接写Sca+回车就行</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>开始调用sc的功能，来接收用户键盘输入的数据。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//sc这个东西有键盘录入整数的功能，这个功能的名字叫nextInt()</span></span><br><span class="line"><span class="comment">//.表示表示调用的意思</span></span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">System.out.println(<span class="string">&quot;我的年龄是:&quot;</span>+age);</span><br><span class="line"></span><br><span class="line"><span class="comment">//sc这个东西还有键盘录入字符串的功能，这个功能的名字叫next</span></span><br><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> sc.next();</span><br><span class="line">System.out.println(<span class="string">&quot;我的姓名是:&quot;</span>+name);</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><h5 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h5><h6 id="运算符和表达式"><a href="#运算符和表达式" class="headerlink" title="运算符和表达式"></a>运算符和表达式</h6><ul>
-<li><p>运算符</p>
-<p>对字面量或者变量进行操作的符号</p>
-</li>
-<li><p>表达式</p>
-<p>用运算符把自变量或者变量连接起来符合java语法的式子就可以称为表达式</p>
-<p>不同运算符连接的表达式体现的是不同类型的表达式</p>
-</li>
-</ul>
-<h6 id="算术运算符-1"><a href="#算术运算符-1" class="headerlink" title="算术运算符"></a>算术运算符</h6><p><img src="/img/JavaNote/Day2/Day2.2.png"></p>
-<p>注意：</p>
-<ul>
-<li>相除想要得到小数，运算过程中需要有浮点数（小数）参与运算</li>
-<li>取余可以用到一些算法上</li>
-</ul>
-<h6 id="字符串拼接操作"><a href="#字符串拼接操作" class="headerlink" title="字符串拼接操作"></a>字符串拼接操作</h6><p>当+操作中，遇到了字符串，这是+就是字符串连接符，而不是算术运算</p>
-<p>如例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span>+<span class="number">23</span>)；</span><br></pre></td></tr></table></figure>
-
-<p>结果为：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为:23</span><br></pre></td></tr></table></figure>
-
-<p>默认算术表达式从左到右进行，故下行代码被依次转化为字符串</p>
-<p>如例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span>+<span class="number">23</span>+<span class="number">1</span>)；</span><br></pre></td></tr></table></figure>
-
-<p>结果为:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为231</span><br></pre></td></tr></table></figure>
-
-<p>可以用（）改变算术表达式的顺序</p>
-<p>如例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span> + ( <span class="number">23</span> + <span class="number">1</span> ) )；</span><br></pre></td></tr></table></figure>
-
-<p>结果为</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为24</span><br></pre></td></tr></table></figure>
-
-<h5 id="自增自减运算符"><a href="#自增自减运算符" class="headerlink" title="自增自减运算符"></a>自增自减运算符</h5><h6 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h6><table>
-<thead>
-<tr>
-<th align="center">符号</th>
-<th align="center">作用</th>
-<th align="center">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">++</td>
-<td align="center">自增</td>
-<td align="center">变量自身的值+1</td>
-</tr>
-<tr>
-<td align="center">–</td>
-<td align="center">自减</td>
-<td align="center">变量自身的值-1</td>
-</tr>
-</tbody></table>
-<h6 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h6><ol>
-<li><p>单独使用</p>
-<p>一句代码中只做自增自减，符号放变量前后无差别</p>
-</li>
-<li><p>参与运算使用</p>
-<p>符号在前，先对变量本身进行自增自减，后参与运算</p>
-<p>符号灾后，先参与运算，后对变量本身进行自增自减</p>
-</li>
-</ol>
-<p>注意：自增自减只能对变量进行操作，不能对常量操作</p>
-<h6 id="细节-3"><a href="#细节-3" class="headerlink" title="细节"></a>细节</h6><p>多行注释左侧有个小减号，可以折叠</p>
-<h5 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h5><h6 id="类型转换分类"><a href="#类型转换分类" class="headerlink" title="类型转换分类"></a>类型转换分类</h6><ul>
-<li><p>隐式转换</p>
-<p>数据范围小的变量<strong>可以直接</strong>赋值给数据范围大的变量</p>
-<p>数据从小到大排列</p>
-<p>byte&lt;short&#x3D;char&lt;int&lt;long&lt;float&lt;double</p>
-<p>虽然float是四个字节，long是八个字节，但是小数的二进制存储形式更加节省内存，可表示的数据范围更大</p>
-<p>原理：</p>
-<p>自动类型转换其本质就是在较小数据类型数据前面，补了若干个字节</p>
-<p><img src="/img/JavaNote/Day2/Day2.3.png" alt="Day2.3"></p>
-<ul>
-<li><p>运算过程中的隐式转换</p>
-<p>取值范围小的数据，和取值范围大的数据进行运算，小的会先提升为大的之后，再进行运算</p>
-<p>注意：byte short char三种数据在运算的时候，都会自动提升为int，然后再进行运算</p>
-<p>示例：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperationDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">byte</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>,b = <span class="number">20</span>;</span><br><span class="line">        <span class="type">byte</span> <span class="variable">c</span> <span class="operator">=</span> a + b;				<span class="comment">//这行直接爆红</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>把c的类型定义为int即可</p>
-</li>
-</ul>
-</li>
-<li><p>强制转换</p>
-<p>强行将范围大的数据，赋值给范围小的变量</p>
-<p>格式：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperationDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">12.3</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> (<span class="type">int</span>) a;</span><br><span class="line">        System.out.println(b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>结果为</p>
-<p><code>12</code></p>
-<p>.3没有了，我们称之为精度损失</p>
-</li>
-</ul>
-<h5 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h5><h6 id="计算机中进制的分类"><a href="#计算机中进制的分类" class="headerlink" title="计算机中进制的分类"></a>计算机中进制的分类</h6><ul>
-<li><p>二进制</p>
-</li>
-<li><p>十进制</p>
-</li>
-<li><p>八进制</p>
-<p>类比前两者</p>
-</li>
-<li><p>十六进制</p>
-<p>用数字0到9和字母A到F（或a到f）表示10到15</p>
-</li>
-</ul>
-<h6 id="不同进制的书写"><a href="#不同进制的书写" class="headerlink" title="不同进制的书写"></a>不同进制的书写</h6><p>对于数字<code>110</code>的不同进制的书写</p>
-<ul>
-<li><p>二进制</p>
-<p><code>0b110</code>即0b开头</p>
-</li>
-<li><p>十进制</p>
-<p><code>110</code></p>
-</li>
-<li><p>八进制</p>
-<p><code>0110</code>即0开头</p>
-</li>
-<li><p>十六进制</p>
-<p><code>0x110</code>即0x开头</p>
-</li>
-</ul>
-<h6 id="细节："><a href="#细节：" class="headerlink" title="细节："></a>细节：</h6><p>以后编写数值的时候尽量不要以0开头</p>
-<h6 id="二进制到十进制的转换"><a href="#二进制到十进制的转换" class="headerlink" title="二进制到十进制的转换"></a>二进制到十进制的转换</h6><ul>
-<li><p>公式：系数*基数的权次幂 相加</p>
-<p>系数：就是每一位上的数</p>
-<p>基数：当前的进制数</p>
-<p>权：从右往左，依次为0 1 2 3 4 5</p>
-<p>示例：</p>
-<p><img src="/img/JavaNote/Day2/Day2.4.png"></p>
-</li>
-<li><p>8421快速转换法</p>
-<p>二进制中，每一位的1都是代表一个固定数值</p>
-<p>把每一位的1代表的十进制数加起来得到的结果就是它所代表的十进制数</p>
-<p>示例：</p>
-<p><img src="/img/JavaNote/Day2/Day2.5.png"></p>
-</li>
-</ul>
-<h6 id="原码反码补码"><a href="#原码反码补码" class="headerlink" title="原码反码补码"></a>原码反码补码</h6><ul>
-<li><p>原码</p>
-<p><img src="/img/JavaNote/Day2/Day2.6.png"></p>
-<p>弊端：遇到负数运算时，会出现错误</p>
-<p>所以计算机做运算时，都是以二进制补码的形式在运算</p>
-</li>
-<li><p>反码</p>
-<p>正数的反码与其原码相同</p>
-<p>负数的反码是对其原码逐位取反，但符号位除外</p>
-</li>
-<li><p>补码</p>
-<p>正数的补码与其原码相同</p>
-<p>负数的补码是在其反码的末位加1</p>
-</li>
-</ul>
-<p><img src="/img/JavaNote/Day2/Day2.7.png"></p>
-<p>这是对-10的取补码过程</p>
-<p><img src="/img/JavaNote/Day2/Day2.8.png"></p>
-<p>这是10与-10的补码进行相加后的结果，得0，结果正确</p>
-<h5 id="强转中的精度损失"><a href="#强转中的精度损失" class="headerlink" title="强转中的精度损失"></a>强转中的精度损失</h5><p><img src="/img/JavaNote/Day2/Day2.9.png"></p>
-<p>补码转原码，同样是取反码再给末尾加1</p>
-<h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h5><h5 id="关系运算符"><a href="#关系运算符" class="headerlink" title="关系运算符"></a>关系运算符</h5><h5 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h5><h5 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h5><h5 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h5>]]></content>
-  </entry>
-  <entry>
-    <title>JupyterNotebooks笔记</title>
-    <url>/2025/01/15/JupyterNotebooks%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2 id="Jupyter-Notebooks"><a href="#Jupyter-Notebooks" class="headerlink" title="Jupyter Notebooks"></a>Jupyter Notebooks</h2><blockquote>
-<p>安装<a href="https://blog.csdn.net/cainiao_python/article/details/125567913">https://blog.csdn.net/cainiao_python/article/details/125567913</a></p>
-<p>这篇好像是linux环境安装的，但是win环境应该也能看懂</p>
-<p>配置的话看这个吧，是win环境的，更明了</p>
-<p><a href="https://blog.csdn.net/weixin_43416960/article/details/137051658">https://blog.csdn.net/weixin_43416960/article/details/137051658</a></p>
-</blockquote>
-<h3 id="1-常用代码操作"><a href="#1-常用代码操作" class="headerlink" title="1.常用代码操作"></a>1.常用代码操作</h3><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-应用的介绍"><a href="#2-应用的介绍" class="headerlink" title="2. 应用的介绍"></a>2. 应用的介绍</h3><blockquote>
-<p>学习自<a href="https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a">https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a</a></p>
-</blockquote>
-<p>​	与其他python不同的是，jupyter notebooks基于代码区块，可运行多个单元格或一个单元格中的代码，这个性质决定了它是学习数据分析、机器学习和人工智能的最好的python编辑和运行的工具</p>
-<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
-<li>易于学习</li>
-<li>以代码块和单元格的方式运行，可以在运行中查看它的中间变量，易于调试和找出bug</li>
-<li>支持markdown文本</li>
-<li>可以调用%开头的魔法函数？</li>
-<li>文件分享形式多样，可随时转化为HTML、md、pdf等文件格式</li>
-<li>可运行python、JavaScript、r语言、ruby等多种编程语言，是集编程和写作于一身的编辑工具，称之为文学编程</li>
-</ul>
-<h4 id="内核"><a href="#内核" class="headerlink" title="内核"></a>内核</h4><p>ipython，比python原生附带的编译器更强大的编译器，具有相当强大的代码自动补全命令技术的功能</p>
-<h4 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h4><blockquote>
-<p><a href="https://zhuanlan.zhihu.com/p/32320214">https://zhuanlan.zhihu.com/p/32320214</a></p>
-<p>这篇知乎对页面的各种选项讲解的挺清楚的</p>
-</blockquote>
-]]></content>
-  </entry>
-  <entry>
     <title>C语言学习笔记</title>
     <url>/2025/01/11/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="学习C语言时一些容易忘记的格式和混淆点"><a href="#学习C语言时一些容易忘记的格式和混淆点" class="headerlink" title="学习C语言时一些容易忘记的格式和混淆点"></a>学习C语言时一些容易忘记的格式和混淆点</h1><blockquote>
@@ -1027,6 +513,908 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Java-Note</title>
+    <url>/2025/01/16/Java-Note/</url>
+    <content><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a>Java学习笔记</h1><blockquote>
+<p>学习自<a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=2&spm_id_from=333.788.player.switch">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=2&amp;spm_id_from=333.788.player.switch</a></p>
+</blockquote>
+<h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><h4 id="计算机简介"><a href="#计算机简介" class="headerlink" title="计算机简介"></a>计算机简介</h4><h5 id="计算机简介-1"><a href="#计算机简介-1" class="headerlink" title="计算机简介"></a>计算机简介</h5><h6 id="计算机发展史"><a href="#计算机发展史" class="headerlink" title="计算机发展史"></a>计算机发展史</h6><p>第一台通用计算机：ENIAC 用于美国国防部的弹道计算</p>
+<p>计算机的目的：对数据进行处理和运算</p>
+<h5 id="数据的存储和运算"><a href="#数据的存储和运算" class="headerlink" title="数据的存储和运算"></a>数据的存储和运算</h5><p>计算机中对于数据的存储和运算，都是通过二进制数据来完成</p>
+<h6 id="二进制"><a href="#二进制" class="headerlink" title="二进制"></a>二进制</h6><p>二进制：类比十进制的逢十进一，借一当十，二进制是逢二进一，借一当二</p>
+<p>二进制的出现原因：计算机底层都是硬件电路，可以通过不通电和通电表达。而二进制中只有两个数字0和1，可以分别用来表示不通电和通电两种状态。所以二进制可以更好的配合计算机硬件去工作。</p>
+<h6 id="补充知识：数据的存储单位"><a href="#补充知识：数据的存储单位" class="headerlink" title="补充知识：数据的存储单位"></a>补充知识：数据的存储单位</h6><p>字节（byte）：一个字节由八个二进制数字组成</p>
+<p>位（bit）：字节中每个二进制位的名称，也称为比特位</p>
+<h5 id="人机交互方式——常用DOS命令"><a href="#人机交互方式——常用DOS命令" class="headerlink" title="人机交互方式——常用DOS命令"></a>人机交互方式——常用DOS命令</h5><h6 id="人机交互方式"><a href="#人机交互方式" class="headerlink" title="人机交互方式"></a>人机交互方式</h6><ul>
+<li>图形化界面</li>
+<li>命令行</li>
+</ul>
+<p>图形化界面的弊端：消耗内存、运行速度慢</p>
+<h6 id="DOS命令行"><a href="#DOS命令行" class="headerlink" title="DOS命令行"></a>DOS命令行</h6><p><em>就是终端啦</em></p>
+<ul>
+<li><p>盘符切换</p>
+<p><code>E:</code>加回车表示切换到E盘</p>
+</li>
+<li><p>呈现当前路径下的内容</p>
+<p><code>dir</code></p>
+</li>
+<li><p>进入目录</p>
+<p><code>cd 文件夹路径</code></p>
+<p>注意：可以进入多级目录</p>
+</li>
+<li><p>回到上一级目录</p>
+<p>·cd..·</p>
+</li>
+<li><p>回退到盘符目录</p>
+<p><code>cd\</code></p>
+</li>
+<li><p>清屏</p>
+<p><code>cls</code></p>
+<p>注意：清屏无法回退</p>
+</li>
+<li><p>退出DOS命令行(命令提示符窗口、终端)</p>
+<p><code>exit</code></p>
+</li>
+</ul>
+<h5 id="Path环境变量"><a href="#Path环境变量" class="headerlink" title="Path环境变量"></a>Path环境变量</h5><h6 id="学习路径"><a href="#学习路径" class="headerlink" title="学习路径"></a>学习路径</h6><ol>
+<li>如何在命令行中启动软件</li>
+<li>配置Path环境变量</li>
+</ol>
+<h6 id="如何在命令行中启动软件"><a href="#如何在命令行中启动软件" class="headerlink" title="如何在命令行中启动软件"></a>如何在命令行中启动软件</h6><p>命令行中进入软件所在路径，直接输入<code>软件名称.exe</code>或者<code>软件名称</code>后回车，即可启动软件。</p>
+<p>可省略的原因：.exe文件输入可执行性文件，无需输入后缀即可启动。可在命令行中输入<code>set pathext</code>查看可执行性文件的后缀。</p>
+<p>细节：如果可执行文件的名称相同，且都用省略后缀的形式启动软件，会有优先循序。优先顺序为用<code>set pathext</code>查看的从左到右优先度递减的顺序。</p>
+<h6 id="配置Path环境变量"><a href="#配置Path环境变量" class="headerlink" title="配置Path环境变量"></a>配置Path环境变量</h6><p>可以解决的问题使用命令行启动软件过程太过繁琐的问题。</p>
+<ul>
+<li>path环境变量：可以理解为系统的管家，帮助用户记录了很多软件的完整路径</li>
+</ul>
+<p>当我们要运行一个程序，而没有告诉它程序所在的完整路径时，系统除了在当前目录下寻找此程序外，还会到Path中指定的路径去找</p>
+<p>即，通过path，就可以在任何位置启动我们常用的软件，简便打开开发软件的过程</p>
+<p>配置过程：</p>
+<ol>
+<li>此电脑右键点击属性</li>
+<li>页面中打开高级系统设置</li>
+<li>打开的系统属性页面的高级页面中点击环境变量</li>
+<li>在系统变量中找到Path，选中并编辑</li>
+<li>在编辑环境变量的界面即可管理Path中的应用</li>
+</ol>
+<p><em><strong>注意：不可以变更系统自带的Path路径！！！</strong></em></p>
+<h5 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h5><p>计算机语言：人与计算机沟通交流的表达方式</p>
+<h6 id="发展进程"><a href="#发展进程" class="headerlink" title="发展进程"></a>发展进程</h6><ul>
+<li><p>机器语言</p>
+<p>机器语言就是0&#x2F;1代码。计算机智能识别0和1.</p>
+<p>在计算机内部，无论什么数据，最终保存的都是0&#x2F;1代码。</p>
+</li>
+<li><p>汇编语言</p>
+<p>将一串机器语言转化为英文单词</p>
+</li>
+<li><p>高级语言</p>
+<p>使用普通英语进行编写代码，然后通过编译器翻译成类似于汇编语言的指令，之后再由计算机执行</p>
+</li>
+</ul>
+<h4 id="Java介绍与环境搭建"><a href="#Java介绍与环境搭建" class="headerlink" title="Java介绍与环境搭建"></a>Java介绍与环境搭建</h4><h5 id="Java背景介绍"><a href="#Java背景介绍" class="headerlink" title="Java背景介绍"></a>Java背景介绍</h5><h6 id="历史："><a href="#历史：" class="headerlink" title="历史："></a>历史：</h6><p>最初的名字：oak（橡树）</p>
+<p>现在的名字：JAVA（咖啡的盛产地）</p>
+<p>JAVA语言是美国Sun公司在1995年推出的计算机语言，后被Oracle公司收购</p>
+<p>JAVA之父：詹姆斯高斯林</p>
+<h6 id="JAVA三大平台"><a href="#JAVA三大平台" class="headerlink" title="JAVA三大平台"></a>JAVA三大平台</h6><ul>
+<li><p>Java SE</p>
+<p>java语言的标准版，用于桌面应用的开发，是其他两个版本的基础</p>
+<p>桌面应用：用户只要打开程序，程序的界面会让用户在最短的时间内找到他们需要的功能，同时主动带领用户完成他们的工作并得到最好的体验</p>
+<p>学习的目的：为今后从事JAVA EE开发打基础</p>
+</li>
+<li><p>Java ME</p>
+<p>java语言的小型版，用于嵌入式消费类电子设备</p>
+<p><em>退出历史舞台</em></p>
+</li>
+<li><p>Java EE</p>
+<p>java语言的企业版，用于Web方向的网站开发</p>
+<p>网页：用于数据展示</p>
+<p>网站：网页+后台服务器</p>
+</li>
+</ul>
+<h5 id="Java跨平台工作原理"><a href="#Java跨平台工作原理" class="headerlink" title="Java跨平台工作原理"></a>Java跨平台工作原理</h5><h6 id="平台与跨平台"><a href="#平台与跨平台" class="headerlink" title="平台与跨平台"></a>平台与跨平台</h6><p>平台：操作系统</p>
+<ul>
+<li>Windows</li>
+<li>MacOS</li>
+<li>Linux</li>
+</ul>
+<p>跨平台：Java程序可以在任意操作系统上运行</p>
+<h6 id="跨平台原理"><a href="#跨平台原理" class="headerlink" title="跨平台原理"></a>跨平台原理</h6><p>JAVA运行在JVM虚拟机上，只要在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（JVM Java Virtual Machine）即可</p>
+<h5 id="JDK下载和安装"><a href="#JDK下载和安装" class="headerlink" title="JDK下载和安装"></a>JDK下载和安装</h5><h6 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h6><p>三种长期支持版本（LTS，即long-term support）</p>
+<ul>
+<li><p>Java8.0</p>
+<p>企业普遍使用，兼容性好，普适性强</p>
+</li>
+<li><p>Java11.0</p>
+</li>
+<li><p>Java17.0</p>
+</li>
+<li><p>至2024年为Java21.0</p>
+</li>
+</ul>
+<h5 id="HelloWorld程序"><a href="#HelloWorld程序" class="headerlink" title="HelloWorld程序"></a>HelloWorld程序</h5><h6 id="java开发的三个步骤"><a href="#java开发的三个步骤" class="headerlink" title="java开发的三个步骤"></a>java开发的三个步骤</h6><ol>
+<li><p>编写代码</p>
+<p>新建后缀为.java的文档，用记事本编写文档</p>
+</li>
+<li><p>编译代码</p>
+<p>JDK的几种工具在bin文件夹里</p>
+</li>
+</ol>
+<ul>
+<li><p>javac.exe</p>
+<p>编译工具</p>
+</li>
+<li><p>java.exe</p>
+<p>运行工具</p>
+</li>
+</ul>
+<p>   这两种工具都要在命令行中使用</p>
+<p>   将编写的文档放在bin目录中，使用<code>javac 文档名.java</code>编译文件，生成.class文件</p>
+<ol start="3">
+<li><p>运行代码</p>
+<p>生成.class字节码文件后，输入<code>java 文件名</code>运行代码</p>
+<p>注意：不要带.class</p>
+</li>
+</ol>
+<p>注意：这个.class文件是有用的，以后打包程序的时候会用到，所以不要跳过编译这步直接运行.java文件。（也不告诉你怎么直接运行嘿嘿嘿）</p>
+<h5 id="HelloWorld案例详解"><a href="#HelloWorld案例详解" class="headerlink" title="HelloWorld案例详解"></a>HelloWorld案例详解</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;			</span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">     System.out.println(<span class="string">&quot; HelloWorld &quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/img/JavaNote/Day1/DAY1.1.png"></p>
+<p>类名称通常与文件名称相同</p>
+<h5 id="HelloWorld案例常见问题"><a href="#HelloWorld案例常见问题" class="headerlink" title="HelloWorld案例常见问题"></a>HelloWorld案例常见问题</h5><ol>
+<li>windows扩展名没有勾选</li>
+<li>没保存</li>
+<li>文件名与类名不一致</li>
+<li>大小写错误。单词拼写错误，存在中文符号</li>
+<li>括号不配对</li>
+<li>编译、执行使用不当</li>
+</ol>
+<h5 id="JDK的组成和配置JAVA-HOME"><a href="#JDK的组成和配置JAVA-HOME" class="headerlink" title="JDK的组成和配置JAVA_HOME"></a>JDK的组成和配置JAVA_HOME</h5><h6 id="JDK的组成"><a href="#JDK的组成" class="headerlink" title="JDK的组成"></a>JDK的组成</h6><p>JDK由JVM、核心类库、开发工具组成</p>
+<ul>
+<li>JVM（Java Virtual Machine）：JDK最核心的组成部分——JVM，它是Java虚拟机，真正运行Java程序的地方。</li>
+<li>核心类库：是Java本身写好的一些程序，给程序员调用的。 Java程序员并不是凭空开始写代码，是要基于核心类库提供的一些基础代码，进行编程。</li>
+<li>JRE（Java Runtime Enviroment）：意思是Java的运行环境；它是由JVM和核心类库组成的；如果你不是开发人员，只需要在电脑上安装JRE就可以运行Java程序。</li>
+<li>开发工具：Java程序员写好源代码之后，需要编译成字节码，这里会提供一个编译工具叫做javac.exe，编写好源代码之后，想要把class文件加载到内存中运行，这里需要用到运行工具java.exe。<br>除了编译工具和运行工具，还有一些其他的反编译工具、文档工具等等..</li>
+</ul>
+<h6 id="JAVA-HOME配置"><a href="#JAVA-HOME配置" class="headerlink" title="JAVA_HOME配置"></a>JAVA_HOME配置</h6><p>默认配置的工具不全</p>
+<blockquote>
+<p> 跟着视频配就好了，没啥记的必要</p>
+<p> <a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&spm_id_from=333.788.player.switch&p=13">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=13</a></p>
+<p> 9:40</p>
+</blockquote>
+<p>注意：win8后环境变量配置可能会在重启后失效，需要回到Path环境配置页面重新点一遍确认</p>
+<h4 id="IDEA开发工具"><a href="#IDEA开发工具" class="headerlink" title="IDEA开发工具"></a>IDEA开发工具</h4><h5 id="IDEA概述"><a href="#IDEA概述" class="headerlink" title="IDEA概述"></a>IDEA概述</h5><p>集成开发环境（Integrated Development Environment ，简称IDE），适用于Java语言开发的集成环境，是业界公认的目前用于Java程序开发最好的工具。</p>
+<p>集成环境：它能够将写代码、编译、运行等工具集成到一起。</p>
+<p>除此之外，IDEA还有代码提示、检查代码错误等功能，从而提高程序员的开发效率。</p>
+<p>IDE有很多种，常见的Eclipse、MyEclipse、Intellij IDEA、JBuilder、NetBeans等。但是这些IDE中目前比较火的是Intellij IDEA（以下简称IDEA），被众多Java程序员视为最好用的Java集成开发环境。</p>
+<h5 id="IDE下载和安装"><a href="#IDE下载和安装" class="headerlink" title="IDE下载和安装"></a>IDE下载和安装</h5><blockquote>
+<p>没什么记得</p>
+</blockquote>
+<h5 id="IDEA中的第一个代码"><a href="#IDEA中的第一个代码" class="headerlink" title="IDEA中的第一个代码"></a>IDEA中的第一个代码</h5><h6 id="IDEA项目结构介绍"><a href="#IDEA项目结构介绍" class="headerlink" title="IDEA项目结构介绍"></a>IDEA项目结构介绍</h6><ul>
+<li>project（项目、工程）</li>
+<li>module（模块）</li>
+<li>package（包）</li>
+<li>class（类）</li>
+</ul>
+<p>前三个玩应本质都是文件夹，为了能更好管理类文件而设计</p>
+<p>类必须创建在src文件夹里！！！</p>
+<h5 id="IDEA运行细节和基本设置"><a href="#IDEA运行细节和基本设置" class="headerlink" title="IDEA运行细节和基本设置"></a>IDEA运行细节和基本设置</h5><h6 id="自动编译"><a href="#自动编译" class="headerlink" title="自动编译"></a>自动编译</h6><p>编译后产生的.class文件在项目文件夹中的out文件夹</p>
+<h5 id="IDEA中类、包、模块、项目相关操作"><a href="#IDEA中类、包、模块、项目相关操作" class="headerlink" title="IDEA中类、包、模块、项目相关操作"></a>IDEA中类、包、模块、项目相关操作</h5><h6 id="IDEA中的类操作"><a href="#IDEA中的类操作" class="headerlink" title="IDEA中的类操作"></a>IDEA中的类操作</h6><ul>
+<li><p>新建类文件</p>
+</li>
+<li><p>删除类文件</p>
+<p>这个删除是直接粉碎，莫得回收，不要删错了</p>
+</li>
+<li><p>修改类文件</p>
+</li>
+</ul>
+<h6 id="IDEA中的包操作"><a href="#IDEA中的包操作" class="headerlink" title="IDEA中的包操作"></a>IDEA中的包操作</h6><ul>
+<li><p>新建包</p>
+<p>在src文件夹中右键新建软件包</p>
+<p>包的命名一般问公司网址倒着写，如：</p>
+<p>com.itheima.项目名（.为文件夹的层级分割，可以在页面中右键勾选外观中的压缩空的中间软件包来使层级关系更明显）</p>
+</li>
+</ul>
+<h6 id="IDEA中的模块操作"><a href="#IDEA中的模块操作" class="headerlink" title="IDEA中的模块操作"></a>IDEA中的模块操作</h6><ul>
+<li><p>新建模块</p>
+<p>要在文件页面选择项目结构来创建</p>
+</li>
+<li><p>删除模块</p>
+<p>右键一个模块是没有删除选项的，选择移除（remove），再到模块所在文件夹删除模块</p>
+</li>
+<li><p>导入模块</p>
+<p>跟创建模块在一个地方</p>
+</li>
+<li><p>修改模块</p>
+<p>右键重构模块有重命名，并选择同时修改</p>
+</li>
+</ul>
+<h6 id="IDEA中的项目操作"><a href="#IDEA中的项目操作" class="headerlink" title="IDEA中的项目操作"></a>IDEA中的项目操作</h6><ul>
+<li><p>关闭项目</p>
+<p>文件中有关闭项目的选项</p>
+</li>
+<li><p>打开项目</p>
+<p>傻子都会了）</p>
+</li>
+<li><p>删除项目</p>
+<p>主页面列表中对项目进行remove</p>
+</li>
+<li><p>修改项目</p>
+<p>选择文件中的项目结构</p>
+<p>编译版本要和JDK版本保持一致</p>
+<p><strong>注意：编译器输出目录不要更改</strong></p>
+<p>修改项目名称的话不能在项目结构改完就不管了，以下是具体操作</p>
+<ol>
+<li>关闭项目</li>
+<li>移除项目</li>
+<li>在项目所在文件夹中更改项目文件夹的名字</li>
+<li>重新打开</li>
+</ol>
+</li>
+<li><p>新建项目</p>
+<p>在列表界面中重新新建项目</p>
+<p>注意：新建项目时的路径一定要把\改成一个\（新版本好像莫得这个问题了）</p>
+</li>
+</ul>
+<h4 id="JAVA基础语法"><a href="#JAVA基础语法" class="headerlink" title="JAVA基础语法"></a>JAVA基础语法</h4><h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><h6 id="注释介绍"><a href="#注释介绍" class="headerlink" title="注释介绍"></a>注释介绍</h6><p>注释是解释说明程序的问题，方便自己和别人阅读代码</p>
+<h6 id="注释格式"><a href="#注释格式" class="headerlink" title="注释格式"></a>注释格式</h6><ul>
+<li><p>单行注释</p>
+<p>格式：<code>// 注释信息</code></p>
+</li>
+<li><p>多行注释</p>
+<p>格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">	注释信息1</span></span><br><span class="line"><span class="comment">	注释信息2</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>文档注释</p>
+</li>
+<li><p>格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">	注释信息1</span></span><br><span class="line"><span class="comment">	注释信息2</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+
+<p>暂时用不上</p>
+</li>
+</ul>
+<p>注意：被注释内容不会参与编辑与运行</p>
+<h6 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h6><p>Ctrl + &#x2F; 	单行注释（对当前行进行注释）<br>Ctrl + Shift + &#x2F; 	对选中的代码进行多行注释。</p>
+<h5 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h5><p>关键字是java语言中有特殊含义的单词。比如用int表示整数，用double表示小数，等等！</p>
+<p>注意：关键字是java用了的，我们就不能用来为做为：类名、变量名，否则会报错！</p>
+<h5 id="字面量"><a href="#字面量" class="headerlink" title="字面量"></a>字面量</h5><p>数据在程序中的书写格式</p>
+<p><img src="/img/JavaNote/Day1/DAY1.2.png"></p>
+<h3 id="Day2"><a href="#Day2" class="headerlink" title="Day2"></a>Day2</h3><h4 id="JAVA基础语法-1"><a href="#JAVA基础语法-1" class="headerlink" title="JAVA基础语法"></a>JAVA基础语法</h4><h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>内存中的存储空间，空间中存储着经常发生改变的数据</p>
+<p>定义形式：</p>
+<p><code>数据类型 变量名 = 数据值;</code></p>
+<p>细节：阅读代码中的等号最好从右往左读</p>
+<h5 id="Debug调试工具"><a href="#Debug调试工具" class="headerlink" title="Debug调试工具"></a>Debug调试工具</h5><p>Debug：是供程序员使用的程序调试工具，可以用于查看程序的执行流程，也可以用于追踪程序执行过程来调试程序</p>
+<h6 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h6><p>基本操作与codeblock的调试相同（byd那个codeblock的调试环境是真难配），记一下不同的操作</p>
+<ul>
+<li><p>批量删除断点</p>
+<p>调试页面有一个查看断点的选项，点开可以批量管理断点</p>
+</li>
+<li><p>添加多个断点</p>
+<p>调试页面有个恢复程序的按钮，可以让当前断点直接运行到下一个断点</p>
+</li>
+</ul>
+<h5 id="变量的注意事项"><a href="#变量的注意事项" class="headerlink" title="变量的注意事项"></a>变量的注意事项</h5><ol>
+<li>变量名不允许重复定义</li>
+<li>一条语句可以定义出多个变量，中间需要用逗号分隔</li>
+<li>变量在使用之前必须完成赋值</li>
+<li>变量有作用域</li>
+</ol>
+<p>细节：IDEA为注释提供了一种特殊的标记，当在注释中输入<code>TODO:</code>时，进度条会有特殊标识</p>
+<h5 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h5><p>标志符就是名字，我们写程序时会起一些名字，如类名、变量名等等都是标识符。</p>
+<h6 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h6><p>​	1.字母、数字、下划线、$组成<br>​	2.不能以数字开头<br>​	3.不能是Java的关键字</p>
+<h6 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h6><ol>
+<li><p>大驼峰命名法：类</p>
+<p>所有单词的首字母大写</p>
+</li>
+<li><p>小驼峰命名法：变量</p>
+<p>首个单词的首字母小写，其余的首字母大写</p>
+</li>
+<li><p>见名知意，便于自己和别人阅读</p>
+<p><em>就是写拼音</em></p>
+</li>
+</ol>
+<h5 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h5><p>数据类型有两类</p>
+<ul>
+<li>基本数据类型</li>
+<li>引用数据类型（Day5学）</li>
+</ul>
+<h6 id="基本数据类型介绍"><a href="#基本数据类型介绍" class="headerlink" title="基本数据类型介绍"></a>基本数据类型介绍</h6><p><img src="/img/JavaNote/Day2/Day2.1.png"></p>
+<p>前两列需要记住，第三列需要记住红字</p>
+<h6 id="定义思路"><a href="#定义思路" class="headerlink" title="定义思路"></a>定义思路</h6><ol>
+<li><p>整数：首选int，装不下了用long类型</p>
+<p>定义long类型的时候要在数字后加一个L</p>
+</li>
+<li><p>小数：首选double（计算更准确），用float类型时，数字后要加F</p>
+</li>
+</ol>
+<h6 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h6><ol>
+<li><p>所有直接输出的整数默认是int类型，小数是double类型</p>
+</li>
+<li><p>ASCLL编码表</p>
+<p>是计算机中字节到字符的一套对应关系</p>
+<p>所有字符在计算机底层都会有一个数值的表示形式</p>
+</li>
+</ol>
+<h5 id="Scanner键盘录入"><a href="#Scanner键盘录入" class="headerlink" title="Scanner键盘录入"></a>Scanner键盘录入</h5><h6 id="键盘录入效果介绍"><a href="#键盘录入效果介绍" class="headerlink" title="键盘录入效果介绍"></a>键盘录入效果介绍</h6><p>可以让程序中使用的数据更加灵活</p>
+<h6 id="键盘录入的三个步骤"><a href="#键盘录入的三个步骤" class="headerlink" title="键盘录入的三个步骤"></a>键盘录入的三个步骤</h6><ol>
+<li><p>在class类上导包</p>
+<p><code>import java.util.Scanner</code></p>
+</li>
+<li><p>得到一个用于键盘扫描器对象</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//Scanner是键盘扫描器对象(你就把它理解成一个东西)，这个东西有录入的功能</span></span><br><span class="line"><span class="comment">//sc是给这个东西取的名字，只有sc可以变，别的都不能变</span></span><br><span class="line"><span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"><span class="comment">// 写的时候直接写Sca+回车就行</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开始调用sc的功能，来接收用户键盘输入的数据。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//sc这个东西有键盘录入整数的功能，这个功能的名字叫nextInt()</span></span><br><span class="line"><span class="comment">//.表示表示调用的意思</span></span><br><span class="line"><span class="type">int</span> <span class="variable">age</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">System.out.println(<span class="string">&quot;我的年龄是:&quot;</span>+age);</span><br><span class="line"></span><br><span class="line"><span class="comment">//sc这个东西还有键盘录入字符串的功能，这个功能的名字叫next</span></span><br><span class="line"><span class="type">String</span> <span class="variable">name</span> <span class="operator">=</span> sc.next();</span><br><span class="line">System.out.println(<span class="string">&quot;我的姓名是:&quot;</span>+name);</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>在IDEA中使用时，导包操作会自动进行，只要在方法中输入<code>Sca+回车</code>即可快捷导包，剩下的第二第三步需要自行输入</p>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><h5 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h5><h6 id="运算符和表达式"><a href="#运算符和表达式" class="headerlink" title="运算符和表达式"></a>运算符和表达式</h6><ul>
+<li><p>运算符</p>
+<p>对字面量或者变量进行操作的符号</p>
+</li>
+<li><p>表达式</p>
+<p>用运算符把自变量或者变量连接起来符合java语法的式子就可以称为表达式</p>
+<p>不同运算符连接的表达式体现的是不同类型的表达式</p>
+</li>
+</ul>
+<h6 id="算术运算符-1"><a href="#算术运算符-1" class="headerlink" title="算术运算符"></a>算术运算符</h6><p><img src="/img/JavaNote/Day2/Day2.2.png"></p>
+<p>注意：</p>
+<ul>
+<li>相除想要得到小数，运算过程中需要有浮点数（小数）参与运算</li>
+<li>取余可以用到一些算法上</li>
+</ul>
+<h6 id="字符串拼接操作"><a href="#字符串拼接操作" class="headerlink" title="字符串拼接操作"></a>字符串拼接操作</h6><p>当+操作中，遇到了字符串，这是+就是字符串连接符，而不是算术运算</p>
+<p>如例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span>+<span class="number">23</span>)；</span><br></pre></td></tr></table></figure>
+
+<p>结果为：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为:23</span><br></pre></td></tr></table></figure>
+
+<p>默认算术表达式从左到右进行，故下行代码被依次转化为字符串</p>
+<p>如例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span>+<span class="number">23</span>+<span class="number">1</span>)；</span><br></pre></td></tr></table></figure>
+
+<p>结果为:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为231</span><br></pre></td></tr></table></figure>
+
+<p>可以用（）改变算术表达式的顺序</p>
+<p>如例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;年龄为:&quot;</span> + ( <span class="number">23</span> + <span class="number">1</span> ) )；</span><br></pre></td></tr></table></figure>
+
+<p>结果为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">年龄为24</span><br></pre></td></tr></table></figure>
+
+<h5 id="自增自减运算符"><a href="#自增自减运算符" class="headerlink" title="自增自减运算符"></a>自增自减运算符</h5><h6 id="符号"><a href="#符号" class="headerlink" title="符号"></a>符号</h6><table>
+<thead>
+<tr>
+<th align="center">符号</th>
+<th align="center">作用</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">++</td>
+<td align="center">自增</td>
+<td align="center">变量自身的值+1</td>
+</tr>
+<tr>
+<td align="center">–</td>
+<td align="center">自减</td>
+<td align="center">变量自身的值-1</td>
+</tr>
+</tbody></table>
+<h6 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h6><ol>
+<li><p>单独使用</p>
+<p>一句代码中只做自增自减，符号放变量前后无差别</p>
+</li>
+<li><p>参与运算使用</p>
+<p>符号在前，先对变量本身进行自增自减，后参与运算</p>
+<p>符号灾后，先参与运算，后对变量本身进行自增自减</p>
+</li>
+</ol>
+<p>注意：自增自减只能对变量进行操作，不能对常量操作</p>
+<h6 id="细节-1"><a href="#细节-1" class="headerlink" title="细节"></a>细节</h6><p>多行注释左侧有个小减号，可以折叠</p>
+<h5 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h5><h6 id="类型转换分类"><a href="#类型转换分类" class="headerlink" title="类型转换分类"></a>类型转换分类</h6><ul>
+<li><p>隐式转换</p>
+<p>数据范围小的变量<strong>可以直接</strong>赋值给数据范围大的变量</p>
+<p>数据从小到大排列</p>
+<p>byte&lt;short&#x3D;char&lt;int&lt;long&lt;float&lt;double</p>
+<p>虽然float是四个字节，long是八个字节，但是小数的二进制存储形式更加节省内存，可表示的数据范围更大</p>
+<p>原理：</p>
+<p>自动类型转换其本质就是在较小数据类型数据前面，补了若干个字节</p>
+<p><img src="/img/JavaNote/Day2/Day2.3.png" alt="Day2.3"></p>
+<ul>
+<li><p>运算过程中的隐式转换</p>
+<p>取值范围小的数据，和取值范围大的数据进行运算，小的会先提升为大的之后，再进行运算</p>
+<p>注意：byte short char三种数据在运算的时候，都会自动提升为int，然后再进行运算</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> <span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperationDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">byte</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>,b = <span class="number">20</span>;</span><br><span class="line">        <span class="type">byte</span> <span class="variable">c</span> <span class="operator">=</span> a + b;				<span class="comment">//这行直接爆红</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>把c的类型定义为int即可</p>
+</li>
+</ul>
+</li>
+<li><p>强制转换</p>
+<p>强行将范围大的数据，赋值给范围小的变量</p>
+<p>格式：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">OperationDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">12.3</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">b</span> <span class="operator">=</span> (<span class="type">int</span>) a;</span><br><span class="line">        System.out.println(b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果为</p>
+<p><code>12</code></p>
+<p>.3没有了，我们称之为精度损失</p>
+</li>
+</ul>
+<h5 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h5><h6 id="计算机中进制的分类"><a href="#计算机中进制的分类" class="headerlink" title="计算机中进制的分类"></a>计算机中进制的分类</h6><ul>
+<li><p>二进制</p>
+</li>
+<li><p>十进制</p>
+</li>
+<li><p>八进制</p>
+<p>类比前两者</p>
+</li>
+<li><p>十六进制</p>
+<p>用数字0到9和字母A到F（或a到f）表示10到15</p>
+</li>
+</ul>
+<h6 id="不同进制的书写"><a href="#不同进制的书写" class="headerlink" title="不同进制的书写"></a>不同进制的书写</h6><p>对于数字<code>110</code>的不同进制的书写</p>
+<ul>
+<li><p>二进制</p>
+<p><code>0b110</code>即0b开头</p>
+</li>
+<li><p>十进制</p>
+<p><code>110</code></p>
+</li>
+<li><p>八进制</p>
+<p><code>0110</code>即0开头</p>
+</li>
+<li><p>十六进制</p>
+<p><code>0x110</code>即0x开头</p>
+</li>
+</ul>
+<h6 id="细节："><a href="#细节：" class="headerlink" title="细节："></a>细节：</h6><p>以后编写数值的时候尽量不要以0开头</p>
+<h6 id="二进制到十进制的转换"><a href="#二进制到十进制的转换" class="headerlink" title="二进制到十进制的转换"></a>二进制到十进制的转换</h6><ul>
+<li><p>公式：系数*基数的权次幂 相加</p>
+<p>系数：就是每一位上的数</p>
+<p>基数：当前的进制数</p>
+<p>权：从右往左，依次为0 1 2 3 4 5</p>
+<p>示例：</p>
+<p><img src="/img/JavaNote/Day2/Day2.4.png"></p>
+</li>
+<li><p>8421快速转换法</p>
+<p>二进制中，每一位的1都是代表一个固定数值</p>
+<p>把每一位的1代表的十进制数加起来得到的结果就是它所代表的十进制数</p>
+<p>示例：</p>
+<p><img src="/img/JavaNote/Day2/Day2.5.png"></p>
+</li>
+</ul>
+<h6 id="原码反码补码"><a href="#原码反码补码" class="headerlink" title="原码反码补码"></a>原码反码补码</h6><ul>
+<li><p>原码</p>
+<p><img src="/img/JavaNote/Day2/Day2.6.png"></p>
+<p>弊端：遇到负数运算时，会出现错误</p>
+<p>所以计算机做运算时，都是以二进制补码的形式在运算</p>
+</li>
+<li><p>反码</p>
+<p>正数的反码与其原码相同</p>
+<p>负数的反码是对其原码逐位取反，但符号位除外</p>
+</li>
+<li><p>补码</p>
+<p>正数的补码与其原码相同</p>
+<p>负数的补码是在其反码的末位加1</p>
+</li>
+</ul>
+<p><img src="/img/JavaNote/Day2/Day2.7.png" title="对-10的取补码过程"></p>
+<p><img src="/img/JavaNote/Day2/Day2.8.png" title="10与-10的补码进行相加后的结果，得0，结果正确"></p>
+<h5 id="强转中的精度损失"><a href="#强转中的精度损失" class="headerlink" title="强转中的精度损失"></a>强转中的精度损失</h5><p><img src="/img/JavaNote/Day2/Day2.9.png"></p>
+<p>补码转原码，同样是取反码再给末尾加1</p>
+<h3 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h3><h4 id="运算符-1"><a href="#运算符-1" class="headerlink" title="运算符"></a>运算符</h4><h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h5><h6 id="基本赋值运算符"><a href="#基本赋值运算符" class="headerlink" title="基本赋值运算符"></a>基本赋值运算符</h6><p>&#x3D;</p>
+<h6 id="拓展赋值运算符"><a href="#拓展赋值运算符" class="headerlink" title="拓展赋值运算符"></a>拓展赋值运算符</h6><p><img src="/img/JavaNote/Day3/Day3.1.png"></p>
+<p>细节：拓展赋值运算符内部自带强转效果，如下</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">short</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">s += <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">short</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">s = s + <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<p>下面的代码会报错，原因与面试第一题相同，而上面的代码没有报错，说明其内部自带强转效果，真正等效的代码如下</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">short</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">s = (<span class="type">short</span>)(s + <span class="number">1</span>);</span><br></pre></td></tr></table></figure>
+
+<h5 id="关系运算符（比较运算符）"><a href="#关系运算符（比较运算符）" class="headerlink" title="关系运算符（比较运算符）"></a>关系运算符（比较运算符）</h5><p><img src="/img/JavaNote/Day3/Day3.2.png"></p>
+<h5 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h5><h6 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h6><p>通过连接布尔类型的表达式，或者是值，来整合多个条件为一段整体逻辑的运算符</p>
+<h6 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h6><p><img src="/img/JavaNote/Day3/Day3.3.png"></p>
+<h5 id="三元运算符"><a href="#三元运算符" class="headerlink" title="三元运算符"></a>三元运算符</h5><h6 id="三元运算符介绍"><a href="#三元运算符介绍" class="headerlink" title="三元运算符介绍"></a>三元运算符介绍</h6><ul>
+<li><p>格式：判断条件? 值1 : 值2;</p>
+</li>
+<li><p>执行流程：</p>
+<p>首先计算关系表达式的值</p>
+<p>如果关系表达式的值为true，则返回值1；</p>
+<p>如果关系表达式的值为false, 则返回值2；</p>
+</li>
+<li><p>总结：<br>根据判断条件，从两份数据中二者选其一</p>
+</li>
+</ul>
+<h6 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h6><p>输入三个数，求最大数</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> class 三个数中取最大数 &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> <span class="variable">v1</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">v2</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">v3</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">tempmax</span> <span class="operator">=</span> v1 &gt; v2 ? v1 : v2;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> tempmax &gt; v3 ? tempmax : v3;</span><br><span class="line">        System.out.println(<span class="string">&quot;最大值为&quot;</span>+max);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="运算符优先级"><a href="#运算符优先级" class="headerlink" title="运算符优先级"></a>运算符优先级</h5><p><img src="/img/JavaNote/Day3/Day3.4.png"></p>
+<p>不用背，直接熟练使用小括号即可</p>
+<p>注意：要被与的优先级大于或，短路与的优先级大于短路或</p>
+<h5 id="面试题"><a href="#面试题" class="headerlink" title="面试题"></a>面试题</h5><h6 id="类型转换-1"><a href="#类型转换-1" class="headerlink" title="类型转换"></a>类型转换</h6><ul>
+<li><p>题目：下列代码是否存在错误，如果有，请指出说明，并改正</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b1</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b2</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b3</span> <span class="operator">=</span> b1 + b2;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>答案:</p>
+<p>错误，原因在于b1和b2是两个byte类型，运算中自动提升为int类型，而b3在定义中是将int类型的结果赋值给byte类型的变量，属于大给小，不能直接给，会损失精度</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b1</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b2</span> <span class="operator">=</span> <span class="number">4</span>;</span><br><span class="line"><span class="type">byte</span> <span class="variable">b3</span> <span class="operator">=</span> (<span class="type">byte</span>)(b1 + b2);</span><br><span class="line"><span class="comment">//先计算结果，在对结果进行强制类型转换</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>题目：下列代码是否存在错误，如果有，请指出说明，并改正</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">3</span> + <span class="number">4</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>无错误，Java存在常量优化机制（在编译的时候javac会将3和4两个字面量进行运算），即产生的字节码文件中的代码为：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">byte</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">7</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>可以通过将class文件反向编译为原文件验证其常量优化机制，直接将class文件拖入IDEA中即可查看</p>
+</li>
+</ul>
+<h4 id="方法（method）"><a href="#方法（method）" class="headerlink" title="方法（method）"></a>方法（method）</h4><h5 id="方法介绍"><a href="#方法介绍" class="headerlink" title="方法介绍"></a>方法介绍</h5><p>方法是一种语法结构，它可以把一段代码封装成一个功能，以便重复调用或独立调用。</p>
+<p>方法的出现：</p>
+<ul>
+<li>可以将挤在一起的臃肿代码，按照功能进行分类管理</li>
+<li>可以提高代码的复用性</li>
+</ul>
+<h5 id="方法的定义格式和调用格式"><a href="#方法的定义格式和调用格式" class="headerlink" title="方法的定义格式和调用格式"></a>方法的定义格式和调用格式</h5><h6 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h6><ul>
+<li><p>定义格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名() &#123;</span><br><span class="line">	<span class="comment">// 方法体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>调用格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">方法名();</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>注意：</p>
+<ol>
+<li>方法与方法之间是平级关系，不允许嵌套定义</li>
+<li>方法不调用就不执行</li>
+<li>方法的定义顺序与执行顺序无关</li>
+</ol>
+<p>细节：CTRL+F12可以展开IDEA中的代码结构</p>
+<h6 id="Debug查看方法的执行流程"><a href="#Debug查看方法的执行流程" class="headerlink" title="Debug查看方法的执行流程"></a>Debug查看方法的执行流程</h6><p>Debug查看方法的运行过程需要按”步入”按钮（快捷键F7），步出（shift+F7）可以执行完当前所处的方法，回到主方法</p>
+<h6 id="方法调用内存图解"><a href="#方法调用内存图解" class="headerlink" title="方法调用内存图解"></a>方法调用内存图解</h6><ul>
+<li>方法没有被调用时，在方法区的字节码文件中存放</li>
+<li>方法被调用时，需要进入到栈内存中运行</li>
+</ul>
+<p>方法区：字节码文件加载时进入的内存（存放所有字节码文件中的方法）</p>
+<p>栈内存：方法运行时所进入的内存，有类似弹匣的特点，方法执行时按照执行顺序依次进入栈内存，执行完成后按照顺序被当作子弹打出弹匣，即栈内存，进入进出的操作称为”进栈、弹栈”</p>
+<p>细节：主方法是程序的入口，程序执行时主方法自动第一个进入栈内存</p>
+<h6 id="带参数方法的定义和调用"><a href="#带参数方法的定义和调用" class="headerlink" title="带参数方法的定义和调用"></a>带参数方法的定义和调用</h6><ul>
+<li><p>定义格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名 (数据类型 变量名,数据类型 变量名)&#123;</span><br><span class="line">	<span class="comment">// 方法体</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>调用格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">方法名(参数<span class="number">1</span>,参数<span class="number">2</span>);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h6 id="形参和实参"><a href="#形参和实参" class="headerlink" title="形参和实参"></a>形参和实参</h6><p>形参：全称形式参数，是指在定义方法是，所声明的函数</p>
+<p>实参：全称实际参数，调用方法时，所传入的参数</p>
+<p>例子：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itheima.method;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MethodDemo2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Text(<span class="number">10</span>);							<span class="comment">//10为实参</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">Text</span><span class="params">(<span class="type">int</span> Xingcan)</span> &#123;    <span class="comment">//此为形参</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="带返回值方法的定义和调用"><a href="#带返回值方法的定义和调用" class="headerlink" title="带返回值方法的定义和调用"></a>带返回值方法的定义和调用</h6><ul>
+<li><p>定义格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 数据类型 方法名 (数据类型 变量名<span class="number">1</span>,数据类型 变量名<span class="number">2.</span>..)&#123;</span><br><span class="line">	<span class="keyword">return</span> 数据值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>调用格式</p>
+<p>需要将返回的值用变量储存</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">数据类型 变量名 = 方法名(参数...);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>细节：</p>
+<p>void是关键字，表示此方法不返回任何关键值</p>
+<h6 id="方法通用定义格式"><a href="#方法通用定义格式" class="headerlink" title="方法通用定义格式"></a>方法通用定义格式</h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> 返回值类型 方法名( 参数 ) &#123;</span><br><span class="line">	方法体;</span><br><span class="line">	<span class="keyword">return</span> 数据 ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>定义方法时，要做到两个明确</p>
+<ol>
+<li>明确参数：主要是明确参数的类型和数量</li>
+<li>明确返回值类型：主要是明确方法操作完毕之后是否有结果数据，如果有，写对应的数据类型，如果没有，写void</li>
+</ol>
+</li>
+<li><p>调用方法时</p>
+<p>void类型的方法，直接调用即可</p>
+<p>非void类型的方法，推荐用变量接受调用</p>
+</li>
+</ul>
+<h5 id="方法常见问题"><a href="#方法常见问题" class="headerlink" title="方法常见问题"></a>方法常见问题</h5><ul>
+<li>方法不调用就不执行</li>
+<li>方法与方法之间是平级关系，不能嵌套定义</li>
+<li>方法的编写顺序和执行顺序无关</li>
+<li>方法的返回值类型为void，表示该方法没有返回值，没有返回值的方法可以省略return语句不写。如果要编写return，后面不能跟具体的数据</li>
+<li>ruturn语句下面，不能编写代码，因为永远执行不到，属于无效的代码</li>
+</ul>
+<h5 id="方法重载（Overload）"><a href="#方法重载（Overload）" class="headerlink" title="方法重载（Overload）"></a>方法重载（Overload）</h5><h6 id="方法重载关系的要求"><a href="#方法重载关系的要求" class="headerlink" title="方法重载关系的要求"></a>方法重载关系的要求</h6><ul>
+<li>在同一个类中，定义了多个同名的方法，但每个方法具有不同的参数类型或参数个数，这些同名的方法，就构成了重载关系</li>
+</ul>
+<h6 id="判断方法"><a href="#判断方法" class="headerlink" title="判断方法"></a>判断方法</h6><p>同一个类中，方法名相同，参数不同的方法</p>
+<p>参数不同有三种：个数不同、类型不同、顺序不同</p>
+<p>注意：识别方法之间是否是重载关系，只看方法名和参数，与返回值无关</p>
+<h6 id="好处"><a href="#好处" class="headerlink" title="好处"></a>好处</h6><ul>
+<li>不用记忆过多繁琐的方法名字</li>
+</ul>
+<h3 id="Day4"><a href="#Day4" class="headerlink" title="Day4"></a>Day4</h3><h4 id="流程控制"><a href="#流程控制" class="headerlink" title="流程控制"></a>流程控制</h4><h5 id="流程控制语句"><a href="#流程控制语句" class="headerlink" title="流程控制语句"></a>流程控制语句</h5><h6 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h6><p>通过一些语句，来控制程序的执行流程</p>
+<h6 id="分类-1"><a href="#分类-1" class="headerlink" title="分类"></a>分类</h6><ul>
+<li><p>顺序结构</p>
+<p>Java默认的执行流程，没有特定的语法结构，按照代码的先后顺序，依次执行</p>
+</li>
+<li><p>分支结构</p>
+<p>if、switch</p>
+</li>
+<li><p>循环结构</p>
+<p>for、while、do…while</p>
+</li>
+</ul>
+<h5 id="分支语句"><a href="#分支语句" class="headerlink" title="分支语句"></a>分支语句</h5><h6 id="if第一种格式"><a href="#if第一种格式" class="headerlink" title="if第一种格式"></a>if第一种格式</h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (判断条件) &#123;</span><br><span class="line">	语句体;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if 第一种形式执行流程如下：</p>
+<ul>
+<li>如果 条件表达式 为true，就执行下面的语句体</li>
+<li>如果 条件表达式 为false，就不执行</li>
+</ul>
+<p>细节：IDEA的Debug调试执行到if语句的条件句时，可以选中括号中的判断条件，Debug会显示条件表达式的结果</p>
+<h6 id="if第二种格式"><a href="#if第二种格式" class="headerlink" title="if第二种格式"></a>if第二种格式</h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (判断条件) &#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if 第二种形式执行流程如下：</p>
+<ul>
+<li>如果 条件表达式 为true,就执行下面的语句体1</li>
+<li>如果 条件表达式 为false,就执行else下面的语句体2</li>
+</ul>
+<h6 id="if第三种格式"><a href="#if第三种格式" class="headerlink" title="if第三种格式"></a>if第三种格式</h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (判断条件<span class="number">1</span>) &#123;</span><br><span class="line">	语句体<span class="number">1</span>;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> (判断条件<span class="number">2</span>) &#123;</span><br><span class="line">	语句体<span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br><span class="line"><span class="keyword">else</span> &#123;</span><br><span class="line">	语句体n+<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>if 第三种形式执行流程如下：</p>
+<ul>
+<li>如果 条件表达式1 为true,就执行下面的语句体1;</li>
+<li>如果 条件表达式1 为false，就继续判断条件表达式2;</li>
+<li>如果 条件表达式2 为true，就执行下面的语句体2;</li>
+<li>如果 条件表达式2 为false，就继续判断条件语句体3;</li>
+<li>如果 条件表达式3 为true,就执行下面的语句体3</li>
+<li>如果 条件表达式3 为false,就继续判断后面的表达式;</li>
+<li>….</li>
+<li>如果前面所有条件表达式判断都为false，就执行最后的else语句中的代码</li>
+</ul>
+<p>细节：快捷键ctrl+shift+L整理代码</p>
+<h6 id="if语句注意事项"><a href="#if语句注意事项" class="headerlink" title="if语句注意事项"></a>if语句注意事项</h6><ul>
+<li>if语句中，如果大括号控制的是一条语句，大括号可以省略不写，但不建议</li>
+<li>if语句的()和{}之间不要写分号</li>
+</ul>
+<h6 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h6><ul>
+<li><p>switch语句格式和说明</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">switch</span>(表达式) &#123;			<span class="comment">//表达式即为与值进行匹配的值</span></span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">1</span>:</span><br><span class="line">		语句体<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	<span class="keyword">case</span> 值<span class="number">2</span>:</span><br><span class="line">		语句体<span class="number">2</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">	...</span><br><span class="line">	<span class="keyword">default</span>:	</span><br><span class="line">        	<span class="comment">/*如果没有匹配的值，则进行收尾,不是必要的*/</span></span><br><span class="line">		语句体n+<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>switch分支的执行流程</p>
+<p>① 先执行表达式的值，再拿着这个值去与case后的值进行匹配。</p>
+<p>② 与哪个case后的值匹配为true就执行哪个case块的代码，遇到break就跳出switch分支。</p>
+<p>③ 如果全部case后的值与之匹配都是false，则执行default块的代码。</p>
+</li>
+</ul>
+<h6 id="switch语句注意事项"><a href="#switch语句注意事项" class="headerlink" title="switch语句注意事项"></a>switch语句注意事项</h6><ul>
+<li><p>case后的值不允许重复</p>
+</li>
+<li><p>case后的值只能是字面量，不能是变量</p>
+</li>
+<li><p>switch()括号中的可接收类型为</p>
+<ol>
+<li>基本数据类型：byte、short、char、int</li>
+<li>引用数据类型：jdk5版本开始可以是枚举、jdk7版本开始可以是String字符串</li>
+</ol>
+</li>
+<li><p>case穿透现象</p>
+<p>switch语句中没有写break产生的现象，会执行匹配值的case中的语句体，并执行下方所有case的语句体，直到遇到break</p>
+<p>但如果使用得当，可以对代码进行优化，举例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">caseDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入日期：&quot;</span>);</span><br><span class="line">        case1();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">case1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> <span class="variable">date</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">switch</span> (date) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">5</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;工作日&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">6</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">7</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;休息日&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h6 id="switch语句拓展"><a href="#switch语句拓展" class="headerlink" title="switch语句拓展"></a>switch语句拓展</h6><ul>
+<li><p>JDK14版本后，case后允许编写多个数据，用逗号分隔，举例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">caseDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入日期：&quot;</span>);</span><br><span class="line">        case1();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">case1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> <span class="variable">date</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">switch</span> (date) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;工作日&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">6</span>,<span class="number">7</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;休息日&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更更更简便的方法——小箭头</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">caseDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入日期：&quot;</span>);</span><br><span class="line">        case1();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">case1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> <span class="variable">date</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">        <span class="keyword">switch</span> (date) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span> -&gt; System.out.println(<span class="string">&quot;工作日&quot;</span>);</span><br><span class="line">            <span class="keyword">case</span> <span class="number">6</span>,<span class="number">7</span> -&gt; System.out.println(<span class="string">&quot;休息日&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h6 id="if还是switch？"><a href="#if还是switch？" class="headerlink" title="if还是switch？"></a>if还是switch？</h6><p>if：适用于范围性的判断</p>
+<p>switch：适用于固定值的匹配</p>
+<h5 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h5><p>介绍：将一段代码逻辑，重复执行多次</p>
+<h6 id="for语句"><a href="#for语句" class="headerlink" title="for语句"></a>for语句</h6><ul>
+<li><p>格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> ( 初始化语句 ; 条件判断句 ; 条件控制语句 ) &#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">初始化语句用于定义循环的变量</span></span><br><span class="line"><span class="comment">条件判断语句用于定义循环进行的条件</span></span><br><span class="line"><span class="comment">条件控制语句用于改变初始化语句中的变量</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>执行流程</p>
+<ol>
+<li><p>执行初始化语句，在整个循环过程中，只执行一次</p>
+</li>
+<li><p>执行判断条件，看其返回结果是true还是false</p>
+<p>false：循环结束</p>
+<p>true：执行第三步</p>
+</li>
+<li><p>执行循环体语句</p>
+</li>
+<li><p>执行条件控制语句</p>
+</li>
+<li><p>回到 2.</p>
+</li>
+</ol>
+<p>注意：3，4的顺序影响循环条件的制定</p>
+</li>
+<li><p>细节：</p>
+<p>循环中控制循环的那个变量，是可以在循环中继续使用的、</p>
+<p>循环的条件控制语句，不要局限的认为，只能是++</p>
+<p>循环中计数器变量的名称——count、</p>
+</li>
+<li><p>注意事项</p>
+<ol>
+<li>for循环{}大括号中定义的变量，在每一轮循环结束后，都会从内存中释放</li>
+<li>for循环()小括号中定义的变量，在整个循环结束后，会从内存中释放</li>
+<li>for循环()与{}之间不要写分号</li>
+</ol>
+</li>
+</ul>
+<h6 id="循环嵌套"><a href="#循环嵌套" class="headerlink" title="循环嵌套"></a>循环嵌套</h6><p>嵌套循环从里到外看</p>
+<p>细节：</p>
+<ul>
+<li><p><code>System.out.println();</code>ln的作用为每次打印数据后进行一次换行，去掉后就不会换行了</p>
+</li>
+<li><p>\t为输入制表符，使用格式：</p>
+<p><code>System.out.println( &quot;\t&quot; );</code></p>
+</li>
+</ul>
+<h6 id="while循环语句"><a href="#while循环语句" class="headerlink" title="while循环语句"></a>while循环语句</h6><ul>
+<li><p>while循环格式与执行流程</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> (条件判断语句) &#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;				<span class="comment">//不要忘了这句</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>执行初始化语句（在大括号外定义循环变量）</p>
+</li>
+<li><p>执行判断条件，看其返回结果为true或false</p>
+<p>false：循环结束</p>
+<p>true：进入第三步</p>
+</li>
+<li><p>执行循环体语句</p>
+</li>
+<li><p>执行条件控制语句</p>
+</li>
+<li><p>回到2.</p>
+</li>
+</ol>
+</li>
+</ul>
+<h6 id="do…while循环语句"><a href="#do…while循环语句" class="headerlink" title="do…while循环语句"></a>do…while循环语句</h6><ul>
+<li><p>do…while循环格式与执行流程</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">	循环体语句;</span><br><span class="line">	条件控制语句;</span><br><span class="line">&#125; <span class="keyword">while</span> (条件判断语句);</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>执行初始化语句（同while）</p>
+</li>
+<li><p>执行循环体语句</p>
+</li>
+<li><p>执行条件控制语句</p>
+</li>
+<li><p>执行判断条件，看起返回结果是true还是false</p>
+<p>false：循环结束</p>
+<p>true：回到2.继续</p>
+</li>
+</ol>
+</li>
+<li><p>特点</p>
+<p>无论判断条件是否满足，都至少执行一次循环体（没什么用）</p>
+</li>
+</ul>
+<h6 id="三种循环的区别"><a href="#三种循环的区别" class="headerlink" title="三种循环的区别"></a>三种循环的区别</h6><ul>
+<li><p>for和while先判断后执行，do…while先执行一次后判断</p>
+</li>
+<li><p>for循环（定义在小括号中的）用于控制循环的变量，在循环结束后，会从内存中消失。循环结束后，不能继续使用</p>
+<p>while循环用于控制循环的变量，在循环结束后，变量还可以继续使用</p>
+<p>两个循环没什么区别，可以互相用</p>
+</li>
+</ul>
+<h6 id="跳转控制语句"><a href="#跳转控制语句" class="headerlink" title="跳转控制语句"></a>跳转控制语句</h6><ul>
+<li><p>基本语句</p>
+<p>break：结束循环和switch语句，也只能在这两个中使用</p>
+<p>continue：跳过本次循环，继续下一次循环，只能在循环中使用</p>
+<p>注意：两者<strong>同级</strong>的下一句不能有代码</p>
+</li>
+<li><p>三种死循环格式</p>
+<ol>
+<li>for(;;) {}</li>
+<li>while(true) {}</li>
+<li>do {} while (true);</li>
+</ol>
+</li>
+<li><p>break的标号功能</p>
+<p>当存在嵌套循环，或者循环内部有switch语句并且想要从内部跳出某一层循环时，可以使用标号功能，如例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">breakBiaoHao</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        BreakBiaoHao();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">BreakBiaoHao</span><span class="params">()</span> &#123;</span><br><span class="line">        lo:							<span class="comment">//标号</span></span><br><span class="line">        <span class="keyword">for</span>(;;) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入数字，1为继续死循环，2为跳出死循环&quot;</span>);</span><br><span class="line">            <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            <span class="type">int</span> <span class="variable">choice</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">            <span class="keyword">switch</span> (choice) &#123;</span><br><span class="line">                <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                    System.out.println(<span class="string">&quot;死循环继续&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                    System.out.println(<span class="string">&quot;跳出死循环&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span> lo;		  <span class="comment">//使用标号</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h6 id="Random随机数"><a href="#Random随机数" class="headerlink" title="Random随机数"></a>Random随机数</h6><ul>
+<li><p>Random使用步骤</p>
+<p>示例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 目标：掌握使用Random生成随机数的步骤。</span></span><br><span class="line"><span class="comment">// 1、导包。import java.util.Random; (idea会自动完成)</span></span><br><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">RandomDemo1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">// 2、创建一个Random对象，用于生成随机数。</span></span><br><span class="line">        <span class="type">Random</span> <span class="variable">r</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">        <span class="comment">// 3、调用Random提供的功能：nextInt得到随机数。</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">20</span>; i++) &#123;</span><br><span class="line">            <span class="type">int</span> <span class="variable">data</span> <span class="operator">=</span> r.nextInt(<span class="number">10</span>); <span class="comment">// 0 - 9</span></span><br><span class="line">            System.out.println(data);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>如果随机数想要以1开头的随机数的话，需要自行进行加1操作，如下</p>
+<p><code>int data = r.nextInt(10) + 1;</code>范围为1~10</p>
+</li>
+</ul>
+<p>细节：死循环如果没有出口的话IDEA会报错</p>
+<h3 id="Day5"><a href="#Day5" class="headerlink" title="Day5"></a>Day5</h3><h4 id="数组（array）"><a href="#数组（array）" class="headerlink" title="数组（array）"></a>数组（array）</h4><p>数组就是一个<strong>容器</strong>，用来存一批同种数据类型的<strong>多个值</strong>的。</p>
+<h5 id="数组静态初始化"><a href="#数组静态初始化" class="headerlink" title="数组静态初始化"></a>数组静态初始化</h5><p>初始化：在内存中，为数组容器开辟空间，并将数据存入容器中的过程</p>
+<h6 id="数组定义类型"><a href="#数组定义类型" class="headerlink" title="数组定义类型"></a>数组定义类型</h6><ul>
+<li><p>格式一</p>
+<p><code>数据类型[] 数组名;</code></p>
+<p>例如：<code>int[] array;</code></p>
+</li>
+<li><p>格式二</p>
+<p><code>数据类型 数组名[];</code></p>
+<p>例如：<code>int array[];</code></p>
+</li>
+</ul>
+<p>细节：JAVA中多用第一种格式</p>
+<p>注意：这种定义格式，定义出来的只是数组类型的变量，内存中还没有创建出数组容器</p>
+<h6 id="数组静态初始化格式"><a href="#数组静态初始化格式" class="headerlink" title="数组静态初始化格式"></a>数组静态初始化格式</h6><ul>
+<li><p>完整格式</p>
+<p><code>数据类型[] 数组名 = new 数据类型[]&#123;元素1,元素2，元素3...&#125;;</code></p>
+</li>
+<li><p>简化格式</p>
+<p><code>数据类型[] 数组名 = &#123;元素1,元素2,元素3...&#125;;</code></p>
+<p>例如：<code>int[] arr1 = &#123;11,22,33&#125;;</code></p>
+</li>
+</ul>
+<p>拓展</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">shuZuDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        arrayTest1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">arrayTest1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] arr1 = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;;</span><br><span class="line">        <span class="type">double</span>[] arr2 = &#123;<span class="number">11.1</span>,<span class="number">22.2</span>,<span class="number">33.3</span>&#125;;</span><br><span class="line">        System.out.println(arr1); <span class="comment">//直接打印变量名</span></span><br><span class="line">        System.out.println(arr2); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出为</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[I@b4c966a</span><br><span class="line">[D@2f4d3709</span><br></pre></td></tr></table></figure>
+
+<p>@：分隔符</p>
+<p>[：表示当前空间为数组类型的空间</p>
+<p>D：表示当前空间的数组类型</p>
+<p>b4c966a：数组的十六进制内存地址</p>
+<h5 id="数组元素访问"><a href="#数组元素访问" class="headerlink" title="数组元素访问"></a>数组元素访问</h5><h5 id="数组遍历操作"><a href="#数组遍历操作" class="headerlink" title="数组遍历操作"></a>数组遍历操作</h5><h5 id="数组动态初始化"><a href="#数组动态初始化" class="headerlink" title="数组动态初始化"></a>数组动态初始化</h5><h5 id="数组内存图"><a href="#数组内存图" class="headerlink" title="数组内存图"></a>数组内存图</h5><h5 id="数组常见问题"><a href="#数组常见问题" class="headerlink" title="数组常见问题"></a>数组常见问题</h5>]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/01/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>JupyterNotebooks笔记</title>
+    <url>/2025/01/15/JupyterNotebooks%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="Jupyter-Notebooks"><a href="#Jupyter-Notebooks" class="headerlink" title="Jupyter Notebooks"></a>Jupyter Notebooks</h2><blockquote>
+<p>安装<a href="https://blog.csdn.net/cainiao_python/article/details/125567913">https://blog.csdn.net/cainiao_python/article/details/125567913</a></p>
+<p>这篇好像是linux环境安装的，但是win环境应该也能看懂</p>
+<p>配置的话看这个吧，是win环境的，更明了</p>
+<p><a href="https://blog.csdn.net/weixin_43416960/article/details/137051658">https://blog.csdn.net/weixin_43416960/article/details/137051658</a></p>
+</blockquote>
+<h3 id="1-常用代码操作"><a href="#1-常用代码操作" class="headerlink" title="1.常用代码操作"></a>1.常用代码操作</h3><h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">jupyter notebook</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-应用的介绍"><a href="#2-应用的介绍" class="headerlink" title="2. 应用的介绍"></a>2. 应用的介绍</h3><blockquote>
+<p>学习自<a href="https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a">https://www.bilibili.com/video/BV1Q4411H7fJ/?share_source=copy_web&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a</a></p>
+</blockquote>
+<p>​	与其他python不同的是，jupyter notebooks基于代码区块，可运行多个单元格或一个单元格中的代码，这个性质决定了它是学习数据分析、机器学习和人工智能的最好的python编辑和运行的工具</p>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><ul>
+<li>易于学习</li>
+<li>以代码块和单元格的方式运行，可以在运行中查看它的中间变量，易于调试和找出bug</li>
+<li>支持markdown文本</li>
+<li>可以调用%开头的魔法函数？</li>
+<li>文件分享形式多样，可随时转化为HTML、md、pdf等文件格式</li>
+<li>可运行python、JavaScript、r语言、ruby等多种编程语言，是集编程和写作于一身的编辑工具，称之为文学编程</li>
+</ul>
+<h4 id="内核"><a href="#内核" class="headerlink" title="内核"></a>内核</h4><p>ipython，比python原生附带的编译器更强大的编译器，具有相当强大的代码自动补全命令技术的功能</p>
+<h4 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h4><blockquote>
+<p><a href="https://zhuanlan.zhihu.com/p/32320214">https://zhuanlan.zhihu.com/p/32320214</a></p>
+<p>这篇知乎对页面的各种选项讲解的挺清楚的</p>
+</blockquote>
+]]></content>
+  </entry>
+  <entry>
     <title>Machine Learning Note</title>
     <url>/2025/01/13/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><h2 id="了解什么是机器学习"><a href="#了解什么是机器学习" class="headerlink" title="了解什么是机器学习"></a>了解什么是机器学习</h2><blockquote>
@@ -1204,24 +1592,6 @@
 <p>还是举出了更多的例子便于理解</p>
 <p><a href="https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&spm_id_from=333.788.player.switch&p=14">https://www.bilibili.com/video/BV1Pa411X76s?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;spm_id_from=333.788.player.switch&amp;p=14</a></p>
 </blockquote>
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/01/10/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
 </search>
