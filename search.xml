@@ -513,9 +513,12 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Java-Note</title>
+    <title></title>
     <url>/2025/01/16/Java-Note/</url>
-    <content><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a>Java学习笔记</h1><blockquote>
+    <content><![CDATA[<hr>
+<p>title: Java-Note<br>date: 2025-01-16 23:50:32<br>tags:<br>description: 学习Java的笔记<br>top_img: &#x2F;img&#x2F;JavaNote&#x2F;JavaNote.jpg<br>cover: &#x2F;img&#x2F;JavaNote&#x2F;JavaNote.jpg</p>
+<hr>
+<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a>Java学习笔记</h1><blockquote>
 <p>学习自<a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=2&spm_id_from=333.788.player.switch">https://www.bilibili.com/video/BV1Fv4y1q7ZH?vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=2&amp;spm_id_from=333.788.player.switch</a></p>
 </blockquote>
 <h2 id="基础篇"><a href="#基础篇" class="headerlink" title="基础篇"></a>基础篇</h2><h3 id="Day1"><a href="#Day1" class="headerlink" title="Day1"></a>Day1</h3><h4 id="计算机简介"><a href="#计算机简介" class="headerlink" title="计算机简介"></a>计算机简介</h4><h5 id="计算机简介-1"><a href="#计算机简介-1" class="headerlink" title="计算机简介"></a>计算机简介</h5><h6 id="计算机发展史"><a href="#计算机发展史" class="headerlink" title="计算机发展史"></a>计算机发展史</h6><p>第一台通用计算机：ENIAC 用于美国国防部的弹道计算</p>
@@ -826,7 +829,8 @@
 <li><p>小数：首选double（计算更准确），用float类型时，数字后要加F</p>
 </li>
 </ol>
-<h6 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h6><ol>
+<p>细节</p>
+<ol>
 <li><p>所有直接输出的整数默认是int类型，小数是double类型</p>
 </li>
 <li><p>ASCLL编码表</p>
@@ -911,7 +915,7 @@
 </li>
 </ol>
 <p>注意：自增自减只能对变量进行操作，不能对常量操作</p>
-<h6 id="细节-1"><a href="#细节-1" class="headerlink" title="细节"></a>细节</h6><p>多行注释左侧有个小减号，可以折叠</p>
+<h6 id="细节"><a href="#细节" class="headerlink" title="细节"></a>细节</h6><p>多行注释左侧有个小减号，可以折叠</p>
 <h5 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h5><h6 id="类型转换分类"><a href="#类型转换分类" class="headerlink" title="类型转换分类"></a>类型转换分类</h6><ul>
 <li><p>隐式转换</p>
 <p>数据范围小的变量<strong>可以直接</strong>赋值给数据范围大的变量</p>
@@ -1005,6 +1009,20 @@
 <h5 id="强转中的精度损失"><a href="#强转中的精度损失" class="headerlink" title="强转中的精度损失"></a>强转中的精度损失</h5><p><img src="/img/JavaNote/Day2/Day2.9.png"></p>
 <p>补码转原码，同样是取反码再给末尾加1</p>
 <h3 id="Day3"><a href="#Day3" class="headerlink" title="Day3"></a>Day3</h3><h4 id="运算符-1"><a href="#运算符-1" class="headerlink" title="运算符"></a>运算符</h4><h5 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h5><h6 id="基本赋值运算符"><a href="#基本赋值运算符" class="headerlink" title="基本赋值运算符"></a>基本赋值运算符</h6><p>&#x3D;</p>
+<p>注意：</p>
+<p>例：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">test</span> <span class="operator">=</span> <span class="number">5</span>/<span class="number">2</span>;</span><br><span class="line">        System.out.println(test);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果：</p>
+<p><code>2.0</code></p>
+<p>赋值运算符从右向左赋值，.class文件中如<code>5/2</code>的运算都会直接变为运算结果，上例如下：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">test</span> <span class="operator">=</span> (<span class="type">double</span>)<span class="number">2.0F</span>;</span><br><span class="line">        System.out.println(test);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>故需要在算数式中加上小数的运算，如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">double</span> <span class="variable">test</span> <span class="operator">=</span> (<span class="number">5</span>*<span class="number">1.0</span>)/<span class="number">2</span>;</span><br><span class="line">        System.out.println(test);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果为：</p>
+<p><code>2.5</code></p>
 <h6 id="拓展赋值运算符"><a href="#拓展赋值运算符" class="headerlink" title="拓展赋值运算符"></a>拓展赋值运算符</h6><p><img src="/img/JavaNote/Day3/Day3.1.png"></p>
 <p>细节：拓展赋值运算符内部自带强转效果，如下</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">short</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">s += <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
@@ -1354,8 +1372,7 @@
 <p>例如：<code>int[] arr1 = &#123;11,22,33&#125;;</code></p>
 </li>
 </ul>
-<p>拓展</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">shuZuDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        arrayTest1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">arrayTest1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] arr1 = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;;</span><br><span class="line">        <span class="type">double</span>[] arr2 = &#123;<span class="number">11.1</span>,<span class="number">22.2</span>,<span class="number">33.3</span>&#125;;</span><br><span class="line">        System.out.println(arr1); <span class="comment">//直接打印变量名</span></span><br><span class="line">        System.out.println(arr2); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="拓展——直接输出数组名"><a href="#拓展——直接输出数组名" class="headerlink" title="拓展——直接输出数组名"></a>拓展——直接输出数组名</h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">shuZuDemo</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        arrayTest1();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">arrayTest1</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] arr1 = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;;</span><br><span class="line">        <span class="type">double</span>[] arr2 = &#123;<span class="number">11.1</span>,<span class="number">22.2</span>,<span class="number">33.3</span>&#125;;</span><br><span class="line">        System.out.println(arr1); <span class="comment">//直接打印变量名</span></span><br><span class="line">        System.out.println(arr2); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>输出为</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[I@b4c966a</span><br><span class="line">[D@2f4d3709</span><br></pre></td></tr></table></figure>
@@ -1364,7 +1381,154 @@
 <p>[：表示当前空间为数组类型的空间</p>
 <p>D：表示当前空间的数组类型</p>
 <p>b4c966a：数组的十六进制内存地址</p>
-<h5 id="数组元素访问"><a href="#数组元素访问" class="headerlink" title="数组元素访问"></a>数组元素访问</h5><h5 id="数组遍历操作"><a href="#数组遍历操作" class="headerlink" title="数组遍历操作"></a>数组遍历操作</h5><h5 id="数组动态初始化"><a href="#数组动态初始化" class="headerlink" title="数组动态初始化"></a>数组动态初始化</h5><h5 id="数组内存图"><a href="#数组内存图" class="headerlink" title="数组内存图"></a>数组内存图</h5><h5 id="数组常见问题"><a href="#数组常见问题" class="headerlink" title="数组常见问题"></a>数组常见问题</h5>]]></content>
+<h5 id="数组元素访问"><a href="#数组元素访问" class="headerlink" title="数组元素访问"></a>数组元素访问</h5><h6 id="数组元素访问格式"><a href="#数组元素访问格式" class="headerlink" title="数组元素访问格式"></a>数组元素访问格式</h6><ul>
+<li>格式：<code>数组名[索引]</code></li>
+</ul>
+<p>索引：索引是数组容器中空间对应的编号，编号从0开始，逐个+1</p>
+<h5 id="数组遍历操作"><a href="#数组遍历操作" class="headerlink" title="数组遍历操作"></a>数组遍历操作</h5><h6 id="数组遍历介绍"><a href="#数组遍历介绍" class="headerlink" title="数组遍历介绍"></a>数组遍历介绍</h6><ul>
+<li>数组遍历：将数组中所有的元素，取出来进行操作</li>
+</ul>
+<h6 id="动态获取数组长度"><a href="#动态获取数组长度" class="headerlink" title="动态获取数组长度"></a>动态获取数组长度</h6><p><code>数组名.length</code>是一个用于获取数组长度的属性，可以用于打印、判断等操作</p>
+<p>细节：属性是类中用于存储数据的变量，它用于描述类或对象的状态，上面描述数组长度的属性，它的值在数组创建后不能被修改。</p>
+<h6 id="数组遍历快捷键"><a href="#数组遍历快捷键" class="headerlink" title="数组遍历快捷键"></a>数组遍历快捷键</h6><p><code>数组名.fori</code>+回车可以直接搭建如下代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="拓展——sout快捷键"><a href="#拓展——sout快捷键" class="headerlink" title="拓展——sout快捷键"></a>拓展——sout快捷键</h6><p>在IDEA中输入<code>元素.sout</code>，并回车，可以直接对元素进行包裹</p>
+<h6 id="拓展——批量修改变量名快捷键"><a href="#拓展——批量修改变量名快捷键" class="headerlink" title="拓展——批量修改变量名快捷键"></a>拓展——批量修改变量名快捷键</h6><p>IDEA中选中变量名，shift+F6，即可批量修改变量名</p>
+<h5 id="数组动态初始化"><a href="#数组动态初始化" class="headerlink" title="数组动态初始化"></a>数组动态初始化</h5><p>动态初始化：初始化时只指定数组长度，系统会分配默认值</p>
+<p>格式：<code>数据类型[] 数组名 = new 数据类型[长度]</code></p>
+<p>默认值的分类：</p>
+<ul>
+<li><p>整数：0</p>
+</li>
+<li><p>小数：0.0</p>
+</li>
+<li><p>布尔：false</p>
+</li>
+<li><p>字符：’\u0000’</p>
+<p>以\u开头+四个数字的字符为Unicode字符，<code>\u0000</code>常见为空白字符</p>
+</li>
+<li><p>引用数据类型：null</p>
+<p>引用数据类型：数组、类、接口…</p>
+<p>字符串String属于一种类</p>
+<p>故可说字符串类型数组的默认值为null</p>
+</li>
+</ul>
+<p>数组长度也可为变量</p>
+<h6 id="两种初始化的区别"><a href="#两种初始化的区别" class="headerlink" title="两种初始化的区别"></a>两种初始化的区别</h6><p>数组长度是否手动指定，数组元素是否手动指定</p>
+<h6 id="拓展——抽取方法"><a href="#拓展——抽取方法" class="headerlink" title="拓展——抽取方法"></a>拓展——抽取方法</h6><p>选中需要抽取的代码，<code>ctrl+alt+m</code>，然后可以修改方法的名字</p>
+<h5 id="数组内存图"><a href="#数组内存图" class="headerlink" title="数组内存图"></a>数组内存图</h5><h6 id="Java内存分配介绍"><a href="#Java内存分配介绍" class="headerlink" title="Java内存分配介绍"></a>Java内存分配介绍</h6><ul>
+<li><p>栈</p>
+<p>具体见前文——方法调用内存图解</p>
+</li>
+<li><p>堆</p>
+<p>new出来的东西会在堆内存中开辟空间并产生地址</p>
+</li>
+<li><p>方法区</p>
+<p>具体见前文——方法调用内存图解</p>
+</li>
+<li><p>本地方法栈</p>
+<p>辅助虚拟机工作，了解即可</p>
+</li>
+<li><p>寄存器</p>
+<p>cpu中的内存，了解即可</p>
+</li>
+</ul>
+<p>过程演示：</p>
+<p>代码：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] arr = &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;;</span><br><span class="line">        </span><br><span class="line">        arr[<span class="number">1</span>] = <span class="number">44</span>;</span><br><span class="line">        arr[<span class="number">2</span>] = <span class="number">55</span>;</span><br><span class="line">        arr[<span class="number">3</span>] = <span class="number">66</span>;</span><br><span class="line">        </span><br><span class="line">        System.out.println(arr[<span class="number">1</span>]);</span><br><span class="line">        System.out.println(arr[<span class="number">2</span>]);</span><br><span class="line">        System.out.println(arr[<span class="number">3</span>]);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>过程：</p>
+<ol>
+<li><p>字节码文件进入方法区，main方法处于候命状态</p>
+</li>
+<li><p>主方法被虚拟机自动调用执行，main方法进入栈内存</p>
+</li>
+<li><p>main方法在栈内存中逐个代码运行，首句<code>int[] arr = &#123;11,22,33&#125;;</code>运行</p>
+<p>此句代码为定义数组的简化版，实际代码为<code>int[] arr = new int[]&#123;11,22,33&#125;;</code>，代码中存在new</p>
+</li>
+<li><p>堆内存中开辟一块整数类型的数组空间，数组长度为3，则把数组空间分为三块，分别储存11，22，33</p>
+<p>开辟空间的同时，堆内存中数组空间的地址值被返回栈内存中的main方法，main方法可按照地址值找到数组空间并对其进行更改</p>
+</li>
+<li><p>main方法的改变变量值语句与打印语句根据地址值对数组空间的值进行操作</p>
+</li>
+<li><p>语句执行完成，main方法弹栈，程序结束</p>
+</li>
+</ol>
+<p><img src="/img/JavaNote/Day5/Day5.1.png"></p>
+<h6 id="两个数组指向相同内存图"><a href="#两个数组指向相同内存图" class="headerlink" title="两个数组指向相同内存图"></a>两个数组指向相同内存图</h6><p>如图</p>
+<p><img src="/img/JavaNote/Day5/Day5.2.png"></p>
+<p>第四行代码中，数组array1已经在堆内存中开辟了一块空间，如笔记前文可知，如果直接输出array1这个变量名后，命令行中会直接输出数组的地址值，故第六行代码中是将数组array1的地址也交给了数组array2，两个数组同时管理堆内存中的一块数组空间，故用array2更改堆内存的数值后，array1的数值也进行了改变</p>
+<h6 id="面试题——方法的参数传递"><a href="#面试题——方法的参数传递" class="headerlink" title="面试题——方法的参数传递"></a>面试题——方法的参数传递</h6><ol>
+<li><p>基本数据类型</p>
+<h6 id=""><a href="#" class="headerlink" title=""></a></h6><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArgsTest1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> <span class="number">100</span>;</span><br><span class="line">        System.out.println(<span class="string">&quot;调用change方法前:&quot;</span> + number);</span><br><span class="line">        change(number);</span><br><span class="line">        System.out.println(<span class="string">&quot;调用change方法后:&quot;</span> + number);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">change</span><span class="params">(<span class="type">int</span> number)</span> &#123;</span><br><span class="line">        number = <span class="number">200</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>两次输出的number变量分别为什么？答案与解析见12：20</p>
+<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?spm_id_from=333.788.player.switch&vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=55">https://www.bilibili.com/video/BV1Fv4y1q7ZH?spm_id_from=333.788.player.switch&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=55</a></p>
+</blockquote>
+</li>
+<li><p>引用数据类型</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ArgsTest2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[] arr = &#123;<span class="number">11</span>, <span class="number">22</span>, <span class="number">33</span>, <span class="number">44</span>, <span class="number">55</span>&#125;;</span><br><span class="line">        System.out.println(<span class="string">&quot;调用change方法之前:&quot;</span> + arr[<span class="number">0</span>]);</span><br><span class="line">        change(arr);</span><br><span class="line">        System.out.println(<span class="string">&quot;调用change方法之后:&quot;</span> + arr[<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">change</span><span class="params">(<span class="type">int</span>[] arr)</span> &#123;</span><br><span class="line">        arr[<span class="number">0</span>] = <span class="number">66</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>两次输出的数组arr[0]分别是什么？答案与解析见21：15</p>
+<blockquote>
+<p><a href="https://www.bilibili.com/video/BV1Fv4y1q7ZH?spm_id_from=333.788.player.switch&vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&p=55">https://www.bilibili.com/video/BV1Fv4y1q7ZH?spm_id_from=333.788.player.switch&amp;vd_source=a67a69fa2d51203b8c6f8ebbc5bfe21a&amp;p=55</a></p>
+</blockquote>
+</li>
+</ol>
+<p>总结：</p>
+<p>方法参数</p>
+<p>如果传递的是基本数据类型，则传递的参数是数据值</p>
+<p>如果是引用数据类型，则传递的参数是地址值</p>
+<p>提问：Java到底是值传递还是址传递？</p>
+<p>JAVA之父回答：地址值也是值</p>
+<h5 id="数组常见问题"><a href="#数组常见问题" class="headerlink" title="数组常见问题"></a>数组常见问题</h5><h6 id="数组索引越界异常（ArrayIndexOutOfBoundsException）"><a href="#数组索引越界异常（ArrayIndexOutOfBoundsException）" class="headerlink" title="数组索引越界异常（ArrayIndexOutOfBoundsException）"></a>数组索引越界异常（ArrayIndexOutOfBoundsException）</h6><h6 id="空指针异常（NullPointerException）"><a href="#空指针异常（NullPointerException）" class="headerlink" title="空指针异常（NullPointerException）"></a>空指针异常（NullPointerException）</h6><p>当引用数据类型的变量，被赋值为null后，地址的指向被切断</p>
+<p>如果此时还想去访问原内存中的数据，就会出现空指针异常</p>
+<p>如下</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">int</span>[] arr = <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">2</span>];</span><br><span class="line">    <span class="comment">// 把null赋值给数组</span></span><br><span class="line">    arr = <span class="literal">null</span>;</span><br><span class="line">    <span class="comment">// 输出元素</span></span><br><span class="line">    System.out.println(arr[<span class="number">0</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><h5 id="二维数组介绍"><a href="#二维数组介绍" class="headerlink" title="二维数组介绍"></a>二维数组介绍</h5><ul>
+<li>二维数组是一种容器，该容器用于储存一维数组</li>
+</ul>
+<h5 id="二维数组静态初始化"><a href="#二维数组静态初始化" class="headerlink" title="二维数组静态初始化"></a>二维数组静态初始化</h5><h6 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h6><ul>
+<li><p>完整格式</p>
+<p><code>数据类型[][] 数组名 = new 数据类型[][] &#123;&#123;元素1,元素2&#125;,&#123;元素1,元素2&#125;&#125;;</code></p>
+<p>例子</p>
+<p><code>int[][] arr = new int[][]&#123;&#123;11,22&#125;,&#123;33,44&#125;&#125;;</code></p>
+</li>
+<li><p>简化格式</p>
+<p><code>数据类型[][] 数组名 = &#123;&#123;元素1,元素2&#125;,&#123;元素1,元素2&#125;&#125;;</code></p>
+<p>例子</p>
+<p><code>int[][] arr = &#123;&#123;11,22&#125;,&#123;33,44&#125;&#125;;</code></p>
+</li>
+<li><p>常用格式</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span>[][] arr = &#123;</span><br><span class="line">	&#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;,</span><br><span class="line">	&#123;<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h6 id="二维数组访问格式"><a href="#二维数组访问格式" class="headerlink" title="二维数组访问格式"></a>二维数组访问格式</h6><p><code>arr[索引m][索引n]</code></p>
+<p>索引m：指定访问哪一个一维数组</p>
+<p>索引n：访问一维数组中的哪个元素</p>
+<h6 id="拓展——直接输出二维数组数组名"><a href="#拓展——直接输出二维数组数组名" class="headerlink" title="拓展——直接输出二维数组数组名"></a>拓展——直接输出二维数组数组名</h6><p>如例</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[][] arr = &#123;</span><br><span class="line">                &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;,</span><br><span class="line">                &#123;<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>&#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        System.out.println(arr);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>结果为<code>[[I@b4c966a</code>，比一维数组多了一个<code>[</code></p>
+<p>以一维数组索引的形式输出如例</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[][] arr = &#123;</span><br><span class="line">                &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;,</span><br><span class="line">                &#123;<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>&#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        System.out.println(arr[<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果为<code>[I@b4c966a</code>,可见二维数组存储一维数组时，存储的是一维数组的地址，而不是一维数组整体</p>
+<p><img src="/img/JavaNote/Day5/Day5.3.png"></p>
+<h6 id="拓展——重命名快捷键"><a href="#拓展——重命名快捷键" class="headerlink" title="拓展——重命名快捷键"></a>拓展——重命名快捷键</h6><p>shift+F6</p>
+<h5 id="二维数组遍历"><a href="#二维数组遍历" class="headerlink" title="二维数组遍历"></a>二维数组遍历</h5><ol>
+<li>遍历二维数组，获取到每一个一维数组</li>
+<li>继续遍历一维数组，获取具体的元素</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">test1</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span>[][] arr = &#123;</span><br><span class="line">                &#123;<span class="number">11</span>,<span class="number">22</span>,<span class="number">33</span>&#125;,</span><br><span class="line">                &#123;<span class="number">44</span>,<span class="number">55</span>,<span class="number">66</span>&#125;</span><br><span class="line">        &#125;;</span><br><span class="line">        printArray2(arr);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">printArray2</span><span class="params">(<span class="type">int</span>[][] arr)</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; arr[i].length; j++) &#123;</span><br><span class="line">                <span class="comment">//arr[i]为二维数组储存的每一个一维数组</span></span><br><span class="line">                System.out.println(arr[i][j]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="二维数组动态初始化"><a href="#二维数组动态初始化" class="headerlink" title="二维数组动态初始化"></a>二维数组动态初始化</h5><h6 id="格式-1"><a href="#格式-1" class="headerlink" title="格式"></a>格式</h6><p><code>数据类型[][] 数组名 = new 数据类型[m][n]</code></p>
+<p>m：二维数组中可以存放多少个一维数组</p>
+<p>n：每一个一维数组中可以存放多少个元素</p>
+<p>也可以将提前创建好的一维数组存储到二维数组中，这个过程通过对二维数组的地址值进行更改以达成</p>
+<h3 id="Day6"><a href="#Day6" class="headerlink" title="Day6"></a>Day6</h3>]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
